@@ -2886,7 +2886,12 @@ html:not(.lt-ie10) .visible-sm-inline-block-skin {
 .bg-image-1 {
   background: #ddddde;
 }
-.well-2 {background: #3e3a3a}
+.well-2 {
+  background: #3e3a3a;
+}
+.well-4 {
+  background: #eee;
+}
 .bg-image-2 {
   background: #f19715;
 }
@@ -9581,4 +9586,27 @@ img.mfp-img {
   .hidden-print {
     display: none !important;
   }
+}
+
+.ruxinProductsBox .col-sm-4{
+  background:#535353;
+  height:410px;
+  padding:15px 0;
+}
+.ruxinProductsBox .col-sm-4:nth-child(2){
+  background: #f19715;
+}
+.ruxinProductsBox .col-sm-4 img{
+  width:100%;
+  height:236px;
+}
+.ruxinProducts{
+  padding:10px 15px;
+  line-height:1.5;
+  font-size:0.9rem;
+}
+.ruxinProducts h5{
+  width:100%;
+  text-align:center;
+  margin-bottom:10px;
 }

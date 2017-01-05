@@ -108,74 +108,34 @@ get_header(); ?>
     </section>
     <!-- END Testimonials-->
 
-    <!-- Services -->
-    <section class="well-4">
-      <div class="container container-wide">
-        <h1>服 务 体 系 介 绍</h1>
-        <div class="divider divider-default"></div>
-        <div class="row offset-1">
-          <div class="col-sm-6 text-sm-right">
-            <h5><a href="<?php bloginfo('home'); ?>/service/">全球展览展示</a></h5>
-            <p>骁懿为客户提供从展会信息咨询、展会推介、设计策划、生产制作、现场搭建、现场维护、展台拆卸和运输，展前、展中、展后全程贴心服务
-<br />大型博览会主场，高端展台设计与工程；
-<br />政府形象，品牌企业形象，展示展厅策划与设计；
-<br />大型商业空间规划和展示设计；
-<br />大型舞台和演出活动规划和设计；</p>
-            <h5><a href="<?php bloginfo('home'); ?>/service/">全球公关活动策划和执行</a></h5>
-            <p class="inset-2">独特的策划创意风格、国际化的创新设计理念、全球化的专业搭建平台，骁懿为您提供公关活动、会展活动、产品发布、产品推广、新闻发布会、企业年会、节日庆典等多类型的线下推广营销服务。</p>
-          </div>
-          <div class="col-sm-offset-1 col-sm-5 text-sm-left">
-            <!-- Marked List -->
-            <ul class="marked-list">
-              <li><a href="<?php bloginfo('home'); ?>/service/">产品服务： 策划、创意、设计、施工、运营一体化</a></li>
-              <li><a href="<?php bloginfo('home'); ?>/service/">品牌打造</a></li>
-              <li><a href="<?php bloginfo('home'); ?>/service/">品牌营销</a></li>
-              <li><a href="<?php bloginfo('home'); ?>/service/">品牌传播</a></li>
-              <li><a href="<?php bloginfo('home'); ?>/service/">品牌管理</a></li>
-              <li><a href="<?php bloginfo('home'); ?>/service/">视觉创意</a></li>
-            </ul>
-            <!-- END Marked List -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END Services-->
-
-    <!-- Google Map -->
-    <div id="contacts" class="map">
-      <div id="google-map" class="map_model"></div>
-    </div>
-    <!-- END Google Map -->
-
     <!-- Contacts -->
     <section class="well-4 well-4--inset-1">
       <div class="container container-wide">
-        <h1>联 系 我 们</h1>
-        <div class="divider divider-default"></div>
-        <form class='rd-mailform' method="post" action="#" onsubmit="return false;">
-          <!-- END RD Mailform Type -->
-          <div class="form-group">
-            <label class="form-label" data-add-placeholder for="mailform-input-name">姓名</label>
-            <input id="mailform-input-name" type="text" name="author" data-constraints="@NotEmpty"/>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" data-add-placeholder for="mailform-input-phone">电话</label>
-            <input id="mailform-input-phone" type="text" name="phone" data-constraints="@Phone"/>
-          </div>
-
-          <div class="form-group textarea">
-            <label class="form-label" data-add-placeholder for="mailform-input-textarea">咨询 / 留言</label>
-            <textarea id="mailform-input-textarea" name="message" data-constraints="@NotEmpty"></textarea>
-          </div>
-          <input class="form-control" type="hidden" name="comment_post_ID" value="1">
-          <input class="form-control" type="hidden" name="comment_parent" value="0">
-
-          <div class="form-group btn-wr">
-            <button class="btn btn-sm btn-sm--mod btn-danger" id="submit" type="submit">发送给我们</button>
-            <div class="mfInfo"></div>
-          </div>
-        </form>
+        <h1>如 心 产 品</h1>
+        <div class="divider divider-default">一对一定制服务，展现品牌最大价值，满足并超越客户的期望 </div>
+        <div class="row text-sm-left ruxinProductsBox">
+            <div class="col-sm-4">
+              <img src="<?php bloginfo('template_url'); ?>/images/logo_sjz.jpg" />
+              <div class="ruxinProducts white">
+                <h5 class="white">实兼轴--精彩不止于校园</h5>
+                实兼轴公众号为大学生、年轻人提供潮流热点资讯、逗比新颖观点，引领年轻人多元价值观；同时也为年轻人提供知名企业实习、兼职、应届招聘、培训以及创业辅导等服务，帮助青年人完成人生独立第一步。
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <img src="<?php bloginfo('template_url'); ?>/images/logo_nmp.jpg" />
+              <div class="ruxinProducts white">
+                <h5 class="white">凝萌π--最贴近大学生的公益组织</h5>
+                凝萌π致力于成为学生触手可及的高校学生择业前辅导、创新创业和职业发展的公益性组织。已在上海大学、上海师范大学、华东师范大学等高校展开系列课程和讲座，帮助大学生在就业或创业的发展过程中取得成功。
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <img src="<?php bloginfo('template_url'); ?>/images/logo_rx.jpg" />
+              <div class="ruxinProducts white">
+                <h5 class="white">如心--比你更懂年轻人</h5>
+                如心文化研究大学生市场的公众平台--大学生研究院，调查研究大学生相关喜好、消费能力、生活方式、性格特点、适时动态等市场行为，帮助企业客户了解大学生市场。同时，第一时间展示如心文化相关营销案例、最新动态。
+              </div>
+            </div>
+        </div>
       </div>
     </section>
     <!-- END Contacts-->
