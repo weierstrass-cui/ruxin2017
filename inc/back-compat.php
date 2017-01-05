@@ -7,8 +7,8 @@
  * relies on many newer functions and markup changes introduced in 4.1.
  *
  * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
+ * @subpackage 如心
+ * @since 如心2017
  */
 
 /**
