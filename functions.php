@@ -406,3 +406,13 @@ require get_template_directory() . '/inc/template-tags.php';
  * @since 骁懿 1.0
  */
 require get_template_directory() . '/inc/customizer.php';
+
+
+function getchild($id){  
+	$result = explode('/',get_category_children($id));  
+	$childs = array();  
+	foreach($result as $i){  
+		if(!empty($i))$childs[] = get_category($i);  
+	}  
+	return $childs;  
+}  
