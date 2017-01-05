@@ -13,7 +13,7 @@ if ( ! function_exists( 'twentyfifteen_comment_nav' ) ) :
 /**
  * Display navigation to next/previous comments when applicable.
  *
- * @since Twenty Fifteen 1.0
+ * @since 骁懿 1.0
  */
 function twentyfifteen_comment_nav() {
 	// Are there comments to navigate through?
@@ -42,7 +42,7 @@ if ( ! function_exists( 'twentyfifteen_entry_meta' ) ) :
 /**
  * Prints HTML with meta information for the categories, tags.
  *
- * @since Twenty Fifteen 1.0
+ * @since 骁懿 1.0
  */
 function twentyfifteen_entry_meta() {
 	if ( is_sticky() && is_home() && ! is_paged() ) {
@@ -129,7 +129,7 @@ endif;
 /**
  * Determine whether blog/site has more than one category.
  *
- * @since Twenty Fifteen 1.0
+ * @since 骁懿 1.0
  *
  * @return bool True of there is more than one category, false otherwise.
  */
@@ -162,7 +162,7 @@ function twentyfifteen_categorized_blog() {
 /**
  * Flush out the transients used in {@see twentyfifteen_categorized_blog()}.
  *
- * @since Twenty Fifteen 1.0
+ * @since 骁懿 1.0
  */
 function twentyfifteen_category_transient_flusher() {
 	// Like, beat it. Dig?
@@ -178,7 +178,7 @@ if ( ! function_exists( 'twentyfifteen_post_thumbnail' ) ) :
  * Wraps the post thumbnail in an anchor element on index views, or a div
  * element when on single views.
  *
- * @since Twenty Fifteen 1.0
+ * @since 骁懿 1.0
  */
 function twentyfifteen_post_thumbnail() {
 	if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
@@ -210,7 +210,7 @@ if ( ! function_exists( 'twentyfifteen_get_link_url' ) ) :
  *
  * Falls back to the post permalink if no URL is found in the post.
  *
- * @since Twenty Fifteen 1.0
+ * @since 骁懿 1.0
  *
  * @see get_url_in_content()
  *
@@ -227,7 +227,7 @@ if ( ! function_exists( 'twentyfifteen_excerpt_more' ) && ! is_admin() ) :
 /**
  * Replaces "[...]" (appended to automatically generated excerpts) with ... and a 'Continue reading' link.
  *
- * @since Twenty Fifteen 1.0
+ * @since 骁懿 1.0
  *
  * @return string 'Continue reading' link prepended with an ellipsis.
  */

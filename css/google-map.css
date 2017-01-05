@@ -1,0 +1,31 @@
+@import url(../css/font-awesome.css);
+@import url(../css/material-icons.css);
+@import url(//fonts.googleapis.com/css?family=Roboto:400,700,700italic,300);
+/*==================  GOOGLE MAP  ======================*/
+.map {
+  position: relative;
+  padding-bottom: 28.27777778rem;
+}
+@media (max-width: 479px) {
+  .map {
+    padding-bottom: 11.11111111rem;
+  }
+}
+.map .gm-style .gm-style-iw {
+  font-size: 0.72222222rem;
+  line-height: 1.2;
+}
+.map--mod {
+  padding-bottom: 27.22222222rem;
+}
+.map_model {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.map_model img {
+  max-width: none !important;
+}
+.map_locations {
+  display: none;
+}

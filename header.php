@@ -8,45 +8,180 @@
  * @subpackage 如心
  * @since 如心2017
  */
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="format-detection" content="telephone=no"/>
+	<link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" type="image/x-icon">
+	<title>
+		<?php 
+         if( $_GET['id'] ){
+		   if( $post = get_post( $_GET['id'] ) ){
+		      if($post->post_title){
+		        echo $post->post_title;
+				echo ' - ';
+				bloginfo('name');
+			   }else if(get_the_category($_GET['id'])[0]->cat_name){
+			    echo get_the_category($_GET['id'])[0]->cat_name;
+				echo ' - ';
+				bloginfo('name');
+		      }
+		   }else{
+		    bloginfo('name');
+		    echo '-';
+		    bloginfo('description');
+		   }
+		}else{
+		  bloginfo('name');
+		  echo '-';
+		  bloginfo('description');
+		}
+    ?> 
+	</title>
+	<!-- Bootstrap -->
+	<link href="<?php bloginfo('template_url'); ?>/css/bootstrap.css" rel="stylesheet">
+	<!-- Links -->
+	<link href="<?php bloginfo('template_url'); ?>/css/rd-mailform.css" rel="stylesheet">
+	<!--JS-->
+	<script src="<?php bloginfo('template_url'); ?>/js/jquery.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/js/jquery-migrate-1.2.1.min.js"></script>
 	<!--[if lt IE 9]>
-	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
+	<div style=' clear: both; text-align:center; position: relative;'>
+	<a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+	  <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+	       alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+	</a>
+	</div>
+	<script src="<?php bloginfo('template_url'); ?>/js/html5shiv.js"></script>
 	<![endif]-->
+	<script src='<?php bloginfo('template_url'); ?>/js/device.min.js'></script>
+	<script>
+		var __tpl__ = '<?php bloginfo('template_url'); ?>';
+		var template_url = '<?php bloginfo("template_directory"); ?>'
+	</script>
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
-
-	<div id="sidebar" class="sidebar">
-		<header id="masthead" class="site-header" role="banner">
-			<div class="site-branding">
-				<?php
-					twentyfifteen_the_custom_logo();
-
-					if ( is_front_page() && is_home() ) : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-					<?php endif;
-
-					$description = get_bloginfo( 'description', 'display' );
-					if ( $description || is_customize_preview() ) : ?>
-						<p class="site-description"><?php echo $description; ?></p>
-					<?php endif;
-				?>
-				<button class="secondary-toggle"><?php _e( 'Menu and widgets', 'twentyfifteen' ); ?></button>
-			</div><!-- .site-branding -->
-		</header><!-- .site-header -->
-
-		<?php get_sidebar(); ?>
-	</div><!-- .sidebar -->
-
-	<div id="content" class="site-content">
+	<div class="page text-center">
+	  <!--========================================================
+	                            HEADER
+	  =========================================================-->
+	  <?php if (is_home()) {?>
+	  <header class="swiper-container swiper-slider" data-height="100vh">
+	  	<?php  global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 1";
+            $firstrow=$wpdb->get_results($query);
+    	?>
+	    <!-- Swiper -->
+	    <div class="swiper-wrapper">
+	    	<?php  foreach($firstrow as $v){ ?>
+		      <div class="swiper-slide" data-slide-bg="<?php echo $v->image_url;?>">
+		      	  <div class="container container-wide bannerDom">
+			        <h1 class="h1 h1--mod brand white"><?php echo $v->name; ?></h1>
+			        <p class="lead white"><?php echo $v->description; ?></p>
+			        <!-- <a href="<?php echo $v->sl_url; ?>" class="btn btn-sm btn-danger">了解更多 !</a> -->
+			      </div>
+		      </div>
+		    <?php }?> 
+	    </div>
+	    <!-- Swiper Navigation -->
+	    <div class="swiper-button-prev material-icons-chevron_left"></div>
+	    <div class="swiper-button-next material-icons-chevron_right"></div>
+	    <!-- <div class="swiper-slide-caption">
+	      <div class="container container-wide">
+	        <h1 class="h1 h1--mod brand white">骁 懿 国 际</h1>
+	        <p class="lead white">骁懿创意、量身打造、特色展示、一体服务</p>
+	        <a href="<?php bloginfo('home'); ?>/about/" class="btn btn-sm btn-danger">了解更多 !</a>
+	      </div>
+	    </div> -->
+	    <!-- END Swiper -->
+	  </header>
+	  <!-- Stuck Container -->
+	  <div id="stuck_container" class="stuck_container">
+	    <div class="navbar-wrap navbar-wrap-position">
+	      <!-- Navbar -->
+	      <nav class="navbar navbar-static-top">
+	        <!-- Navbar Brand -->
+	        <div class="navbar-header center-xs visible-sm-inline-block-skin">
+	          <div class="navbar-brand">
+	            <a href="<?php bloginfo('home'); ?>/"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" /></a>
+	          </div>
+	        </div>
+	        <!-- END Navbar Brand -->
+	        <!-- Navbar Nav -->
+	        <ul class="navbar-nav sf-menu navbar-right" data-type="navbar">
+	          <li class="active">
+	            <a href="<?php bloginfo('home'); ?>/">首页</a>
+	          </li>
+	          <!-- <li class="dropdown"> -->
+	          <li>
+	            <a href="<?php bloginfo('home'); ?>/about/">服务体系</a>
+	          </li>
+	          <li>
+	            <a href="<?php bloginfo('home'); ?>/news/">成功案例</a>
+	          </li>
+	          <li>
+	            <a href="<?php bloginfo('home'); ?>/service/">关于我们</a>
+	          </li>
+	          <li class="phoneCall">
+		          <img src="<?php bloginfo('template_url'); ?>/images/phoneCall.png" />
+	          </li>
+	        </ul>
+	        <!-- END Navbar Nav -->
+	      </nav>
+	      <!-- END Navbar -->
+	    </div>
+	  </div>
+	  <?php }else{ ?>
+	  <header>
+    <!-- Stuck Container -->
+    <div id="stuck_container" class="stuck_container">
+      <div class="bg-image bg-image-3">
+        <div class="navbar-wrap">
+          <!-- Navbar -->
+          <nav class="navbar navbar-static-top">
+            <!-- Navbar Brand -->
+            <div class="navbar-header center-xs">
+              <div class="navbar-brand">
+                <a href="<?php bloginfo('home'); ?>/"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" /></a>
+              </div>
+            </div>
+            <!-- END Navbar Brand -->
+            <!-- Navbar Nav -->
+            <ul class="navbar-nav sf-menu navbar-right" data-type="navbar">
+              <li class="active">
+	            <a href="<?php bloginfo('home'); ?>/">首页</a>
+	          </li>
+	          <!-- <li class="dropdown"> -->
+	          <li>
+	            <a href="<?php bloginfo('home'); ?>/about/">服务体系</a>
+	          </li>
+	          <li>
+	            <a href="<?php bloginfo('home'); ?>/news/">成功案例</a>
+	          </li>
+	          <li>
+	            <a href="<?php bloginfo('home'); ?>/service/">关于我们</a>
+	          </li>
+	          <li class="phoneCall">
+		          <img src="<?php bloginfo('template_url'); ?>/images/phoneCall.png" />
+	          </li>
+            </ul>
+            <!-- END Navbar Nav -->
+          </nav>
+          <!-- END Navbar -->
+        </div>
+      </div>
+    </div>
+    <!-- END Stuck Container -->
+  </header>
+	  <?php } ?>
+	  <!-- END Stuck Container -->
+	  <!--========================================================
+	                            CONTENT
+	  =========================================================-->
+	  <main>

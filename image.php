@@ -36,7 +36,7 @@ get_header(); ?>
 								/**
 								 * Filter the default Twenty Fifteen image attachment size.
 								 *
-								 * @since Twenty Fifteen 1.0
+								 * @since 骁懿 1.0
 								 *
 								 * @param string $image_size Image size. Default 'large'.
 								 */
