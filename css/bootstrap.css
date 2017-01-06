@@ -1160,6 +1160,7 @@ th {
   position: relative;
   display: block;
   overflow: hidden;
+  border:10px solid rgba(255, 255, 255, 0.8);
 }
 .thumb > img {
   width: 100%;
