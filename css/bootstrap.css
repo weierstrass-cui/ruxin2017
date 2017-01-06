@@ -2190,9 +2190,10 @@ main .well-404 h2 + .lead {
                      FOOTER  Styles
 =========================================================*/
 footer {
-  background: #ffffff;
+  background: #313131;
   padding-top: 4.77777778rem;
   padding-bottom: 7rem;
+  color:#fff;
 }
 h1,
 h2,
@@ -3257,6 +3258,8 @@ blockquote.pull-right .small:after {
 }
 address.contact-info {
   font-style: normal;
+  text-align: left;
+  line-height: 2;
 }
 address.contact-info p + p {
   margin-top: 0;
@@ -9635,4 +9638,20 @@ img.mfp-img {
  left:0;
  margin:0;
  line-height:3.5;
+}
+.footerInfo h4{
+  margin-bottom: 1rem;
+}
+.footBanner{
+  padding: 2rem 0;
+}
+.footBanner a{
+  display:inline-block;
+  width:24%;
+}
+.footBanner a:hover{
+  color:#f19715;
+}
+.footerInfo .ecode{
+  margin-bottom: 1rem;
 }

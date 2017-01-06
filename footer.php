@@ -16,20 +16,45 @@
   =========================================================-->
   <footer>
     <div class="container container-wide">
+      <a href="<?php bloginfo('home'); ?>/">
+        <img src="<?php bloginfo('template_url'); ?>/images/logo_color.png" />
+      </a>
+      <div class="footBanner">
+        <a href="javascript://">服务体系</a>|
+        <a href="javascript://">优势资源</a>|
+        <a href="javascript://">成功案例</a>|
+        <a href="javascript://">关于我们</a>
+      </div>
+
       <!-- Address -->
-      <address class="contact-info">
-        <p>中国，上海市闵行区</p>
-        <p>恒南路1325号(闿鑫商务)B座306室</p>
-        <dl>
-          <dt>全国服务热线: </dt>
-          <dd><a href="callto:400-788-4429"> 400-788-4429</a></dd>
-        </dl>
-      </address>
+      <div class="row text-sm-left footerInfo">
+          <div class="col-sm-8">
+            <h4 class="white">联系我们</h4>
+            <address class="contact-info">
+              <p>上海总部：上海市杨浦区隆昌路619号城市概念8号楼中区B13，200090</p>
+              <p>北京分公司：北京市朝阳区朝阳北路青年汇104号楼518室</p>
+              <br />
+              <dl>
+                <dt>联系电话：</dt>
+                <dd><a href="callto:400-788-4429"> 400-820-2083</a></dd>
+              </dl>
+              <dl>
+                <dt>Email: </dt>
+                <dd><a href="mailto:jane.z@ruxinwenhua.com"> jane.z@ruxinwenhua.com</a></dd>
+              </dl>
+            </address>
+          </div>
+          <div class="col-sm-4">
+            <h4 class="white">关注我们</h4>
+            <img class="ecode" src="<?php bloginfo('template_url'); ?>/images/ecode.jpg" />
+            <p>上海如心文化--大学生研究院</p>
+          </div>
+      </div>
       <!-- END Address -->
       <p class="rights">
-        上海骁懿展览展示有限公司 &#169; <span id="copyright-year"></span>
-        <span class="fw-b">&#183;</span>
-        <a rel="nofollow" href="index-5.html"> 沪ICP备案8888</a>
+        版权所有上海如心文化传播有限公司 &#169; <span id="copyright-year"></span>
+        <!-- <span class="fw-b">&#183;</span> -->
+        <!-- <a rel="nofollow" href="index-5.html"> 沪ICP备案8888</a> -->
       </p>
     </div>
   </footer>
