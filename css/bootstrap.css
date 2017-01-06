@@ -6210,7 +6210,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .h1.brand:before,
 .h1.brand:after {
-  content: '\e019';
+  /*content: '\e019';*/
   font-family: "微软雅黑", "Material Icons";
   font-size: 3.33333333rem;
   line-height: 2.22222222rem;
