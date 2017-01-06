@@ -51,7 +51,9 @@ get_header(); ?>
         <h1>服 务 体 系</h1>
         <div class="divider divider-default white">提供优秀品牌策划、文案撰写、创意设计及全方位的活动落地执行</div>
         <div class="row text-sm-left">
-          <?php $categorys = getchild(3); ?>
+          <?php  // $categorys = getchild(3);
+                $categorys = get_posts("category=3&numberposts=6");
+           ?>
             <?php if( $categorys ):?>
               <?php foreach( $categorys as $index => $post ): ?>
                 <?php if($index == '3'){ ?>
@@ -62,13 +64,15 @@ get_header(); ?>
                       <div class="col-sm-4">
                 <?php } ?>
                   <div class="product">
-                    <a href="<?php bloginfo('home'); ?>/blog_single_post?id=<?php echo $post->ID; ?>" class="thumb">
+                    <!-- <a href="<?php bloginfo('home'); ?>/blog_single_post?id=<?php echo $post->ID; ?>" class="thumb">
                       <?php // the_post_thumbnail(); ?>
                       <img src="<?php echo $post->category_description ?>" width="370" height="278" alt="">
-                      <span class="thumb__overlay"><?php echo $post->cat_name ?></a></span>
+                      <span class="thumb__overlay"><?php echo $post->cat_name ?></span>
+                    </a> -->
+                    <a href="<?php bloginfo('home'); ?>/blog_single_post?id=<?php echo $post->ID; ?>" class="thumb">
+                      <img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" width="370" height="278" alt="">
+                      <span class="thumb__overlay"><?php the_title(); ?></span>
                     </a>
-                    <!-- <h5><a href="<?php bloginfo('home'); ?>/blog_single_post?id=<?php echo $post->ID; ?>"><?php the_title(); ?></a></h5>
-                    <p><?php echo get_post_meta($post->ID,'简介',true); ?></p> -->
                   </div>
                 </div>
               <?php endforeach; ?>
