@@ -9656,3 +9656,12 @@ img.mfp-img {
 .footerInfo .ecode{
   margin-bottom: 1rem;
 }
+
+@media (max-width: 768px) {
+  .successListBox{
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  .successList{margin: 0 auto;}
+}

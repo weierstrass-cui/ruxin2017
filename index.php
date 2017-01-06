@@ -88,7 +88,7 @@ get_header(); ?>
         <h1 class="white">成 功 案 例</h1>
         <div class="divider divider-light white">一对一定制服务，展现品牌最大价值，满足并超越客户的期望 </div>
         <!-- Owl Carousel -->
-        <div class="row text-sm-left">
+        <div class="row text-sm-left successListBox">
           <?php $categorys = getchild(10); ?>
             <?php if( $categorys ):?>
               <?php foreach( $categorys as $index => $post ): ?>
