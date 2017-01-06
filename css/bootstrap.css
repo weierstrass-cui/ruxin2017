@@ -7992,7 +7992,7 @@ a.list-group-item-danger.active:focus {
 @media (min-width: 992px) {
   .well-1 {
     padding-top: 5.77777778rem;
-    padding-bottom: 11.72222222rem;
+    padding-bottom: 4.72222222rem;
   }
 }
 .well-2 {
@@ -8002,7 +8002,7 @@ a.list-group-item-danger.active:focus {
 @media (min-width: 992px) {
   .well-2 {
     padding-top: 5.11111111rem;
-    padding-bottom: 13.38888889rem;
+    padding-bottom: 4.38888889rem;
   }
 }
 .well-3 {
@@ -8012,7 +8012,7 @@ a.list-group-item-danger.active:focus {
 @media (min-width: 992px) {
   .well-3 {
     padding-top: 5.66666667rem;
-    padding-bottom: 13.11111111rem;
+    padding-bottom: 4.11111111rem;
   }
 }
 @media (min-width: 992px) {
@@ -8027,7 +8027,7 @@ a.list-group-item-danger.active:focus {
 @media (min-width: 992px) {
   .well-4 {
     padding-top: 5.55555556rem;
-    padding-bottom: 11.55555556rem;
+    padding-bottom: 4.55555556rem;
   }
 }
 .well-4--inset-1 {
@@ -8035,7 +8035,7 @@ a.list-group-item-danger.active:focus {
 }
 @media (min-width: 992px) {
   .well-4--inset-1 {
-    padding-bottom: 0;
+    padding-bottom: 4.66666667rem;
   }
 }
 .well-5 {
@@ -8045,7 +8045,7 @@ a.list-group-item-danger.active:focus {
 @media (min-width: 992px) {
   .well-5 {
     padding-top: 14.11111111rem;
-    padding-bottom: 11.61111111rem;
+    padding-bottom: 4.61111111rem;
   }
 }
 @media (min-width: 992px) {
