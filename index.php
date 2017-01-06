@@ -64,7 +64,7 @@ get_header(); ?>
                   <div class="product">
                     <a href="<?php bloginfo('home'); ?>/blog_single_post?id=<?php echo $post->ID; ?>" class="thumb">
                       <?php // the_post_thumbnail(); ?>
-                      <img src="<?php bloginfo('template_url'); ?>/images/<?php echo $post->category_description ?>" width="370" height="278" alt="">
+                      <img src="<?php echo $post->category_description ?>" width="370" height="278" alt="">
                       <span class="thumb__overlay"><?php echo $post->cat_name ?></a></span>
                     </a>
                     <!-- <h5><a href="<?php bloginfo('home'); ?>/blog_single_post?id=<?php echo $post->ID; ?>"><?php the_title(); ?></a></h5>
@@ -97,7 +97,7 @@ get_header(); ?>
                 <?php } ?>
                   <a href="<?php bloginfo('home'); ?>/blog_single_post?id=<?php echo $post->ID; ?>" class="thumb successList">
                     <?php // the_post_thumbnail(); ?>
-                    <img src="<?php bloginfo('template_url'); ?>/images/<?php echo $post->category_description ?>" style="width:270px;height:270px;" alt="<?php echo $post->cat_name ?>" />
+                    <img src="<?php echo $post->category_description ?>" style="width:270px;height:270px;" alt="<?php echo $post->cat_name ?>" />
                     <span class="thumb__overlay"><?php echo $post->cat_name ?></a></span>
                   </a>
                 </div>
