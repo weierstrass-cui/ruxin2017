@@ -84,21 +84,22 @@ get_header(); ?>
         <h1 class="white">成 功 案 例</h1>
         <div class="divider divider-light white">一对一定制服务，展现品牌最大价值，满足并超越客户的期望 </div>
         <!-- Owl Carousel -->
-        <div class="owl-carousel">
-          <?php $posts = get_posts("category=3&numberposts=99"); ?>
-            <?php if( $posts ):?>
-              <?php foreach( $posts as $index => $post ): setup_postdata( $post ); ?>
-                <div class="owl-item">
-                  <!-- Blockquote -->
-                  <blockquote class="quote">
-                    <h5 class="cite"><?php the_title(); ?></h5>
-                    <!-- <p class="cite">Male from United States</p> -->
-                    <img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" width="265" height="265" alt="">
+        <div class="row text-sm-left">
+          <?php $categorys = getchild(10); ?>
+            <?php if( $categorys ):?>
+              <?php foreach( $categorys as $index => $post ): ?>
+                <?php if($index == '4'){ ?>
+                    </div>
+                    <div class="row text-sm-left">
+                      <div class="col-sm-3">
+                <?php }else{ ?>
+                      <div class="col-sm-3">
+                <?php } ?>
+                  <a href="<?php bloginfo('home'); ?>/blog_single_post?id=<?php echo $post->ID; ?>" class="thumb successList">
                     <?php // the_post_thumbnail(); ?>
-                    <p class="inset-1"><?php echo get_post_meta($post->ID,'简介',true); ?></p>
-                    <!-- <a href="#" class="btn btn-sm btn-danger">View More</a> -->
-                  </blockquote>
-                  <!-- END Blockquote -->
+                    <img src="<?php bloginfo('template_url'); ?>/images/<?php echo $post->category_description ?>" style="width:270px;height:270px;" alt="<?php echo $post->cat_name ?>" />
+                    <span class="thumb__overlay"><?php echo $post->cat_name ?></a></span>
+                  </a>
                 </div>
               <?php endforeach; ?>
             <?php endif ?>

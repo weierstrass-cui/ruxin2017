@@ -1199,6 +1199,7 @@ th {
   top:0;
   margin-top:0;
   height:100%;
+  line-height:4;
   font-size:3rem;
   font-weight:bold;
   /*color:#fff;*/
@@ -9609,4 +9610,29 @@ img.mfp-img {
   width:100%;
   text-align:center;
   margin-bottom:10px;
+}
+
+.successList{
+  border-radius: 50%;
+  overflow:hidden;
+  width:200px;
+  height:200px;
+  position:relative;
+  border:15px solid rgba(255, 255, 255, 0.7);
+}
+.successList .thumb__overlay{
+  width:50%;
+  height:50%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin:-25% 0 0 -25%;
+  border-radius:50%;
+  line-height:5.5;
+}
+.successList:hover .thumb__overlay{
+ width:100%;
+ left:0;
+ margin:0;
+ line-height:3.5;
 }
