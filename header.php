@@ -120,13 +120,13 @@
 	          </li>
 	          <!-- <li class="dropdown"> -->
 	          <li>
-	            <a href="<?php bloginfo('home'); ?>/about/">服务体系</a>
+	            <a href="<?php bloginfo('home'); ?>/service/">服务体系</a>
 	          </li>
 	          <li>
 	            <a href="<?php bloginfo('home'); ?>/news/">成功案例</a>
 	          </li>
 	          <li>
-	            <a href="<?php bloginfo('home'); ?>/service/">关于我们</a>
+	            <a href="<?php bloginfo('home'); ?>/about/">关于我们</a>
 	          </li>
 	          <li class="phoneCall">
 		          <img src="<?php bloginfo('template_url'); ?>/images/phoneCall.png" />
@@ -159,13 +159,13 @@
 	          </li>
 	          <!-- <li class="dropdown"> -->
 	          <li>
-	            <a href="<?php bloginfo('home'); ?>/about/">服务体系</a>
+	            <a href="<?php bloginfo('home'); ?>/service/">服务体系</a>
 	          </li>
 	          <li>
 	            <a href="<?php bloginfo('home'); ?>/news/">成功案例</a>
 	          </li>
 	          <li>
-	            <a href="<?php bloginfo('home'); ?>/service/">关于我们</a>
+	            <a href="<?php bloginfo('home'); ?>/about/">关于我们</a>
 	          </li>
 	          <li class="phoneCall">
 		          <img src="<?php bloginfo('template_url'); ?>/images/phoneCall.png" />

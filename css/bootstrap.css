@@ -2899,7 +2899,7 @@ html:not(.lt-ie10) .visible-sm-inline-block-skin {
   background: #f19715;
 }
 .bg-image-3 {
-  background-image: url(../images/bg-image-header.jpg);
+  background: #ef7c1c;
 }
 .bg-image-4 {
   background-image: url(../images/page-2_img01.jpg);
@@ -2908,7 +2908,7 @@ html:not(.lt-ie10) .visible-sm-inline-block-skin {
   background-image: url(../images/page-2_img05.jpg);
 }
 .bg-image-6 {
-  background-image: url(../images/page-3_img01.jpg);
+  background: #e5e5e5;
 }
 .bg-image-7 {
   background-image: url(../images/page-3_img02.jpg);
@@ -5950,7 +5950,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   max-width: 109.44444444rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 3.94444444rem 1.94444444rem 3.55555556rem 1.94444444rem;
+  padding: 1.5rem 1.94444444rem;
 }
 .navbar-wrap-position {
   position: absolute;
@@ -9664,4 +9664,146 @@ img.mfp-img {
     margin-right: auto;
   }
   .successList{margin: 0 auto;}
+}
+
+.serviceBanner{
+  background: url(../images/serviceBanner.jpg) no-repeat center center;
+  width:100%;
+  height: 860px;
+  overflow:hidden;
+  position:relative;
+}
+.serviceBanner .l1{
+  width:100%;
+  font-size: 6rem;
+  position: absolute;
+  left: 0;
+  top: 185px;
+  opacity: 1;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  transition-delay: 1s;
+  -webkit-transition: opacity .9s linear;
+  -moz-transition: opacity .9s linear;
+  transition: opacity .9s linear;
+}
+.serviceBanner .l1 .zoomIn{
+    opacity: 1;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-delay: 1s;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.serviceBanner .l2{
+  width:100%;
+  font-size: 6rem;
+  position: absolute;
+  left: 0;
+  top: 290px;
+  opacity: 1;
+  -webkit-transition-delay: 2s;
+  -moz-transition-delay: 1s;
+  transition-delay: 2s;
+  -webkit-transition: opacity .9s linear;
+  -moz-transition: opacity .9s linear;
+  transition: opacity .9s linear;
+}
+.serviceBanner .l2 .zoomIn{
+    opacity: 1;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-delay: 2s;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: 1;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@media (max-width: 768px) {
+  .serviceBanner .l1{
+    top:250px;
+  }
+  .serviceBanner .l2{
+    top:305px;
+  }
+  .serviceBanner .l1, .serviceBanner .l2{
+    font-size: 2.5rem;
+  }
+}
+
+.servciePageList{
+  overflow: hidden;
+  margin:2rem 0 0;
+  width:970px;
+}
+.servciePageList .serviceListBox{
+  width:50%;
+  position:relative;
+  float:left;
+  display:inline-block;
+}
+.servciePageList .serviceInfo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  text-align:left;
+}
+.serviceListBox:hover .serviceInfo{
+  background: #f19715;
+}
+.servciePageList .serviceInfo .serviceInfoTitle{
+  border:1px solid #fff;
+  padding: 5px;
+  display:inline-block;
+  margin:2rem 0 0 2rem;
+}
+.servciePageList .serviceInfo h3{
+  color: #f19715;
+  font-size: 1rem;
+  background:#fff;
+  display:inline-block;
+  padding:5px 1.5rem;
+}
+.servciePageList .serviceInfo p{
+  color: #fff;
+  width: 90%;
+  padding-left: 5%;
+  border-left: 1px solid #fff;
+  margin:1rem auto 0;
+  line-height: 2rem;
+}
+
+.servciePageList .serviceListBox:nth-child(2) .serviceInfo .serviceInfoTitle,
+.servciePageList .serviceListBox:nth-child(3) .serviceInfo .serviceInfoTitle,
+.servciePageList .serviceListBox:nth-child(6) .serviceInfo .serviceInfoTitle{
+  border-color: #313131;
+}
+
+.servciePageList .serviceListBox:nth-child(2) .serviceInfo h3,
+.servciePageList .serviceListBox:nth-child(3) .serviceInfo h3,
+.servciePageList .serviceListBox:nth-child(6) .serviceInfo h3{
+  background:#313131;
+}
+.servciePageList .serviceListBox:nth-child(2) .serviceInfo p,
+.servciePageList .serviceListBox:nth-child(3) .serviceInfo p,
+.servciePageList .serviceListBox:nth-child(6) .serviceInfo p{
+  color: #313131;
+  border-left: 1px solid #000;
+}
+
+@media (max-width: 768px) {
+  .servciePageList{
+    width: 100%;
+  }
+  .servciePageList .serviceListBox{
+    width: 100%;
+  }
 }
