@@ -9839,3 +9839,45 @@ img.mfp-img {
     border-left: 1px solid #313131;
   }
 }
+
+.aboutBanner{
+ background: url(../images/aboutBanner.jpg) no-repeat center center;
+  width:100%;
+  height: 680px;
+  overflow:hidden;
+  position:relative;
+}
+.aboutNav{
+  position: relative;
+}
+.aboutNav a{
+  color: #f39800;
+  font-size: 2rem;
+  padding:2rem 4rem;
+  display:inline-block;
+}
+.aboutNav .aboutNavHighlight{
+  position: absolute;
+  bottom: 0;
+  border-bottom: 3px solid #707070;
+  -webkit-transition: left .5s linear;
+  -moz-transition: left .5s linear;
+  transition: left .5s linear;
+}
+.aboutInfo{
+  background: #eeeeee;
+  overflow:hidden;
+}
+.aboutInfo .aboutInfoBox{
+  width: 80%;
+  margin: 4rem auto;
+  text-align: left;
+  display:none;
+}
+
+@media (max-width: 768px) {
+  .aboutNav a{
+    font-size: 1rem;
+    padding:1rem 2rem;
+  }
+}
