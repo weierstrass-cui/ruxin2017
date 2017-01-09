@@ -9704,7 +9704,7 @@ img.mfp-img {
   font-size: 6rem;
   position: absolute;
   left: 0;
-  top: 290px;
+  top: 302px;
   opacity: 1;
   -webkit-transition-delay: 2s;
   -moz-transition-delay: 1s;
@@ -9730,7 +9730,7 @@ img.mfp-img {
     top:250px;
   }
   .serviceBanner .l2{
-    top:305px;
+    top:310px;
   }
   .serviceBanner .l1, .serviceBanner .l2{
     font-size: 2.5rem;
@@ -9740,7 +9740,7 @@ img.mfp-img {
 .servciePageList{
   overflow: hidden;
   margin:2rem 0 0;
-  width:970px;
+  min-width:970px;
 }
 .servciePageList .serviceListBox{
   width:50%;
