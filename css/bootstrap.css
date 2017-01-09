@@ -9796,7 +9796,7 @@ img.mfp-img {
 .servciePageList .serviceListBox:nth-child(3) .serviceInfo p,
 .servciePageList .serviceListBox:nth-child(6) .serviceInfo p{
   color: #313131;
-  border-left: 1px solid #000;
+  border-left: 1px solid #313131;
 }
 
 @media (max-width: 768px) {
@@ -9805,5 +9805,37 @@ img.mfp-img {
   }
   .servciePageList .serviceListBox{
     width: 100%;
+  }
+  .servciePageList .serviceListBox .serviceInfoTitle{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -30px 0 0 -85px;
+  }
+  .servciePageList .serviceListBox h3{
+    font-size:2rem;
+  }
+  .servciePageList .serviceInfo p{
+    display: none;
+  }
+  .servciePageList .serviceListBox:nth-child(3) .serviceInfo .serviceInfoTitle{
+    border-color: #fff;
+  }
+  .servciePageList .serviceListBox:nth-child(3) .serviceInfo h3{
+    background:#fff;
+  }
+  .servciePageList .serviceListBox:nth-child(3) .serviceInfo p{
+    color: #fff;
+    border-left: 1px solid #fff;
+  }
+  .servciePageList .serviceListBox:nth-child(2n) .serviceInfo .serviceInfoTitle{
+    border-color: #313131;
+  }
+  .servciePageList .serviceListBox:nth-child(2n) .serviceInfo h3{
+    background:#313131;
+  }
+  .servciePageList .serviceListBox:nth-child(2n) .serviceInfo p{
+    color: #313131;
+    border-left: 1px solid #313131;
   }
 }
