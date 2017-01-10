@@ -2,8 +2,8 @@
 /*
 Template Name:成功案例
 */
-$postID = $_GET['post'];
 $cateID = $_GET['cat'];
+$postID = $_GET['post'] ? $_GET['post'] : get_posts("category=".$cateID."&numberposts=1")[0]->ID;
 get_header(); ?>
     <div class="galleryBox">
         <div class="galleryNav">

@@ -91,7 +91,7 @@ get_header(); ?>
         <div class="row text-sm-left successListBox">
           <?php $categorys = getchild(10); ?>
             <?php if( $categorys ):?>
-              <?php foreach( $categorys as $index => $post ): ?>
+              <?php foreach( $categorys as $index => $cate ): ?>
                 <?php if($index == '4'){ ?>
                     </div>
                     <div class="row text-sm-left">
@@ -99,10 +99,11 @@ get_header(); ?>
                 <?php }else{ ?>
                       <div class="col-sm-3">
                 <?php } ?>
-                  <a href="<?php bloginfo('home'); ?>/blog_single_post?id=<?php echo $post->ID; ?>" class="thumb successList">
+                  <?php $posts = get_posts("category=".$cate->term_id."&numberposts=1"); ?>
+                  <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat='.$cate->term_id ?>" class="thumb successList">
                     <?php // the_post_thumbnail(); ?>
-                    <img src="<?php echo $post->category_description ?>" style="width:270px;height:270px;" alt="<?php echo $post->cat_name ?>" />
-                    <span class="thumb__overlay"><?php echo $post->cat_name ?></a></span>
+                    <img src="<?php echo $cate->category_description ?>" style="width:270px;height:270px;" alt="<?php echo $cate->cat_name ?>" />
+                    <span class="thumb__overlay"><?php echo $cate->cat_name ?></a></span>
                   </a>
                 </div>
               <?php endforeach; ?>
