@@ -20,10 +20,10 @@
         <img src="<?php bloginfo('template_url'); ?>/images/logo_color.png" />
       </a>
       <div class="footBanner">
-        <a href="javascript://">服务体系</a>|
+        <a href="<?php bloginfo('home'); ?>/service/">服务体系</a>|
         <a href="javascript://">优势资源</a>|
-        <a href="javascript://">成功案例</a>|
-        <a href="javascript://">关于我们</a>
+        <a href="<?php bloginfo('home'); ?>/gallery/">成功案例</a>|
+        <a href="<?php bloginfo('home'); ?>/about/">关于我们</a>
       </div>
 
       <!-- Address -->
@@ -36,7 +36,7 @@
               <br />
               <dl>
                 <dt>联系电话：</dt>
-                <dd><a href="callto:400-788-4429"> 400-820-2083</a></dd>
+                <dd><a href="callto:4008202083"> 400-820-2083</a></dd>
               </dl>
               <dl>
                 <dt>Email: </dt>
