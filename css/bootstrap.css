@@ -9927,7 +9927,16 @@ img.mfp-img {
   display: block;
 }
 .galleryBox .galleryNav li .blogList a{
-  font-size: 1rem;
+  font-size: 1.2rem;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid #ef7c1c;
+  margin-bottom: 0.4rem;
+}
+.galleryBox .galleryNav li .blogList a:last-child{
+  margin-bottom: 0;
 }
 .galleryBox .galleryNav li .blogList a:hover,
 .galleryBox .galleryNav li .blogList a.active{
