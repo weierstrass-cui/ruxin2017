@@ -18,7 +18,9 @@ get_header(); ?>
                             <?php $posts = get_posts("category=".$item->term_id."&numberposts=99"); ?>
                             <?php if( $posts ):?>
                                 <?php foreach( $posts as $postInde => $post ): setup_postdata( $post ); ?>
-                                    <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat='.$item->term_id.'&post='.$post->ID ?>" <?php echo $postID == $post->ID ? 'class="active"' : '' ?>><?php the_title(); ?></a>
+                                    <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat='.$item->term_id.'&post='.$post->ID ?>" <?php echo $postID == $post->ID ? 'class="active"' : '' ?>>
+                                        <?php echo get_post_meta($post->ID,'短标题',true) ? get_post_meta($post->ID,'短标题',true) : the_title(); ?>
+                                    </a>
                                 <?php endforeach; ?>
                             <?php endif ?>
                         </div>
@@ -27,8 +29,17 @@ get_header(); ?>
                 <?php endif ?>
             </ul>
         </div>
+        <?php $this_post = get_post($postID); ?>
         <div class="galleryInfo">
-        
+            <h3 class="postTile"><?php echo $this_post->post_title; ?></h3>
+            <ul class="tips">
+                <li>坐标：<?php echo get_post_meta($postID,'坐标',true); ?></li>
+                <li>时间：<?php echo get_post_meta($postID,'时间',true); ?></li>
+            </ul>
+            <div id="thePost" class="thePost">
+                <?php echo $this_post->post_content; ?>
+            </div>
+            <div id="theImages"></div>
         </div>
         <script type="text/javascript">
             $(function(){
@@ -37,6 +48,12 @@ get_header(); ?>
                         $(this).find('.blogList').slideDown();
                     }
                 });
+                $('#thePost').find('img').each(function(){
+                    var div = $('<div></div>').appendTo('#theImages');
+                    $(this).appendTo(div);
+                });
+                $('#thePost').find('p').find('br').remove();
+                $('.galleryNav').height($('.galleryInfo').height());
             });
         </script>
     </div>
