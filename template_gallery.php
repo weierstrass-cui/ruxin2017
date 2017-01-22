@@ -53,7 +53,7 @@ get_header(); ?>
                     $(this).appendTo(div);
                 });
                 $('#thePost').find('p').find('br').remove();
-                $('.galleryNav').height($('.galleryInfo').height());
+                $('.galleryNav').height($('.galleryInfo').height() + 100);
             });
         </script>
     </div>

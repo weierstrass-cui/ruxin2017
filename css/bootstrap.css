@@ -2192,8 +2192,8 @@ main .well-404 h2 + .lead {
 =========================================================*/
 footer {
   background: #313131;
-  padding-top: 4.77777778rem;
-  padding-bottom: 7rem;
+  padding-top: 3.77777778rem;
+  padding-bottom: 3rem;
   color:#fff;
 }
 h1,
