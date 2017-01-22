@@ -30,7 +30,10 @@ get_header(); ?>
                   <!-- Blockquote -->
                   <blockquote class="quote">
                     <!-- <p class="cite">Male from United States</p> -->
-                    <img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" style="width:150px;height:150px;" alt="<?php the_title(); ?>">
+                    <div class="quoteImgBox">
+                      <img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" alt="<?php the_title(); ?>">
+                      <span></span>
+                    </div>
                     <?php // the_post_thumbnail(); ?>
                     <h5 class="cite"><?php the_title(); ?></h5>
                     <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
