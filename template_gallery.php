@@ -54,16 +54,24 @@ get_header(); ?>
                     }
                 });
                 if( $('#theImages').is(':hidden') ){
-                    $('#thePost').find('img').each(function(){
-                        var src = $(this).attr('src').replace(/^\/ruxin2017/,'');
-                        var div = $('<div class="swiper-slide" data-slide-bg="<?php bloginfo('home'); ?>' + src + '"></div>').appendTo('#theImagesForMob .swiper-wrapper');
-                        $(this).remove();
-                    });
+                    if( $('#thePost').find('img').length ){
+                        $('#thePost').find('img').each(function(){
+                            var src = $(this).attr('src').replace(/^\/ruxin2017/,'');
+                            var div = $('<div class="swiper-slide" data-slide-bg="<?php bloginfo('home'); ?>' + src + '"></div>').appendTo('#theImagesForMob .swiper-wrapper');
+                            $(this).remove();
+                        });
+                    }else{
+                        $('#theImagesForMob').hide();
+                    }
                 }else{
-                    $('#thePost').find('img').each(function(){
-                        var div = $('<div></div>').appendTo('#theImages');
-                        $(this).appendTo(div);
-                    });
+                    if($('#thePost').find('img').length){
+                        $('#thePost').find('img').each(function(){
+                            var div = $('<div></div>').appendTo('#theImages');
+                            $(this).appendTo(div);
+                        });
+                    }else{
+                        $('#theImages').hide();
+                    }
                 }
                 
                 $('#thePost').find('p').find('br').remove();

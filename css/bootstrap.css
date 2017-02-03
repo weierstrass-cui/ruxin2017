@@ -1610,7 +1610,7 @@ th {
   transform: translateX(0);
 }
 .rd-mobilemenu_ul li.active > a {
-  background: #3575bc;
+  background: #ef7c1c;
   color: #ffffff;
 }
 .rd-mobilemenu_ul a {
@@ -1618,11 +1618,11 @@ th {
   padding: 14px 25px 16px;
 }
 .rd-mobilemenu_ul a.active {
-  background: #f5f5f5;
+  background: #ef7c1c;
   color: #2d2d2d;
 }
 .rd-mobilemenu_ul a:hover {
-  background: #3575bc;
+  background: #ef7c1c;
   color: #ffffff;
 }
 .rd-mobilemenu_ul a .rd-submenu-toggle {
