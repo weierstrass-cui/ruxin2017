@@ -36,6 +36,11 @@ get_header(); ?>
                 <li>坐标：<?php echo get_post_meta($postID,'坐标',true); ?></li>
                 <li>时间：<?php echo get_post_meta($postID,'时间',true); ?></li>
             </ul>
+            <div id="theImagesForMob" class="swiper-container swiper-slider" data-height="310px">
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-button-prev material-icons-chevron_left"></div>
+                <div class="swiper-button-next material-icons-chevron_right"></div>
+            </div>
             <div id="thePost" class="thePost">
                 <?php echo $this_post->post_content; ?>
             </div>
@@ -48,10 +53,19 @@ get_header(); ?>
                         $(this).find('.blogList').slideDown();
                     }
                 });
-                $('#thePost').find('img').each(function(){
-                    var div = $('<div></div>').appendTo('#theImages');
-                    $(this).appendTo(div);
-                });
+                if( $('#theImages').is(':hidden') ){
+                    $('#thePost').find('img').each(function(){
+                        var src = $(this).attr('src').replace(/^\/ruxin2017/,'');
+                        var div = $('<div class="swiper-slide" data-slide-bg="<?php bloginfo('home'); ?>' + src + '"></div>').appendTo('#theImagesForMob .swiper-wrapper');
+                        $(this).remove();
+                    });
+                }else{
+                    $('#thePost').find('img').each(function(){
+                        var div = $('<div></div>').appendTo('#theImages');
+                        $(this).appendTo(div);
+                    });
+                }
+                
                 $('#thePost').find('p').find('br').remove();
                 $('.galleryNav').height($('.galleryInfo').height() + 100);
             });

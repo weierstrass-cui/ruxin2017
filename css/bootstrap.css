@@ -9673,7 +9673,7 @@ img.mfp-img {
 }
 .footBanner a{
   display:inline-block;
-  width:24%;
+  width:23%;
 }
 .footBanner a:hover{
   color:#f19715;
@@ -9919,12 +9919,24 @@ img.mfp-img {
   width: 335px;
   float: left;
 }
+@media (max-width: 768px) {
+  .galleryBox .galleryNav{
+    display: none;
+  }
+}
 .galleryBox .galleryInfo{
   float: left;
   width: calc(100% - 335px);
   padding: 2rem 5rem;
 }
-
+@media (max-width: 768px) {
+  .galleryBox .galleryInfo{
+    width: 100%;
+    padding:2rem 0;
+    float: none;
+    position: relative;
+  }
+}
 .galleryBox .galleryNav a{
   color: #fff;
   font-size: 1.5rem;
@@ -9973,10 +9985,20 @@ img.mfp-img {
   margin: 40px auto;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .galleryBox .galleryInfo .postTile{
+    margin: 0 auto 20px;
+  }
+}
 .galleryBox .galleryInfo .tips{
   width: 100%;
   overflow: hidden;
   margin: 0 auto 40px;
+}
+@media (max-width: 768px) {
+  .galleryBox .galleryInfo .tips{
+    margin: 0 2rem 20px;
+  }
 }
 .galleryBox .galleryInfo .tips li{
   border-left: 6px solid #ed7c2d;
@@ -9990,9 +10012,20 @@ img.mfp-img {
   border-top: 55px solid #eeeeee;
   padding: 60px 0 0;
 }
+@media (max-width: 768px) {
+  .galleryBox .galleryInfo .thePost{
+    border-top: 0 none;
+    padding: 0;
+    margin: 0 2rem;
+  }
+}
 #theImages{
   width: 100%;
   overflow: hidden;
+}
+#theImagesForMob{
+  display: none;
+  margin:0 auto 20px;
 }
 #theImages div{
   width: 50%;
@@ -10007,5 +10040,12 @@ img.mfp-img {
   max-height: 415px;
   border: 20px solid #eee;
 }
-
+@media (max-width: 768px) {
+  #theImages{
+    display: none;
+  }
+  #theImagesForMob{
+    display: block;
+  }
+}
 
