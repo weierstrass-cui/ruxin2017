@@ -1737,6 +1737,10 @@ th {
   letter-spacing: 1.2px;
   text-overflow: ellipsis;
   white-space: nowrap;
+  text-align: center;
+  background: url(../images/logo_color2.png) no-repeat center center;
+  background-size: auto 85%;
+  text-indent: -999px;
 }
 .rd-mobilepanel_title small {
   display: none;
@@ -1747,7 +1751,7 @@ th {
   left: 8px;
   width: 48px;
   height: 48px;
-  background-color: #f7f7f7;
+  background-color: #fff;
   border-color: transparent;
   outline: none;
   -moz-transition: 0.2s;
@@ -2899,7 +2903,7 @@ html:not(.lt-ie10) .visible-sm-inline-block-skin {
   background: #f19715;
 }
 .bg-image-3 {
-  background: #ef7c1c;
+  background: #F07D00;
 }
 .bg-image-4 {
   background-image: url(../images/page-2_img01.jpg);
@@ -9698,6 +9702,11 @@ img.mfp-img {
   overflow:hidden;
   position:relative;
 }
+@media (max-width: 768px) {
+  .serviceBanner{
+    height: calc(100vh - 56px);
+  }
+}
 .serviceBanner .l1{
   width:100%;
   font-size: 6rem;
@@ -9752,10 +9761,10 @@ img.mfp-img {
 }
 @media (max-width: 768px) {
   .serviceBanner .l1{
-    top:250px;
+    top:calc(50% - 90px);
   }
   .serviceBanner .l2{
-    top:310px;
+    top:calc(50% - 20px);
   }
   .serviceBanner .l1, .serviceBanner .l2{
     font-size: 2.5rem;
@@ -10067,3 +10076,8 @@ img.mfp-img {
   }
 }
 
+@media (max-width: 768px) {
+  #stuck_container{
+    display: none;
+  }
+}
