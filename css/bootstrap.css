@@ -9827,6 +9827,7 @@ img.mfp-img {
 @media (max-width: 768px) {
   .servciePageList{
     width: 100%;
+    min-width: auto;
   }
   .servciePageList .serviceListBox{
     width: 100%;
