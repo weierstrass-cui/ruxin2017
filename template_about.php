@@ -4,7 +4,9 @@ Template Name:关于我们
 */
 
 get_header(); ?>
-    <div class="aboutBanner"></div>
+    <div class="aboutBanner">
+      <img src="<?php bloginfo('template_url'); ?>/images/aboutBanner.jpg" />
+    </div>
     <div class="aboutNav">
       <a href="javascript://">关于如心</a>
       <a href="javascript://">关于简知</a>
@@ -13,14 +15,17 @@ get_header(); ?>
     </div>
     <div class="aboutInfo">
       <div class="aboutInfoBox" style="display:block;">
+        <h3 class="mobTitle">关于如心</h3>
         <?php $post = get_post(52); ?>
         <?php echo $post->post_content; ?>
       </div>
       <div class="aboutInfoBox">
+        <h3 class="mobTitle">关于简知</h3>
         <?php $post = get_post(54); ?>
         <?php echo $post->post_content; ?>
       </div>
       <div class="aboutInfoBox">
+        <h3 class="mobTitle">团队介绍</h3>
         <?php $post = get_post(56); ?>
         <?php echo $post->post_content; ?>
       </div>

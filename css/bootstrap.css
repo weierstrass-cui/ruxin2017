@@ -9867,14 +9867,21 @@ img.mfp-img {
 }
 
 .aboutBanner{
- background: url(../images/aboutBanner.jpg) no-repeat center center;
   width:100%;
-  height: 680px;
   overflow:hidden;
   position:relative;
 }
+.aboutBanner img{
+  display: block;
+  width: 100%;
+}
 .aboutNav{
   position: relative;
+}
+@media (max-width: 768px) {
+  .aboutNav{
+    display: none;
+  }
 }
 .aboutNav a{
   color: #f39800;
@@ -9900,14 +9907,24 @@ img.mfp-img {
   text-align: left;
   display:none;
 }
-
+.aboutInfo .aboutInfoBox h3.mobTitle{
+  display: none;
+}
 @media (max-width: 768px) {
-  .aboutNav a{
-    font-size: 1rem;
-    padding:1rem 2rem;
+  .aboutInfo .aboutInfoBox{
+    width: 90%;
+    display: block;
+    border-bottom: 1px solid #a0a0a0;
+    margin: 2rem auto;
+    padding: 0 0 2rem;
+  }
+  .aboutInfo .aboutInfoBox h3.mobTitle{
+    color: #e9611d;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    display: block;
   }
 }
-
 .galleryBox{
   width: 100%;
   height: auto;
