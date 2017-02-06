@@ -32,7 +32,7 @@ get_header(); ?>
         <h1>专业服务</h1>
         <div class="divider divider-default">校企粘性互动，品牌植入，线上线下创业策略，执行优化</div>
         <div class="servciePageList">
-          <?php $post = get_post(47); ?>
+          <?php $post = get_post(44); ?>
           <a href="javascript://" class="serviceListBox">
             <img src="<?php bloginfo('template_url'); ?>/images/serviceList1.jpg" />
             <div class="serviceInfo">
@@ -40,7 +40,7 @@ get_header(); ?>
               <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
             </div>
           </a>
-          <?php $post = get_post(45); ?>
+          <?php $post = get_post(42); ?>
           <a href="javascript://" class="serviceListBox">
             <img src="<?php bloginfo('template_url'); ?>/images/serviceList2.jpg" />
             <div class="serviceInfo">
@@ -48,7 +48,7 @@ get_header(); ?>
               <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
             </div>
           </a>
-          <?php $post = get_post(43); ?>
+          <?php $post = get_post(39); ?>
           <a href="javascript://" class="serviceListBox">
             <img src="<?php bloginfo('template_url'); ?>/images/serviceList3.jpg" />
             <div class="serviceInfo">
@@ -56,7 +56,7 @@ get_header(); ?>
               <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
             </div>
           </a>
-          <?php $post = get_post(41); ?>
+          <?php $post = get_post(37); ?>
           <a href="javascript://" class="serviceListBox">
             <img src="<?php bloginfo('template_url'); ?>/images/serviceList4.jpg" />
             <div class="serviceInfo">
@@ -64,7 +64,7 @@ get_header(); ?>
               <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
             </div>
           </a>
-          <?php $post = get_post(39); ?>
+          <?php $post = get_post(35); ?>
           <a href="javascript://" class="serviceListBox">
             <img src="<?php bloginfo('template_url'); ?>/images/serviceList5.jpg" />
             <div class="serviceInfo">
@@ -72,7 +72,7 @@ get_header(); ?>
               <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
             </div>
           </a>
-          <?php $post = get_post(37); ?>
+          <?php $post = get_post(27); ?>
           <a href="javascript://" class="serviceListBox">
             <img src="<?php bloginfo('template_url'); ?>/images/serviceList6.jpg" />
             <div class="serviceInfo">
