@@ -154,17 +154,17 @@
             <!-- END Navbar Brand -->
             <!-- Navbar Nav -->
             <ul class="navbar-nav sf-menu navbar-right" data-type="navbar">
-              <li class="active">
+              <li>
 	            <a href="<?php bloginfo('home'); ?>/">首页</a>
 	          </li>
 	          <!-- <li class="dropdown"> -->
-	          <li>
+	          <li<?php if( is_page(4) ) echo ' class="active"'; ?>>
 	            <a href="<?php bloginfo('home'); ?>/service/">服务体系</a>
 	          </li>
-	          <li>
+	          <li<?php if( is_page(6) ) echo ' class="active"'; ?>>
 	            <a href="<?php bloginfo('home'); ?>/gallery?cat=12">成功案例</a>
 	          </li>
-	          <li>
+	          <li<?php if( is_page(8) ) echo ' class="active"'; ?>>
 	            <a href="<?php bloginfo('home'); ?>/about/">关于我们</a>
 	          </li>
 	          <li class="phoneCall">
