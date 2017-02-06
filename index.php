@@ -122,22 +122,22 @@ get_header(); ?>
       <div class="container container-wide">
         <h1>如 心 产 品</h1>
         <div class="divider divider-default">一对一定制服务，展现品牌最大价值，满足并超越客户的期望 </div>
-        <div class="row text-sm-left ruxinProductsBox">
-            <div class="col-sm-4">
+        <div class="row ruxinProductsBox">
+            <div class="ruxinOneProduct">
               <img src="<?php bloginfo('template_url'); ?>/images/logo_sjz.jpg" />
               <div class="ruxinProducts white">
                 <h5 class="white">实兼轴--精彩不止于校园</h5>
                 实兼轴公众号为大学生、年轻人提供潮流热点资讯、逗比新颖观点，引领年轻人多元价值观；同时也为年轻人提供知名企业实习、兼职、应届招聘、培训以及创业辅导等服务，帮助青年人完成人生独立第一步。
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="ruxinOneProduct">
               <img src="<?php bloginfo('template_url'); ?>/images/logo_nmp.jpg" />
               <div class="ruxinProducts white">
                 <h5 class="white">凝萌π--最贴近大学生的公益组织</h5>
                 凝萌π致力于成为学生触手可及的高校学生择业前辅导、创新创业和职业发展的公益性组织。已在上海大学、上海师范大学、华东师范大学等高校展开系列课程和讲座，帮助大学生在就业或创业的发展过程中取得成功。
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="ruxinOneProduct">
               <img src="<?php bloginfo('template_url'); ?>/images/logo_rx.jpg" />
               <div class="ruxinProducts white">
                 <h5 class="white">如心--比你更懂年轻人</h5>
