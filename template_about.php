@@ -16,7 +16,7 @@ get_header(); ?>
     <div class="aboutInfo">
       <div class="aboutInfoBox" style="display:block;">
         <h3 class="mobTitle">关于如心</h3>
-        <?php $post = get_post(52); ?>
+        <?php $post = get_post(54); ?>
         <?php echo $post->post_content; ?>
       </div>
       <div class="aboutInfoBox">
