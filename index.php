@@ -72,7 +72,7 @@ get_header(); ?>
                       <img src="<?php echo $post->category_description ?>" width="370" height="278" alt="">
                       <span class="thumb__overlay"><?php echo $post->cat_name ?></span>
                     </a> -->
-                    <a href="<?php bloginfo('home'); ?>/blog_single_post?id=<?php echo $post->ID; ?>" class="thumb">
+                    <a href="javascript://" class="thumb">
                       <img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" width="370" height="278" alt="">
                       <span class="thumb__overlay"><?php the_title(); ?></span>
                     </a>
