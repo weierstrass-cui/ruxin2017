@@ -9,7 +9,7 @@ get_header(); ?>
         <div class="galleryNav">
             <ul>
                 <li><a href="javascript://">所有分类</a></li>
-                <?php  $categorys = getchild(10); ?>
+                <?php  $categorys = getchild(4); ?>
                 <?php if( $categorys ): ?>
                   <?php foreach( $categorys as $index => $item ): ?>
                     <li>
