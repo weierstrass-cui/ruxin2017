@@ -92,7 +92,7 @@ get_header(); ?>
         <div class="divider divider-light white">一对一定制服务，展现品牌最大价值，满足并超越客户的期望 </div>
         <!-- Owl Carousel -->
         <div class="row text-sm-left successListBox">
-          <?php $categorys = getchild(10); ?>
+          <?php $categorys = getchild(4); ?>
             <?php if( $categorys ):?>
               <?php foreach( $categorys as $index => $cate ): ?>
                 <?php if($index == '4'){ ?>
@@ -242,10 +242,10 @@ get_header(); ?>
             _this.find('ul').width( count * 250);
             if( (count * 250) > _this.width() ){
               _this.siblings('.lastScreen').bind('click', function(){
-                
+                _this.find('ul').css('left', 0);
               }).show();
               _this.siblings('.nextScreen').bind('click', function(){
-                
+                _this.find('ul').css('left', '-500px');
               }).show();
             }
           });
