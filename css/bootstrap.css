@@ -10094,3 +10094,78 @@ img.mfp-img {
     display: none;
   }
 }
+.friendlyLinks{
+
+}
+.friendlyLinks h1{
+  font-size: 36px;
+  width: 360px;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff;
+  font-weight: normal;
+  height: 40px;
+}
+.gallerySlider{
+  width: 95%;
+  height: 155px;
+  margin: 50px auto;
+  max-width: 1200px;
+  position: relative;
+  overflow: hidden;
+}
+.gallerySlider:last-child{
+  margin-bottom: 0;
+}
+.gallerySlider .galleryMain{
+  width: calc(100% - 70px);
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.gallerySlider ul{
+  overflow: hidden;
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+}
+.gallerySlider li{
+  width: 230px;
+  height: 155px;
+  margin-right: 20px;
+  float: left;
+  display: inline-block;
+  overflow: hidden;
+}
+.gallerySlider li img{
+  width: 100%;
+  height: 100%;
+}
+.gallerySlider .lastScreen, .gallerySlider .nextScreen{
+  background: rgba(255,255,255, 0.6);
+  width: 35px;
+  height: 155px;
+  line-height: 155px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Material Icons';
+  font-size: 2.5rem;
+  color: #413c3b;
+  display: none;
+}
+.gallerySlider .nextScreen{
+  right: 0;
+  left: auto;
+}
+.gallerySlider .lastScreen:before{
+  content: "\e5cb";
+  width: 100%;
+  text-align: center;
+}
+.gallerySlider .nextScreen:before{
+  content: "\e5cc";
+  width: 100%;
+  text-align: center;
+}

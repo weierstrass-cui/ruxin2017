@@ -149,4 +149,107 @@ get_header(); ?>
     </section>
     <!-- END Contacts-->
 
+    <section class="well-3 bg-image bg-fixed bg-image-2 friendlyLinks">
+      <div class="container container-wide">
+        <h1 class="white">校 方 资 源</h1>
+        <div class="gallerySlider">
+          <div class="galleryMain">
+            <ul>
+              <?php
+                $posts = get_posts("category=19&numberposts=99");
+              ?>
+              <?php if( $posts ):?>
+                <?php foreach( $posts as $index => $post ): ?>
+                  <li>
+                    <a href="javascript://" title="<?php the_title(); ?>">
+                      <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript://" title="<?php the_title(); ?>">
+                      <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript://" title="<?php the_title(); ?>">
+                      <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript://" title="<?php the_title(); ?>">
+                      <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript://" title="<?php the_title(); ?>">
+                      <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript://" title="<?php the_title(); ?>">
+                      <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript://" title="<?php the_title(); ?>">
+                      <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript://" title="<?php the_title(); ?>">
+                      <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript://" title="<?php the_title(); ?>">
+                      <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
+                    </a>
+                  </li>
+                <?php endforeach; ?>
+              <?php endif ?>
+            </ul>
+          </div>
+          <a href="javascript://" class="lastScreen"></a>
+          <a href="javascript://" class="nextScreen"></a>
+        </div>
+        <h1 class="white">合 作 企 业</h1>
+        <div class="gallerySlider">
+          <div class="galleryMain">
+            <ul>
+              <?php
+                $posts = get_posts("category=20&numberposts=99");
+              ?>
+              <?php if( $posts ):?>
+                <?php foreach( $posts as $index => $post ): ?>
+                  <li>
+                    <a href="javascript://" title="<?php the_title(); ?>">
+                      <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
+                    </a>
+                  </li>
+                <?php endforeach; ?>
+              <?php endif ?>
+            </ul>
+          </div>
+          <a href="javascript://" class="lastScreen"></a>
+          <a href="javascript://" class="nextScreen"></a>
+        </div>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('.galleryMain').each(function(){
+            var _this = $(this);
+            var count = _this.find('li').length;
+            _this.find('ul').width( count * 250);
+            if( (count * 250) > _this.width() ){
+              _this.siblings('.lastScreen').bind('click', function(){
+                
+              }).show();
+              _this.siblings('.nextScreen').bind('click', function(){
+                
+              }).show();
+            }
+          });
+        });
+      </script>
+    </section>
 <?php get_footer(); ?>
