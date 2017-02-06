@@ -106,7 +106,7 @@ get_header(); ?>
                   <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat='.$cate->term_id ?>" class="thumb successList">
                     <?php // the_post_thumbnail(); ?>
                     <img src="<?php echo $cate->category_description ?>" style="width:270px;height:270px;" alt="<?php echo $cate->cat_name ?>" />
-                    <span class="thumb__overlay"><?php echo $cate->cat_name ?></a></span>
+                    <span class="thumb__overlay" style="color:#000;"><?php echo $cate->cat_name ?></a></span>
                   </a>
                 </div>
               <?php endforeach; ?>
