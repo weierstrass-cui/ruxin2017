@@ -21,12 +21,12 @@ get_header(); ?>
       </div>
       <div class="aboutInfoBox">
         <h3 class="mobTitle">关于简知</h3>
-        <?php $post = get_post(54); ?>
+        <?php $post = get_post(56); ?>
         <?php echo $post->post_content; ?>
       </div>
       <div class="aboutInfoBox">
         <h3 class="mobTitle">团队介绍</h3>
-        <?php $post = get_post(56); ?>
+        <?php $post = get_post(58); ?>
         <?php echo $post->post_content; ?>
       </div>
     </div>
