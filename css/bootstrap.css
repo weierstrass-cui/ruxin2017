@@ -10036,7 +10036,7 @@ img.mfp-img {
 .galleryBox .galleryInfo .tips{
   width: 100%;
   overflow: hidden;
-  margin: 0 auto 40px;
+  margin: 0 auto 10px;
 }
 @media (max-width: 768px) {
   .galleryBox .galleryInfo .tips{
@@ -10053,7 +10053,7 @@ img.mfp-img {
 }
 .galleryBox .galleryInfo .thePost{
   border-top: 55px solid #eeeeee;
-  padding: 60px 0 0;
+  padding: 30px 0 0;
 }
 @media (max-width: 768px) {
   .galleryBox .galleryInfo .thePost{
