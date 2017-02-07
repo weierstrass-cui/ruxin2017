@@ -10115,7 +10115,7 @@ img.mfp-img {
 }
 .gallerySlider{
   width: 95%;
-  height: 155px;
+  height: 230px;
   margin: 50px auto;
   max-width: 1050px;
   position: relative;
@@ -10151,7 +10151,7 @@ img.mfp-img {
 }
 .gallerySlider li{
   width: 230px;
-  height: 155px;
+  height: 230px;
   margin-right: 20px;
   float: left;
   display: inline-block;
