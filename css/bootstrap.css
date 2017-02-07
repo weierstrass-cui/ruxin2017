@@ -10168,8 +10168,8 @@ img.mfp-img {
 .gallerySlider .lastScreen, .gallerySlider .nextScreen{
   background: rgba(255,255,255, 0.6);
   width: 35px;
-  height: 155px;
-  line-height: 155px;
+  height: 230px;
+  line-height: 230px;
   position: absolute;
   top: 0;
   left: 0;

@@ -162,7 +162,7 @@
 	            <a href="<?php bloginfo('home'); ?>/service/">服务体系</a>
 	          </li>
 	          <li<?php if( is_page(6) ) echo ' class="active"'; ?>>
-	            <a href="<?php bloginfo('home'); ?>/gallery?cat=12">成功案例</a>
+	            <a href="<?php bloginfo('home'); ?>/gallery?cat=6">成功案例</a>
 	          </li>
 	          <li<?php if( is_page(8) ) echo ' class="active"'; ?>>
 	            <a href="<?php bloginfo('home'); ?>/about/">关于我们</a>
