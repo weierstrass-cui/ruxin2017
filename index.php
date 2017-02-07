@@ -165,46 +165,6 @@ get_header(); ?>
                       <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
                     </a>
                   </li>
-                  <li>
-                    <a href="javascript://" title="<?php the_title(); ?>">
-                      <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript://" title="<?php the_title(); ?>">
-                      <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript://" title="<?php the_title(); ?>">
-                      <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript://" title="<?php the_title(); ?>">
-                      <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript://" title="<?php the_title(); ?>">
-                      <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript://" title="<?php the_title(); ?>">
-                      <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript://" title="<?php the_title(); ?>">
-                      <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript://" title="<?php the_title(); ?>">
-                      <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
-                    </a>
-                  </li>
                 <?php endforeach; ?>
               <?php endif ?>
             </ul>
@@ -237,15 +197,32 @@ get_header(); ?>
       <script type="text/javascript">
         $(function(){
           $('.galleryMain').each(function(){
-            var _this = $(this);
-            var count = _this.find('li').length;
+            var _this = $(this), count = _this.find('li').length;
             _this.find('ul').width( count * 250);
             if( (count * 250) > _this.width() ){
               _this.siblings('.lastScreen').bind('click', function(){
-                _this.find('ul').css('left', 0);
+                if( _this.hasClass('isMoving') ){
+                  return false;
+                }
+                _this.addClass('isMoving');
+                var ul = _this.find('ul');
+                ul.find('li:last').prependTo(ul);
+                ul.css({'left': '-250px'});
+                ul.animate({'left': '0px'}, function(){
+                  _this.removeClass('isMoving');
+                });
               }).show();
               _this.siblings('.nextScreen').bind('click', function(){
-                _this.find('ul').css('left', '-500px');
+                if( _this.hasClass('isMoving') ){
+                  return false;
+                }
+                _this.addClass('isMoving');
+                var ul = _this.find('ul');
+                ul.animate({'left': '-250px'}, function(){
+                  ul.find('li:first').appendTo(ul);
+                  ul.css({'left': '0px'});
+                  _this.removeClass('isMoving');
+                });
               }).show();
             }
           });
