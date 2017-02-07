@@ -409,10 +409,11 @@ require get_template_directory() . '/inc/customizer.php';
 
 
 function getchild($id){  
-	$result = explode('/',get_category_children($id));  
-	$childs = array();  
-	foreach($result as $i){  
-		if(!empty($i))$childs[] = get_category($i);  
-	}  
-	return $childs;  
+	$result = explode('/', get_category_children($id));
+	rsort($result);
+	$childs = array();
+	foreach($result as $i){
+		if(!empty($i))$childs[] = get_category($i);
+	}
+	return $childs;
 }  
