@@ -10121,6 +10121,16 @@ img.mfp-img {
   position: relative;
   overflow: hidden;
 }
+.aboutSlider{
+  width: 100%;
+  margin: 0;
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .aboutSlider{
+    display: none;
+  }
+}
 .gallerySlider:last-child{
   margin-bottom: 0;
 }
@@ -10147,6 +10157,10 @@ img.mfp-img {
   display: inline-block;
   overflow: hidden;
 }
+.aboutSlider li{
+  width: 250px;
+  margin-right: 0;
+}
 .gallerySlider li img{
   width: 100%;
   height: 100%;
@@ -10163,6 +10177,10 @@ img.mfp-img {
   font-size: 2.5rem;
   color: #413c3b;
   display: none;
+}
+.aboutSlider .lastScreen, .aboutSlider .nextScreen{
+  background: #dcdcdc;
+  color: #f19c10;
 }
 .gallerySlider .nextScreen{
   right: 0;
