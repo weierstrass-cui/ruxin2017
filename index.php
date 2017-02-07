@@ -155,14 +155,15 @@ get_header(); ?>
         <div class="gallerySlider">
           <div class="galleryMain">
             <ul>
-              <?php
-                $posts = get_posts("category=19&numberposts=99");
+              <?php 
+                global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 3";
+                  $xfzy=$wpdb->get_results($query);
               ?>
-              <?php if( $posts ):?>
-                <?php foreach( $posts as $index => $post ): ?>
+              <?php if( $xfzy ):?>
+                <?php foreach( $xfzy as $index => $v ): ?>
                   <li>
-                    <a href="javascript://" title="<?php the_title(); ?>">
-                      <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
+                    <a href="javascript://" title="<?php echo $v->name; ?>">
+                      <img alt="<?php echo $v->description; ?>" src="<?php echo $v->image_url;?>" />
                     </a>
                   </li>
                 <?php endforeach; ?>
@@ -176,14 +177,15 @@ get_header(); ?>
         <div class="gallerySlider">
           <div class="galleryMain">
             <ul>
-              <?php
-                $posts = get_posts("category=20&numberposts=99");
+              <?php 
+                global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 4";
+                  $hzqy=$wpdb->get_results($query);
               ?>
-              <?php if( $posts ):?>
-                <?php foreach( $posts as $index => $post ): ?>
+              <?php if( $hzqy ):?>
+                <?php foreach( $hzqy as $index => $v ): ?>
                   <li>
-                    <a href="javascript://" title="<?php the_title(); ?>">
-                      <img alt="<?php the_title(); ?>" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" />
+                    <a href="javascript://" title="<?php echo $v->name; ?>">
+                      <img alt="<?php echo $v->description; ?>" src="<?php echo $v->image_url;?>" />
                     </a>
                   </li>
                 <?php endforeach; ?>
