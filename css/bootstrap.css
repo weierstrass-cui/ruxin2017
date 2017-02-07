@@ -1740,7 +1740,7 @@ th {
   text-align: center;
   background: url(../images/logo_color2.png) no-repeat center center;
   background-size: auto 85%;
-  text-indent: -999px;
+  text-indent: -9999px;
 }
 .rd-mobilepanel_title small {
   display: none;
