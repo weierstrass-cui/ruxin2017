@@ -10100,6 +10100,11 @@ img.mfp-img {
 .friendlyLinks{
 
 }
+@media (max-width: 768px) {
+  .friendlyLinks{
+    display: none;
+  }
+}
 .friendlyLinks h1{
   font-size: 36px;
   width: 360px;
