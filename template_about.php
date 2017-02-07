@@ -9,7 +9,7 @@ get_header(); ?>
     </div>
     <div class="aboutNav">
       <a href="javascript://">关于如心</a>
-      <a href="javascript://">关于简知</a>
+      <!-- <a href="javascript://">关于简知</a> -->
       <a href="javascript://">团队介绍</a>
       <span class="aboutNavHighlight"></span>
     </div>
@@ -19,11 +19,11 @@ get_header(); ?>
         <?php $post = get_post(54); ?>
         <?php echo $post->post_content; ?>
       </div>
-      <div class="aboutInfoBox">
+      <!-- <div class="aboutInfoBox">
         <h3 class="mobTitle">关于简知</h3>
         <?php $post = get_post(56); ?>
         <?php echo $post->post_content; ?>
-      </div>
+      </div> -->
       <div class="aboutInfoBox">
         <h3 class="mobTitle">团队介绍</h3>
         <?php $post = get_post(58); ?>
