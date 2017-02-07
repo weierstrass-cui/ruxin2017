@@ -162,7 +162,7 @@ get_header(); ?>
               <?php if( $xfzy ):?>
                 <?php foreach( $xfzy as $index => $v ): ?>
                   <li>
-                    <a href="javascript://" title="<?php echo $v->name; ?>">
+                    <a href="<?php echo $v->sl_url ? $v->sl_url : 'javascript://'; ?>" target="_blank" title="<?php echo $v->name; ?>">
                       <img alt="<?php echo $v->description; ?>" src="<?php echo $v->image_url;?>" />
                     </a>
                   </li>
@@ -184,7 +184,7 @@ get_header(); ?>
               <?php if( $hzqy ):?>
                 <?php foreach( $hzqy as $index => $v ): ?>
                   <li>
-                    <a href="javascript://" title="<?php echo $v->name; ?>">
+                    <a href="<?php echo $v->sl_url ? $v->sl_url : 'javascript://'; ?>" target="_blank" title="<?php echo $v->name; ?>">
                       <img alt="<?php echo $v->description; ?>" src="<?php echo $v->image_url;?>" />
                     </a>
                   </li>
