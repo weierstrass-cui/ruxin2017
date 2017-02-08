@@ -61,7 +61,7 @@ get_header(); ?>
                   <blockquote class="quote">
                     <!-- <p class="cite">Male from United States</p> -->
                     <div class="quoteImgBox">
-                      <img src="<?php echo get_post_meta($post->ID,'手机图',true); ?>" alt="<?php the_title(); ?>">
+                      <img src="<?php bloginfo('home') ?><?php echo get_post_meta($post->ID,'手机图',true); ?>" alt="<?php the_title(); ?>">
                       <span></span>
                     </div>
                     <div class="h5">
@@ -116,7 +116,7 @@ get_header(); ?>
     <section class="mo-dark mo-wideBox mo-service moShow">
       <div class="container container-wide">
         <h1>服 务 体 系</h1>
-        <div class="divider divider-default white">提供优秀品牌策划、文案撰写、创意设计及全方位的活动落地执行</div>
+        <div class="divider divider-default white">提供优秀品牌策划、文案撰写、创意设计<br />及全方位的活动落地执行</div>
         <div class="swiper-container swiper-slider">
           <div class="swiper-wrapper">
             <?php  $categorys = get_posts("category=3&numberposts=6"); ?>
