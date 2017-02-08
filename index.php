@@ -53,7 +53,7 @@ get_header(); ?>
         <div class="divider divider-default white">全面渗透大学生市场、多维度传播、<br />全方位曝光，实现强力转化</div>
         <!-- Owl Carousel -->
         <div class="mo-owl-carousel">
-          <?php $posts = get_posts("category=2&numberposts=5"); ?>
+          <?php $posts = get_posts("category=13&numberposts=4"); ?>
             <?php if( $posts ):?>
               <?php foreach( $posts as $index => $post ): setup_postdata( $post ); ?>
                 <div class="owl-item">
@@ -61,7 +61,7 @@ get_header(); ?>
                   <blockquote class="quote">
                     <!-- <p class="cite">Male from United States</p> -->
                     <div class="quoteImgBox">
-                      <img src="<?php bloginfo('home') ?><?php echo get_post_meta($post->ID,'手机图',true); ?>" alt="<?php the_title(); ?>">
+                      <img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" alt="<?php the_title(); ?>">
                       <span></span>
                     </div>
                     <div class="h5">
