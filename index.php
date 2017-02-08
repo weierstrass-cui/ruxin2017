@@ -61,7 +61,7 @@ get_header(); ?>
                   <blockquote class="quote">
                     <!-- <p class="cite">Male from United States</p> -->
                     <div class="quoteImgBox">
-                      <img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" alt="<?php the_title(); ?>">
+                      <img src="<?php echo get_post_meta($post->ID,'手机图',true); ?>" alt="<?php the_title(); ?>">
                       <span></span>
                     </div>
                     <div class="h5">
@@ -124,7 +124,7 @@ get_header(); ?>
               <?php foreach( $categorys as $index => $post ): ?>
                 <div class="swiper-slide">
                   <h3 class="white"><?php the_title(); ?></h3>
-                  <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
+                  <p><?php echo get_post_meta($post->ID,'手机简介',true); ?></p>
                 </div>
               <?php endforeach; ?>
             <?php endif ?>
