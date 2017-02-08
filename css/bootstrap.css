@@ -10198,4 +10198,143 @@ img.mfp-img {
 }
 
 
+.moShow{display: none;}
+@media (max-width: 768px) {
+  .pcShow{display: none;}
+  .moShow{display: block;}
+}
 
+
+.mo-dark{
+  background: #313131;
+}
+.mo-wideBox{
+  border-top: 4px solid #ed7c2d;
+  padding: 2rem 0 0;
+}
+.mo-light-border{
+  border-top: 4px solid #fff;
+}
+.mo-wideBox .well-1{
+  padding: 0;
+}
+.mo-wideBox h1{
+  color: #ed7c2d;
+}
+.mo-wideBox .divider{
+  width: 95%;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.mo-owl-carousel blockquote.quote{
+  padding: 0;
+  overflow: hidden;
+}
+.mo-owl-carousel blockquote.quote .quoteImgBox{
+  float: left;
+  width: 65%;
+  border-radius: 0;
+  border: 0 none;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+.mo-owl-carousel blockquote.quote .quoteImgBox img{
+  width: 100%;
+  border-radius: 0;
+}
+.mo-owl-carousel blockquote.quote .quoteImgBox span{
+  width: 95%;
+  height: 95%;
+  border-radius: 0;
+  position: absolute;
+  top: 2.5%;
+  left: 2.5%;
+  border: 1px solid #fff;
+  background: none;
+}
+.mo-owl-carousel .h5{
+  float: left;
+  width: 35%;
+  background: #ed7c2d;
+  color: #fff;
+  height: 150px;
+  padding: 55px 0;
+}
+.mo-owl-carousel .h5 h5{
+  width: 100%;
+  color: #fff;
+}
+.mo-owl-carousel .owl-item:nth-child(2n) blockquote.quote .quoteImgBox{
+  float: right;
+}
+.mo-owl-carousel .owl-item:nth-child(2n) .h5{
+  float: right;
+  background: #fff;
+  color: #ed7c2d;
+}
+.mo-service .container, .mo-gallery .container{
+  padding-left:0;
+  padding-right: 0; 
+}
+.mo-service .swiper-container{
+  background: #ed7c2d;
+  padding: 5rem 0;
+  color: #fff;
+}
+.mo-service .swiper-container h3{
+  margin-bottom: 1rem;
+}
+.mo-service .swiper-container p{
+  font-size: 1.2rem;
+}
+.mo-gallery .swiper-container{
+  height: 18rem;
+}
+.mo-gallery .swiper-container .swiper-slide{
+  position: relative;
+}
+.mo-gallery .swiper-container p{
+  border: 1px solid #fff;
+  width: 160px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin:-25px 0 0 -80px;
+}
+.mo-gallery .swiper-container span{
+  background: rgba(237,124,45,0.4);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.mo-gallery .swiper-container p a{
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #ed7c2d;
+  line-height: 34px;
+}
+.mo-home-about{
+  padding: 0;
+}
+.mo-home-about h1{
+  background: #ed7c2d;
+  color: #fff;
+  height: 45px;
+  line-height: 45px;
+}
+.mo-home-about p{
+  color: #fff;
+  padding: 1rem;
+  text-align: left;
+}

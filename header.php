@@ -73,7 +73,7 @@
 	                            HEADER
 	  =========================================================-->
 	  <?php if (is_home()) {?>
-	  <header class="swiper-container swiper-slider" data-height="100vh">
+	  <header class="swiper-container swiper-slider pcShow" data-height="100vh">
 	  	<?php  global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 1";
             $firstrow=$wpdb->get_results($query);
     	?>
@@ -92,13 +92,27 @@
 	    <!-- Swiper Navigation -->
 	    <div class="swiper-button-prev material-icons-chevron_left"></div>
 	    <div class="swiper-button-next material-icons-chevron_right"></div>
-	    <!-- <div class="swiper-slide-caption">
-	      <div class="container container-wide">
-	        <h1 class="h1 h1--mod brand white">骁 懿 国 际</h1>
-	        <p class="lead white">骁懿创意、量身打造、特色展示、一体服务</p>
-	        <a href="<?php bloginfo('home'); ?>/about/" class="btn btn-sm btn-danger">了解更多 !</a>
-	      </div>
-	    </div> -->
+	    <!-- END Swiper -->
+	  </header>
+	  <header class="swiper-container swiper-slider moShow" data-height="100vh">
+	  	<?php  global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 5";
+            $firstrow=$wpdb->get_results($query);
+    	?>
+	    <!-- Swiper -->
+	    <div class="swiper-wrapper">
+	    	<?php  foreach($firstrow as $v){ ?>
+		      <div class="swiper-slide" data-slide-bg="<?php echo $v->image_url;?>">
+		      	  <div class="container container-wide bannerDom">
+			        <h1 class="h1 h1--mod brand white"><?php echo $v->name; ?></h1>
+			        <p class="lead white"><?php echo $v->description; ?></p>
+			        <!-- <a href="<?php echo $v->sl_url; ?>" class="btn btn-sm btn-danger">了解更多 !</a> -->
+			      </div>
+		      </div>
+		    <?php }?> 
+	    </div>
+	    <!-- Swiper Navigation -->
+	    <div class="swiper-button-prev material-icons-chevron_left"></div>
+	    <div class="swiper-button-next material-icons-chevron_right"></div>
 	    <!-- END Swiper -->
 	  </header>
 	  <!-- Stuck Container -->
