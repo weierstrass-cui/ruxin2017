@@ -18,9 +18,11 @@ get_header(); ?>
                             <?php $posts = get_posts("category=".$item->term_id."&numberposts=99"); ?>
                             <?php if( $posts ):?>
                                 <?php foreach( $posts as $postInde => $post ): setup_postdata( $post ); ?>
-                                    <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat='.$item->term_id.'&post='.$post->ID ?>" <?php echo $postID == $post->ID ? 'class="active"' : '' ?>>
-                                        <?php echo get_post_meta($post->ID,'短标题',true) ? get_post_meta($post->ID,'短标题',true) : the_title(); ?>
-                                    </a>
+                                    <div>
+                                        <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat='.$item->term_id.'&post='.$post->ID ?>" <?php echo $postID == $post->ID ? 'class="active"' : '' ?>>
+                                            <?php echo get_post_meta($post->ID,'短标题',true) ? get_post_meta($post->ID,'短标题',true) : the_title(); ?>
+                                        </a>
+                                    </div>
                                 <?php endforeach; ?>
                             <?php endif ?>
                         </div>

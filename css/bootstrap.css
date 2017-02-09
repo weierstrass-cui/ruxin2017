@@ -10114,7 +10114,7 @@ img.mfp-img {
 }
 .galleryBox .galleryNav a{
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .galleryBox .galleryNav li{
   padding: 0 0 0.8rem;
@@ -10139,7 +10139,7 @@ img.mfp-img {
   display: block;
 }
 .galleryBox .galleryNav li .blogList a{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
