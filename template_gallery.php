@@ -73,8 +73,9 @@ get_header(); ?>
                         $('#theImages').hide();
                     }
                 }
+                $('#thePost').find('p').find('br').remove();
+                $('.galleryNav').height($('.galleryInfo').height() + 100);
                 setTimeout(function(){
-                    $('#thePost').find('p').find('br').remove();
                     $('.galleryNav').height($('.galleryInfo').height() + 100);
                 }, 3000);
             });
