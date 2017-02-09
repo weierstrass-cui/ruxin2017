@@ -5,7 +5,7 @@ Template Name:关于我们
 
 get_header(); ?>
     <div class="aboutBanner">
-      <img src="<?php bloginfo('template_url'); ?>/images/aboutBanner.jpg" />
+      <img data-original="<?php bloginfo('template_url'); ?>/images/aboutBanner.jpg" />
     </div>
     <div class="aboutNav">
       <a href="javascript://">关于如心</a>
@@ -40,9 +40,9 @@ get_header(); ?>
                 </div>
                 <div class="topic">
                   <?php if(($index % 2) == 1){ ?>
-                    <img src="<?php bloginfo('template_url'); ?>/images/topicLeft.png" />
+                    <img data-original="<?php bloginfo('template_url'); ?>/images/topicLeft.png" />
                   <?php }else{ ?>
-                    <img src="<?php bloginfo('template_url'); ?>/images/topicRight.png" />
+                    <img data-original="<?php bloginfo('template_url'); ?>/images/topicRight.png" />
                   <?php } ?>
                   <h4><?php echo $v->name; ?></h4>
                   <p><?php echo $v->description; ?></p>

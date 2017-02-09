@@ -31,7 +31,7 @@ get_header(); ?>
                   <blockquote class="quote">
                     <!-- <p class="cite">Male from United States</p> -->
                     <div class="quoteImgBox">
-                      <img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" alt="<?php the_title(); ?>">
+                      <img data-original="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" alt="<?php the_title(); ?>">
                       <span></span>
                     </div>
                     <?php // the_post_thumbnail(); ?>
@@ -61,7 +61,7 @@ get_header(); ?>
                   <blockquote class="quote">
                     <!-- <p class="cite">Male from United States</p> -->
                     <div class="quoteImgBox">
-                      <img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" alt="<?php the_title(); ?>">
+                      <img data-original="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" alt="<?php the_title(); ?>">
                       <span></span>
                     </div>
                     <div class="h5">
@@ -99,11 +99,11 @@ get_header(); ?>
                   <div class="product">
                     <!-- <a href="<?php bloginfo('home'); ?>/blog_single_post?id=<?php echo $post->ID; ?>" class="thumb">
                       <?php // the_post_thumbnail(); ?>
-                      <img src="<?php echo $post->category_description ?>" width="370" height="278" alt="">
+                      <img data-original="<?php echo $post->category_description ?>" width="370" height="278" alt="">
                       <span class="thumb__overlay"><?php echo $post->cat_name ?></span>
                     </a> -->
                     <a href="javascript://" class="thumb">
-                      <img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" width="370" height="278" alt="">
+                      <img data-original="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" width="370" height="278" alt="">
                       <span class="thumb__overlay"><?php the_title(); ?></span>
                     </a>
                   </div>
@@ -153,7 +153,7 @@ get_header(); ?>
                   <?php $posts = get_posts("category=".$cate->term_id."&numberposts=1"); ?>
                   <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat='.$cate->term_id ?>" class="thumb successList">
                     <?php // the_post_thumbnail(); ?>
-                    <img src="<?php echo $cate->category_description ?>" alt="<?php echo $cate->cat_name ?>" />
+                    <img data-original="<?php echo $cate->category_description ?>" alt="<?php echo $cate->cat_name ?>" />
                     <span class="thumb__overlay"><?php echo $cate->cat_name ?></a></span>
                   </a>
                 </div>
@@ -191,21 +191,21 @@ get_header(); ?>
         <div class="divider divider-default">一对一定制服务，展现品牌最大价值，满足并超越客户的期望 </div>
         <div class="row ruxinProductsBox">
             <div class="ruxinOneProduct">
-              <img src="<?php bloginfo('template_url'); ?>/images/logo_sjz.jpg" />
+              <img data-original="<?php bloginfo('template_url'); ?>/images/logo_sjz.jpg" />
               <div class="ruxinProducts white">
                 <h5 class="white">实兼轴--精彩不止于校园</h5>
                 实兼轴公众号为大学生、年轻人提供潮流热点资讯、逗比新颖观点，引领年轻人多元价值观；同时也为年轻人提供知名企业实习、兼职、应届招聘、培训以及创业辅导等服务，帮助青年人完成人生独立第一步。
               </div>
             </div>
             <div class="ruxinOneProduct">
-              <img src="<?php bloginfo('template_url'); ?>/images/logo_nmp.jpg" />
+              <img data-original="<?php bloginfo('template_url'); ?>/images/logo_nmp.jpg" />
               <div class="ruxinProducts white">
                 <h5 class="white">凝萌π--最贴近大学生的公益组织</h5>
                 凝萌π致力于成为学生触手可及的高校学生择业前辅导、创新创业和职业发展的公益性组织。已在上海大学、上海师范大学、华东师范大学等高校展开系列课程和讲座，帮助大学生在就业或创业的发展过程中取得成功。
               </div>
             </div>
             <div class="ruxinOneProduct">
-              <img src="<?php bloginfo('template_url'); ?>/images/logo_rx.jpg" />
+              <img data-original="<?php bloginfo('template_url'); ?>/images/logo_rx.jpg" />
               <div class="ruxinProducts white">
                 <h5 class="white">如心--比你更懂年轻人</h5>
                 如心文化研究大学生市场的公众平台--大学生研究院，调查研究大学生相关喜好、消费能力、生活方式、性格特点、适时动态等市场行为，帮助企业客户了解大学生市场。同时，第一时间展示如心文化相关营销案例、最新动态。
@@ -217,7 +217,7 @@ get_header(); ?>
     <!-- END 如心产品-->
     <!-- 关于我们 -->
     <section class="mo-dark mo-light-border mo-wideBox mo-home-about moShow">
-      <img src="<?php bloginfo('template_url'); ?>/images/aboutBanner.jpg" />
+      <img data-original="<?php bloginfo('template_url'); ?>/images/aboutBanner.jpg" />
       <h1>关 于 我 们</h1>
       <p>
         <?php echo get_post_meta('54','简介',true); ?>

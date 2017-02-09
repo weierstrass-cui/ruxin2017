@@ -34,7 +34,7 @@ get_header(); ?>
         <div class="servciePageList">
           <?php $post = get_post(44); ?>
           <a href="javascript://" class="serviceListBox">
-            <img src="<?php bloginfo('template_url'); ?>/images/serviceList1.jpg" />
+            <img data-original="<?php bloginfo('template_url'); ?>/images/serviceList1.jpg" />
             <div class="serviceInfo">
               <div class="serviceInfoTitle"><h3><?php echo $post->post_title; ?></h3></div>
               <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
@@ -42,7 +42,7 @@ get_header(); ?>
           </a>
           <?php $post = get_post(42); ?>
           <a href="javascript://" class="serviceListBox">
-            <img src="<?php bloginfo('template_url'); ?>/images/serviceList2.jpg" />
+            <img data-original="<?php bloginfo('template_url'); ?>/images/serviceList2.jpg" />
             <div class="serviceInfo">
               <div class="serviceInfoTitle"><h3><?php echo $post->post_title; ?></h3></div>
               <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
@@ -50,7 +50,7 @@ get_header(); ?>
           </a>
           <?php $post = get_post(39); ?>
           <a href="javascript://" class="serviceListBox">
-            <img src="<?php bloginfo('template_url'); ?>/images/serviceList3.jpg" />
+            <img data-original="<?php bloginfo('template_url'); ?>/images/serviceList3.jpg" />
             <div class="serviceInfo">
               <div class="serviceInfoTitle"><h3><?php echo $post->post_title; ?></h3></div>
               <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
@@ -58,7 +58,7 @@ get_header(); ?>
           </a>
           <?php $post = get_post(37); ?>
           <a href="javascript://" class="serviceListBox">
-            <img src="<?php bloginfo('template_url'); ?>/images/serviceList4.jpg" />
+            <img data-original="<?php bloginfo('template_url'); ?>/images/serviceList4.jpg" />
             <div class="serviceInfo">
               <div class="serviceInfoTitle"><h3><?php echo $post->post_title; ?></h3></div>
               <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
@@ -66,7 +66,7 @@ get_header(); ?>
           </a>
           <?php $post = get_post(35); ?>
           <a href="javascript://" class="serviceListBox">
-            <img src="<?php bloginfo('template_url'); ?>/images/serviceList5.jpg" />
+            <img data-original="<?php bloginfo('template_url'); ?>/images/serviceList5.jpg" />
             <div class="serviceInfo">
               <div class="serviceInfoTitle"><h3><?php echo $post->post_title; ?></h3></div>
               <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
@@ -74,7 +74,7 @@ get_header(); ?>
           </a>
           <?php $post = get_post(27); ?>
           <a href="javascript://" class="serviceListBox">
-            <img src="<?php bloginfo('template_url'); ?>/images/serviceList6.jpg" />
+            <img data-original="<?php bloginfo('template_url'); ?>/images/serviceList6.jpg" />
             <div class="serviceInfo">
               <div class="serviceInfoTitle"><h3><?php echo $post->post_title; ?></h3></div>
               <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
@@ -84,5 +84,5 @@ get_header(); ?>
       </div>
     </section>
     <!-- END Wedding -->
-    <img src="<?php bloginfo('template_url'); ?>/images/gezi.jpg" />
+    <img data-original="<?php bloginfo('template_url'); ?>/images/gezi.jpg" />
 <?php get_footer(); ?>

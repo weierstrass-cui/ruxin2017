@@ -17,7 +17,7 @@
   <footer class="pcShow">
     <div class="container container-wide">
       <a href="<?php bloginfo('home'); ?>/">
-        <img src="<?php bloginfo('template_url'); ?>/images/logo_color.png" />
+        <img data-original="<?php bloginfo('template_url'); ?>/images/logo_color.png" />
       </a>
       <div class="footBanner">
         <a href="<?php bloginfo('home'); ?>/service/">服务体系</a>|
@@ -62,7 +62,7 @@
   <footer class="moShow">
     <div class="container container-wide">
       <a href="<?php bloginfo('home'); ?>/">
-        <img src="<?php bloginfo('template_url'); ?>/images/logo_color.png" />
+        <img data-original="<?php bloginfo('template_url'); ?>/images/logo_color.png" />
       </a>
       <!-- Address -->
       <div class="row text-sm-left footerInfo" id="mo-contactUs">
@@ -93,9 +93,9 @@
     </div>
   </footer>
   <div id="footerBar" class="moShow">
-    <a href="javascript://"><img src="<?php bloginfo('template_url'); ?>/images/footerBar1.png" /></a>
-    <a href="javascript://"><img src="<?php bloginfo('template_url'); ?>/images/footerBar2.png" /></a>
-    <a href="callto:4008202083"><img src="<?php bloginfo('template_url'); ?>/images/footerBar3.png" /></a>
+    <a href="javascript://"><img data-original="<?php bloginfo('template_url'); ?>/images/footerBar1.png" /></a>
+    <a href="javascript://"><img data-original="<?php bloginfo('template_url'); ?>/images/footerBar2.png" /></a>
+    <a href="callto:4008202083"><img data-original="<?php bloginfo('template_url'); ?>/images/footerBar3.png" /></a>
   </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -103,6 +103,15 @@
 <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/message.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/tm-scripts.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $("img").lazyload({ 
+        placeholder : "images/loading.gif",
+        effect: "fadeIn"
+     });  
+  });
+</script>
 <!-- </script> -->
 <?php wp_footer(); ?>
 </body>

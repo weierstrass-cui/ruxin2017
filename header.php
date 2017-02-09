@@ -53,7 +53,7 @@
 	<!--[if lt IE 9]>
 	<div style=' clear: both; text-align:center; position: relative;'>
 	<a href="http://windows.microsoft.com/en-US/internet-explorer/..">
-	  <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+	  <img data-original="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
 	       alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
 	</a>
 	</div>
@@ -123,7 +123,7 @@
 	        <!-- Navbar Brand -->
 	        <div class="navbar-header center-xs visible-sm-inline-block-skin">
 	          <div class="navbar-brand">
-	            <a href="<?php bloginfo('home'); ?>/"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" /></a>
+	            <a href="<?php bloginfo('home'); ?>/"><img data-original="<?php bloginfo('template_url'); ?>/images/logo.png" /></a>
 	          </div>
 	        </div>
 	        <!-- END Navbar Brand -->
@@ -146,7 +146,7 @@
 	            <a href="#contactUs">联系我们</a>
 	          </li>
 	          <li class="phoneCall">
-		          <img src="<?php bloginfo('template_url'); ?>/images/phoneCall.png" />
+		          <img data-original="<?php bloginfo('template_url'); ?>/images/phoneCall.png" />
 	          </li>
 	        </ul>
 	        <!-- END Navbar Nav -->
@@ -165,7 +165,7 @@
             <!-- Navbar Brand -->
             <div class="navbar-header center-xs">
               <div class="navbar-brand">
-                <a href="<?php bloginfo('home'); ?>/"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" /></a>
+                <a href="<?php bloginfo('home'); ?>/"><img data-original="<?php bloginfo('template_url'); ?>/images/logo.png" /></a>
               </div>
             </div>
             <!-- END Navbar Brand -->
@@ -188,7 +188,7 @@
 	            <a href="#contactUs">联系我们</a>
 	          </li>
 	          <li class="phoneCall">
-		          <img src="<?php bloginfo('template_url'); ?>/images/phoneCall.png" />
+		          <img data-original="<?php bloginfo('template_url'); ?>/images/phoneCall.png" />
 	          </li>
             </ul>
             <!-- END Navbar Nav -->
