@@ -154,7 +154,7 @@ get_header(); ?>
                   <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat='.$cate->term_id ?>" class="thumb successList">
                     <?php // the_post_thumbnail(); ?>
                     <img src="<?php echo $cate->category_description ?>" alt="<?php echo $cate->cat_name ?>" />
-                    <span class="thumb__overlay" style="color:#000;"><?php echo $cate->cat_name ?></a></span>
+                    <span class="thumb__overlay"><?php echo $cate->cat_name ?></a></span>
                   </a>
                 </div>
               <?php endforeach; ?>
@@ -275,8 +275,8 @@ get_header(); ?>
         $(function(){
           $('.galleryMain').each(function(){
             var _this = $(this), count = _this.find('li').length;
-            _this.find('ul').width( count * 250);
-            if( (count * 250) > _this.width() ){
+            _this.find('ul').width( count * 167);
+            if( (count * 167) > _this.width() ){
               _this.siblings('.lastScreen').bind('click', function(){
                 if( _this.hasClass('isMoving') ){
                   return false;
@@ -284,7 +284,7 @@ get_header(); ?>
                 _this.addClass('isMoving');
                 var ul = _this.find('ul');
                 ul.find('li:last').prependTo(ul);
-                ul.css({'left': '-250px'});
+                ul.css({'left': '-167px'});
                 ul.animate({'left': '0px'}, function(){
                   _this.removeClass('isMoving');
                 });
@@ -295,7 +295,7 @@ get_header(); ?>
                 }
                 _this.addClass('isMoving');
                 var ul = _this.find('ul');
-                ul.animate({'left': '-250px'}, function(){
+                ul.animate({'left': '-167px'}, function(){
                   ul.find('li:first').appendTo(ul);
                   ul.css({'left': '0px'});
                   _this.removeClass('isMoving');

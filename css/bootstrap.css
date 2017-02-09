@@ -9684,6 +9684,7 @@ img.mfp-img {
 }
 .footerInfo h4{
   margin-bottom: 1rem;
+  font-size: 1.3rem;
 }
 .footBanner{
   padding: 2rem 0;
@@ -10115,7 +10116,7 @@ img.mfp-img {
 }
 .gallerySlider{
   width: 95%;
-  height: 230px;
+  height: 147px;
   margin: 50px auto;
   max-width: 1050px;
   position: relative;
@@ -10150,15 +10151,15 @@ img.mfp-img {
   height: 100%;
 }
 .gallerySlider li{
-  width: 230px;
-  height: 230px;
+  width: 147px;
+  height: 147px;
   margin-right: 20px;
   float: left;
   display: inline-block;
   overflow: hidden;
 }
 .aboutSlider li{
-  width: 250px;
+  width: 167px;
   margin-right: 0;
 }
 .gallerySlider li img{
@@ -10168,8 +10169,8 @@ img.mfp-img {
 .gallerySlider .lastScreen, .gallerySlider .nextScreen{
   background: rgba(255,255,255, 0.6);
   width: 35px;
-  height: 230px;
-  line-height: 230px;
+  height: 147px;
+  line-height: 147px;
   position: absolute;
   top: 0;
   left: 0;
