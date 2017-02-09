@@ -34,8 +34,11 @@ get_header(); ?>
           <?php if( $firstrow ):?>
             <?php foreach( $firstrow as $index => $v ): ?>
               <li>
-                <img class="face" alt="<?php echo $v->name; ?>" src="<?php echo $v->image_url;?>" />
-                <div>
+                <div class="face">
+                  <img class="face" alt="<?php echo $v->name; ?>" src="<?php echo $v->image_url;?>" />
+                  <?php echo $v->logo_url; ?>
+                </div>
+                <div class="topic">
                   <?php if(($index % 2) == 1){ ?>
                     <img src="<?php bloginfo('template_url'); ?>/images/topicLeft.png" />
                   <?php }else{ ?>

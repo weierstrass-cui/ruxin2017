@@ -10015,38 +10015,45 @@ img.mfp-img {
   padding: 0 10rem;
   margin-bottom: 3rem;
 }
-.teamLeaderList li div{
+.teamLeaderList li div.topic{
   position: relative;
 }
-.teamLeaderList li img.face{
-  border-color: #fff;
+.teamLeaderList li div.face{
+  width: 20%;
+  text-align: center;
 }
-.teamLeaderList li:nth-child(2n+1) img.face{
+.teamLeaderList li div.face img{
+  width: 100%;
+  border-color: #fff;
+  display: block;
+  margin-bottom: 1rem;
+}
+.teamLeaderList li:nth-child(2n+1) div.face{
   margin-left: 3%;
   margin-right: 0;
 }
-.teamLeaderList li:nth-child(2n+1) img.face, .teamLeaderList li:nth-child(2n+1) div{
+.teamLeaderList li:nth-child(2n+1) div.face, .teamLeaderList li:nth-child(2n+1) div.topic{
   float: right;
 }
-.teamLeaderList li div img{
+.teamLeaderList li div.topic img{
   width: 100%;
 }
-.teamLeaderList li:nth-child(2n) div h4{
+.teamLeaderList li:nth-child(2n) div.topic h4{
   position: absolute;
   top: 10%;
   left: 12%;
 }
-.teamLeaderList li:nth-child(2n+1) div h4{
+.teamLeaderList li:nth-child(2n+1) div.topic h4{
   position: absolute;
   top: 10%;
   left: 3%;
 }
-.teamLeaderList li:nth-child(2n) div p{
+.teamLeaderList li:nth-child(2n) div.topic p{
   position: absolute;
   top: 30%;
   left: 12%;
 }
-.teamLeaderList li:nth-child(2n+1) div p{
+.teamLeaderList li:nth-child(2n+1) div.topic p{
   position: absolute;
   top: 30%;
   left: 3%;
@@ -10056,18 +10063,18 @@ img.mfp-img {
     padding: 0;
     margin-bottom: 1rem;
   }
-  .teamLeaderList li div img{
+  .teamLeaderList li div.topic img{
     display: none;
   }
-  .teamLeaderList li div h4, .teamLeaderList li div p{
+  .teamLeaderList li div.topic h4, .teamLeaderList li div.topic p{
     position: static !important;
   }
-  .teamLeaderList li:nth-child(2n+1) img.face{
-    float: left;
-    margin-left: 0;
-    margin-right: 3%;
+  .teamLeaderList li div.face{
+    float: left !important;
+    margin-left: 0 !important;
+    margin-right: 3% !important;
   }
-  .teamLeaderList li:nth-child(2n+1) div{
+  .teamLeaderList li:nth-child(2n+1) div.topic{
     float: left;
     margin-left: 0;
     margin-right: 0;
