@@ -10055,6 +10055,7 @@ img.mfp-img {
   .teamMemberList li:nth-child(2),
   .teamMemberList li:nth-child(3){
     padding: 0;
+    margin-bottom: 1rem;
   }
   .teamMemberList li:nth-child(1) div img,
   .teamMemberList li:nth-child(2) div img,
