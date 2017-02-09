@@ -9680,7 +9680,9 @@ img.mfp-img {
  line-height:3.5;
 }
 .footerInfo{
-  margin-top: 1.33333333rem;
+  margin: 1.33333333rem auto 0;
+  width: 80%;
+
 }
 .footerInfo h4{
   margin-bottom: 1rem;
@@ -9698,6 +9700,8 @@ img.mfp-img {
 }
 .footerInfo .ecode{
   margin-bottom: 1rem;
+  width: 170px;
+  height: 170px;
 }
 
 @media (max-width: 768px) {
