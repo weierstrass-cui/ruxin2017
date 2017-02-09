@@ -27,7 +27,7 @@
       </div>
 
       <!-- Address -->
-      <div class="row text-sm-left footerInfo">
+      <div class="row text-sm-left footerInfo" id="contactUs">
           <div class="col-sm-8">
             <h4 class="white">联系我们</h4>
             <address class="contact-info">

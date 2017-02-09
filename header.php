@@ -142,6 +142,9 @@
 	          <li>
 	            <a href="<?php bloginfo('home'); ?>/about/">关于我们</a>
 	          </li>
+	          <li>
+	            <a href="#contactUs">联系我们</a>
+	          </li>
 	          <li class="phoneCall">
 		          <img src="<?php bloginfo('template_url'); ?>/images/phoneCall.png" />
 	          </li>
@@ -180,6 +183,9 @@
 	          </li>
 	          <li<?php if( is_page(8) ) echo ' class="active"'; ?>>
 	            <a href="<?php bloginfo('home'); ?>/about/">关于我们</a>
+	          </li>
+	          <li>
+	            <a href="#contactUs">联系我们</a>
 	          </li>
 	          <li class="phoneCall">
 		          <img src="<?php bloginfo('template_url'); ?>/images/phoneCall.png" />
