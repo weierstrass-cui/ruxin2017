@@ -10009,7 +10009,7 @@ img.mfp-img {
 }
 .galleryBox .galleryNav li .blogList a{
   font-size: 1.2rem;
-  display: block;
+  display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -10047,8 +10047,8 @@ img.mfp-img {
 .galleryBox .galleryInfo .tips li{
   border-left: 6px solid #ed7c2d;
   color: #3e3a39;
-  height: 32px;
-  line-height: 32px;
+  height: 20px;
+  line-height: 20px;
   margin-bottom: 16px;
   text-indent: 20px;
 }
