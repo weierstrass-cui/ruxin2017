@@ -74,7 +74,7 @@
 	  =========================================================-->
 	  <?php if (is_home()) {?>
 	  <header class="swiper-container swiper-slider pcShow" data-height="100vh">
-	  	<?php  global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 1";
+	  	<?php  global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 1 order by ordering";
             $firstrow=$wpdb->get_results($query);
     	?>
 	    <!-- Swiper -->
@@ -95,7 +95,7 @@
 	    <!-- END Swiper -->
 	  </header>
 	  <header class="swiper-container swiper-slider moShow" data-height="100vh">
-	  	<?php  global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 5";
+	  	<?php  global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 5 order by ordering";
             $firstrow=$wpdb->get_results($query);
     	?>
 	    <!-- Swiper -->

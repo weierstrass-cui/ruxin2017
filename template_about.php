@@ -28,7 +28,7 @@ get_header(); ?>
         <h3 class="mobTitle">团队介绍</h3>
         <ul class="teamMemberList">
           <?php
-            global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 6";
+            global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 6 order by ordering";
               $firstrow=$wpdb->get_results($query);
           ?>
           <?php if( $firstrow ):?>
@@ -56,7 +56,7 @@ get_header(); ?>
       <div class="galleryMain">
         <ul>
           <?php
-            global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 2";
+            global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 2 order by ordering";
               $firstrow=$wpdb->get_results($query);
           ?>
           <?php if( $firstrow ):?>
@@ -77,7 +77,7 @@ get_header(); ?>
       <div class="galleryMain">
         <ul>
           <?php
-            global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 7";
+            global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 7 order by ordering";
               $firstrow=$wpdb->get_results($query);
           ?>
           <?php if( $firstrow ):?>

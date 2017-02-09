@@ -231,7 +231,7 @@ get_header(); ?>
           <div class="galleryMain">
             <ul>
               <?php 
-                global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 3";
+                global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 3 order by ordering";
                   $xfzy=$wpdb->get_results($query);
               ?>
               <?php if( $xfzy ):?>
@@ -253,7 +253,7 @@ get_header(); ?>
           <div class="galleryMain">
             <ul>
               <?php 
-                global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 4";
+                global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 4 order by ordering";
                   $hzqy=$wpdb->get_results($query);
               ?>
               <?php if( $hzqy ):?>
