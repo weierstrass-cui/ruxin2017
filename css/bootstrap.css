@@ -9955,6 +9955,122 @@ img.mfp-img {
     display: block;
   }
 }
+.teamMemberList{
+  width: 100%;
+  overflow: hidden;
+}
+.teamMemberList li{
+  float: left;
+  display:inline-block;
+  width: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .teamMemberList li{
+    width: 100%;
+  }
+}
+.teamMemberList li img.face{
+  width: 20%;
+  float: left;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 3%;
+  border:5px solid #e0e9ee;
+}
+.teamMemberList li div{
+  width: 77%;
+  float: left;
+  display: inline-block;
+}
+.teamMemberList li div h4{
+  width: 86%;
+  border-bottom: 1px solid #eb6100;
+  color: #3e3a39;
+  font-weight: normal;
+  font-size: 1rem;
+  padding: 0 0 0.5rem;
+  margin: 0 0 0.5rem;
+}
+.teamMemberList li div p{
+  width: 85%;
+  color: #3e3a39;
+  font-size: 1rem;
+  overflow: hidden;
+}
+.teamMemberList li:nth-child(1),
+.teamMemberList li:nth-child(2),
+.teamMemberList li:nth-child(3){
+  width: 100%;
+  padding: 0 5rem;
+}
+.teamMemberList li:nth-child(1) div,
+.teamMemberList li:nth-child(2) div,
+.teamMemberList li:nth-child(3) div{
+  position: relative;
+}
+.teamMemberList li:nth-child(1) img.face,
+.teamMemberList li:nth-child(2) img.face,
+.teamMemberList li:nth-child(3) img.face{
+  border-color: #fff;
+}
+.teamMemberList li:nth-child(2) img.face{
+  margin-left: 3%;
+  margin-right: 0;
+}
+.teamMemberList li:nth-child(2) img.face, .teamMemberList li:nth-child(2) div{
+  float: right;
+}
+.teamMemberList li:nth-child(1) div img,
+.teamMemberList li:nth-child(2) div img,
+.teamMemberList li:nth-child(3) div img{
+  width: 100%;
+}
+.teamMemberList li:nth-child(1) div h4,
+.teamMemberList li:nth-child(3) div h4{
+  position: absolute;
+  top: 10%;
+  left: 12%;
+}
+.teamMemberList li:nth-child(2) div h4{
+  position: absolute;
+  top: 10%;
+  left: 3%;
+}
+.teamMemberList li:nth-child(1) div p,
+.teamMemberList li:nth-child(3) div p{
+  position: absolute;
+  top: 30%;
+  left: 12%;
+}
+.teamMemberList li:nth-child(2) div p{
+  position: absolute;
+  top: 30%;
+  left: 3%;
+}
+@media (max-width: 768px) {
+  .teamMemberList li:nth-child(1),
+  .teamMemberList li:nth-child(2),
+  .teamMemberList li:nth-child(3){
+    padding: 0;
+  }
+  .teamMemberList li:nth-child(1) div img,
+  .teamMemberList li:nth-child(2) div img,
+  .teamMemberList li:nth-child(3) div img{
+    display: none;
+  }
+  .teamMemberList li:nth-child(1) div h4, .teamMemberList li:nth-child(1) div p,
+  .teamMemberList li:nth-child(2) div h4, .teamMemberList li:nth-child(2) div p,
+  .teamMemberList li:nth-child(3) div h4, .teamMemberList li:nth-child(3) div p{
+    position: static;
+  }
+  .teamMemberList li:nth-child(2) img.face, .teamMemberList li:nth-child(2) div{
+    float: left;
+  }
+}
+
+
 .galleryBox{
   width: 100%;
   height: auto;
