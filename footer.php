@@ -14,7 +14,7 @@
   <!--========================================================
                           FOOTER
   =========================================================-->
-  <footer>
+  <footer class="pcShow">
     <div class="container container-wide">
       <a href="<?php bloginfo('home'); ?>/">
         <img src="<?php bloginfo('template_url'); ?>/images/logo_color.png" />
@@ -59,6 +59,44 @@
       </p>
     </div>
   </footer>
+  <footer class="moShow">
+    <div class="container container-wide">
+      <a href="<?php bloginfo('home'); ?>/">
+        <img src="<?php bloginfo('template_url'); ?>/images/logo_color.png" />
+      </a>
+      <!-- Address -->
+      <div class="row text-sm-left footerInfo" id="mo-contactUs">
+          <div class="col-sm-12">
+            <h4 class="white">联系我们</h4>
+            <address class="contact-info">
+              <p>上海总部：上海市杨浦区隆昌路619号城市概念8号楼中区B13室</p>
+              <p>北京分公司：北京市朝阳区朝阳北路青年汇104号楼518室</p>
+              <p>青岛分公司：青岛市黄岛区漓江西路1166号嘉年华广场9号楼1104室</p>
+              <br />
+              <dl>
+                <dt>联系电话：</dt>
+                <dd><a href="callto:4008202083"> 400-820-2083</a></dd>
+              </dl>
+              <dl>
+                <dt>Email: </dt>
+                <dd><a href="mailto:jane.z@ruxinwenhua.com"> jane.z@ruxinwenhua.com</a></dd>
+              </dl>
+            </address>
+          </div>
+      </div>
+      <!-- END Address -->
+      <p class="rights">
+        版权所有上海如心文化传播有限公司 &#169; <span id="copyright-year"></span>
+        <!-- <span class="fw-b">&#183;</span> -->
+        <!-- <a rel="nofollow" href="index-5.html"> 沪ICP备案8888</a> -->
+      </p>
+    </div>
+  </footer>
+  <div id="footerBar" class="moShow">
+    <a href="javascript://"><img src="<?php bloginfo('template_url'); ?>/images/footerBar1.png" /></a>
+    <a href="javascript://"><img src="<?php bloginfo('template_url'); ?>/images/footerBar2.png" /></a>
+    <a href="callto:4008202083"><img src="<?php bloginfo('template_url'); ?>/images/footerBar3.png" /></a>
+  </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <!-- Include all compiled plugins (below), or include individual files as needed -->

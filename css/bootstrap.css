@@ -2200,6 +2200,11 @@ footer {
   padding-bottom: 3rem;
   color:#fff;
 }
+@media (max-width: 768px) {
+  footer {
+    padding-top: 1.77777778rem;
+  }
+}
 h1,
 h2,
 h3,
@@ -10460,4 +10465,31 @@ img.mfp-img {
   color: #fff;
   padding: 1rem;
   text-align: left;
+}
+footer.moShow{
+  background: #000;
+}
+#mo-contactUs{
+  text-align: left;
+  width: 100%;
+}
+#footerBar{
+  background: #313131;
+  padding: 1rem 0;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}
+#footerBar a{
+  width: 33%;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  display: inline-block;
+  border-right: 1px solid #959595;
+}
+#footerBar a:last-child{
+  border-right: 0 none;
 }
