@@ -62,7 +62,7 @@ get_header(); ?>
               <?php foreach( $firstrow as $index => $v ): ?>
                 <li>
                   <img class="face" alt="<?php echo $v->name; ?>" src="<?php echo $v->image_url;?>" />
-                  <div>
+                  <div style="margin-top:1.3rem;">
                     <h4><?php echo $v->name; ?></h4>
                     <p><?php echo $v->description; ?></p>
                   </div>
