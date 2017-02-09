@@ -14,7 +14,7 @@ get_header(); ?>
       <span class="aboutNavHighlight"></span>
     </div>
     <div class="aboutInfo">
-      <div class="aboutInfoBox" style="display:block;">
+      <div class="aboutInfoBox" style="display:block;width:80%;">
         <h3 class="mobTitle">关于如心</h3>
         <?php $post = get_post(54); ?>
         <?php echo $post->post_content; ?>
