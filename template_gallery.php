@@ -18,7 +18,7 @@ get_header(); ?>
                             <?php $posts = get_posts("category=".$item->term_id."&numberposts=99"); ?>
                             <?php if( $posts ):?>
                                 <?php foreach( $posts as $postInde => $post ): setup_postdata( $post ); ?>
-                                    <div>
+                                    <div style="margin-bottom:0.3rem;">
                                         <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat='.$item->term_id.'&post='.$post->ID ?>" <?php echo $postID == $post->ID ? 'class="active"' : '' ?>>
                                             <?php echo get_post_meta($post->ID,'短标题',true) ? get_post_meta($post->ID,'短标题',true) : the_title(); ?>
                                         </a>
@@ -84,11 +84,18 @@ get_header(); ?>
         </script>
     </div>
     <div class="anliList moShow">
-        <div class="oneAnli">
-            <div class="shotTitle"></div>
-            <h3></h3>
-            <div class="time"></div>
-            <a href="javacript://"><span>了解详情</span></a>
-        </div>
+        <?php $posts = get_posts("category=4&numberposts=4"); ?>
+        <?php if( $posts ):?>
+          <?php foreach( $posts as $index => $post ): setup_postdata( $post ); ?>
+              <div class="oneAnli" style="background:url(<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>) no-repeat;background-size:100% 100%;">
+                <div class="anliMask">
+                    <div class="shotTitle"><?php echo get_post_meta($post->ID,'短标题',true); ?></div>
+                    <h3><?php the_title(); ?></h3>
+                    <div class="time"><?php echo get_post_meta($post->ID,'时间',true); ?></div>
+                    <a href="<?php bloginfo('home'); ?>/galleryInfo?<?php echo 'post='.$post->ID ?>"><span>了解详情</span></a>
+                </div>
+            </div>
+          <?php endforeach; ?>
+        <?php endif ?>
     </div>
 <?php get_footer(); ?>

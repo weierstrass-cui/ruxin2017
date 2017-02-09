@@ -10497,3 +10497,61 @@ footer.moShow{
 #footerBar a:last-child{
   border-right: 0 none;
 }
+
+.oneAnli{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.oneAnli .anliMask{
+  background: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top:0;
+  left: 0;
+  color: #fff;
+}
+.oneAnli .anliMask .shotTitle{
+  position: absolute;
+  top: calc(50% - 10rem);
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
+.oneAnli .anliMask h3{
+  position: absolute;
+  top: calc(50% - 7rem);
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 0 2rem;
+  color: #fff;
+  text-align: center;
+}
+.oneAnli .anliMask .time{
+  position: absolute;
+  top: calc(50% - 3rem);
+  width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+}
+.oneAnli .anliMask a{
+  position: absolute;
+  border: 1px solid #fff;
+  width: 6rem;
+  height: 2.3rem;
+  top: calc(50% - 1rem);
+  left: 50%;
+  margin-left: -3rem;
+  display: block;
+  padding: 5px;
+}
+.oneAnli .anliMask a span{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  color: #000;
+  display: block;
+}
