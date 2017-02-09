@@ -106,8 +106,8 @@
 <script src="<?php bloginfo('template_url'); ?>/js/jquery.lazyload.min.js"></script>
 <script type="text/javascript">
   $(function(){
-    $("img").lazyload({ 
-        placeholder : "images/loading.gif",
+    $("img").lazyload({
+        threshold :20,
         effect: "fadeIn"
      });  
   });

@@ -10146,6 +10146,7 @@ img.mfp-img {
   text-overflow: ellipsis;
   border-bottom: 1px solid #ef7c1c;
   margin-bottom: 0.4rem;
+  max-width: 100%;
 }
 .galleryBox .galleryNav li .blogList a:last-child{
   margin-bottom: 0;
