@@ -9937,7 +9937,7 @@ img.mfp-img {
   overflow:hidden;
 }
 .aboutInfo .aboutInfoBox{
-  width: 80%;
+  width: 100%;
   margin: 4rem auto;
   text-align: left;
   display:none;
@@ -9960,9 +9960,15 @@ img.mfp-img {
     display: block;
   }
 }
+.teamMemberListBox{
+  background: #fff;
+  padding: 3rem 0 2rem;
+}
 .teamMemberList{
-  width: 100%;
+  width: 80%;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 .teamMemberList li{
   float: left;
@@ -10004,76 +10010,67 @@ img.mfp-img {
   font-size: 1rem;
   overflow: hidden;
 }
-.teamMemberList li:nth-child(1),
-.teamMemberList li:nth-child(2),
-.teamMemberList li:nth-child(3){
+.teamLeaderList li{
   width: 100%;
   padding: 0 10rem;
   margin-bottom: 3rem;
 }
-.teamMemberList li:nth-child(1) div,
-.teamMemberList li:nth-child(2) div,
-.teamMemberList li:nth-child(3) div{
+.teamLeaderList li div{
   position: relative;
 }
-.teamMemberList li:nth-child(1) img.face,
-.teamMemberList li:nth-child(2) img.face,
-.teamMemberList li:nth-child(3) img.face{
+.teamLeaderList li img.face{
   border-color: #fff;
 }
-.teamMemberList li:nth-child(2) img.face{
+.teamLeaderList li:nth-child(2n+1) img.face{
   margin-left: 3%;
   margin-right: 0;
 }
-.teamMemberList li:nth-child(2) img.face, .teamMemberList li:nth-child(2) div{
+.teamLeaderList li:nth-child(2n+1) img.face, .teamLeaderList li:nth-child(2n+1) div{
   float: right;
 }
-.teamMemberList li:nth-child(1) div img,
-.teamMemberList li:nth-child(2) div img,
-.teamMemberList li:nth-child(3) div img{
+.teamLeaderList li div img{
   width: 100%;
 }
-.teamMemberList li:nth-child(1) div h4,
-.teamMemberList li:nth-child(3) div h4{
+.teamLeaderList li:nth-child(2n) div h4{
   position: absolute;
   top: 10%;
   left: 12%;
 }
-.teamMemberList li:nth-child(2) div h4{
+.teamLeaderList li:nth-child(2n+1) div h4{
   position: absolute;
   top: 10%;
   left: 3%;
 }
-.teamMemberList li:nth-child(1) div p,
-.teamMemberList li:nth-child(3) div p{
+.teamLeaderList li:nth-child(2n) div p{
   position: absolute;
   top: 30%;
   left: 12%;
 }
-.teamMemberList li:nth-child(2) div p{
+.teamLeaderList li:nth-child(2n+1) div p{
   position: absolute;
   top: 30%;
   left: 3%;
 }
 @media (max-width: 768px) {
-  .teamMemberList li:nth-child(1),
-  .teamMemberList li:nth-child(2),
-  .teamMemberList li:nth-child(3){
+  .teamLeaderList li{
     padding: 0;
     margin-bottom: 1rem;
   }
-  .teamMemberList li:nth-child(1) div img,
-  .teamMemberList li:nth-child(2) div img,
-  .teamMemberList li:nth-child(3) div img{
+  .teamLeaderList li div img{
     display: none;
   }
-  .teamMemberList li:nth-child(1) div h4, .teamMemberList li:nth-child(1) div p,
-  .teamMemberList li:nth-child(2) div h4, .teamMemberList li:nth-child(2) div p,
-  .teamMemberList li:nth-child(3) div h4, .teamMemberList li:nth-child(3) div p{
-    position: static;
+  .teamLeaderList li div h4, .teamLeaderList li div p{
+    position: static !important;
   }
-  .teamMemberList li:nth-child(2) img.face, .teamMemberList li:nth-child(2) div{
+  .teamLeaderList li:nth-child(2n+1) img.face{
     float: left;
+    margin-left: 0;
+    margin-right: 3%;
+  }
+  .teamLeaderList li:nth-child(2n+1) div{
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

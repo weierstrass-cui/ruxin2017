@@ -26,9 +26,9 @@ get_header(); ?>
       </div> -->
       <div class="aboutInfoBox">
         <h3 class="mobTitle">团队介绍</h3>
-        <ul class="teamMemberList">
+        <ul class="teamMemberList teamLeaderList">
           <?php
-            global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 6 order by ordering";
+            global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 8 order by ordering";
               $firstrow=$wpdb->get_results($query);
           ?>
           <?php if( $firstrow ):?>
@@ -36,10 +36,9 @@ get_header(); ?>
               <li>
                 <img class="face" alt="<?php echo $v->name; ?>" src="<?php echo $v->image_url;?>" />
                 <div>
-                  <?php if($index == 0 || $index == 2){ ?>
+                  <?php if(($index % 2) == 1){ ?>
                     <img src="<?php bloginfo('template_url'); ?>/images/topicLeft.png" />
-                  <?php } ?>
-                  <?php if($index == 1){ ?>
+                  <?php }else{ ?>
                     <img src="<?php bloginfo('template_url'); ?>/images/topicRight.png" />
                   <?php } ?>
                   <h4><?php echo $v->name; ?></h4>
@@ -50,6 +49,26 @@ get_header(); ?>
             <?php endforeach; ?>
           <?php endif ?>
         </ul>
+        <div class="teamMemberListBox">
+          <ul class="teamMemberList">
+            <?php
+              global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 6 order by ordering";
+                $firstrow=$wpdb->get_results($query);
+            ?>
+            <?php if( $firstrow ):?>
+              <?php foreach( $firstrow as $index => $v ): ?>
+                <li>
+                  <img class="face" alt="<?php echo $v->name; ?>" src="<?php echo $v->image_url;?>" />
+                  <div>
+                    <h4><?php echo $v->name; ?></h4>
+                    <p><?php echo $v->description; ?></p>
+                  </div>
+                  </a>
+                </li>
+              <?php endforeach; ?>
+            <?php endif ?>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="gallerySlider aboutSlider">

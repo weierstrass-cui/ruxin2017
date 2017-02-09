@@ -5,7 +5,7 @@ Template Name:成功案例
 $cateID = $_GET['cat'];
 $postID = $_GET['post'] ? $_GET['post'] : get_posts("category=".$cateID."&numberposts=1")[0]->ID;
 get_header(); ?>
-    <div class="galleryBox">
+    <div class="galleryBox pcShow">
         <div class="galleryNav">
             <ul>
                 <li><a href="javascript://">所有分类</a></li>
@@ -80,5 +80,13 @@ get_header(); ?>
                 }, 3000);
             });
         </script>
+    </div>
+    <div class="anliList moShow">
+        <div class="oneAnli">
+            <div class="shotTitle"></div>
+            <h3></h3>
+            <div class="time"></div>
+            <a href="javacript://"><span>了解详情</span></a>
+        </div>
     </div>
 <?php get_footer(); ?>
