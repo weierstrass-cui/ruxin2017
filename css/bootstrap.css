@@ -10103,13 +10103,29 @@ img.mfp-img {
   float: left;
   width: calc(100% - 335px);
   padding: 2rem 5rem;
+  position: relative;
+}
+.galleryBox .galleryInfo .nextPost{
+  position: absolute;
+  top:85px;
+  right: 5rem;
+  color: #ed7c2d;
+}
+.galleryBox .galleryInfo .lastPost{
+  position: absolute;
+  top:85px;
+  left: 5rem;
+  color: #ed7c2d;
+}
+.galleryBox .galleryInfo .nextPost:hover,
+.galleryBox .galleryInfo .lastPost:hover{
+  text-decoration: underline;
 }
 @media (max-width: 768px) {
   .galleryBox .galleryInfo{
     width: 100%;
     padding:2rem 0;
     float: none;
-    position: relative;
   }
 }
 .galleryBox .galleryNav a{

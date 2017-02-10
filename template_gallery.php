@@ -33,6 +33,42 @@ get_header(); ?>
         </div>
         <?php $this_post = get_post($postID); ?>
         <div class="galleryInfo">
+            <?php  global $wpdb; 
+                // $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 1 order by ordering";
+                $query = "select w.object_id as id, w.term_taxonomy_id as cid from ".$wpdb->prefix."term_relationships as w";
+                $query = $query." join ".$wpdb->prefix."term_taxonomy as c";
+                $query = $query." on w.term_taxonomy_id = c.term_taxonomy_id";
+                $query = $query." WHERE c.parent = 4";
+                $query = $query." GROUP BY w.object_id";
+                $query = $query." ORDER BY w.object_id";
+                $post_list = $wpdb->get_results($query);
+                $post_index = 0;
+                if( $post_list ){
+                    foreach( $post_list as $index => $item ){
+                        if( $postID == $item->id ){
+                            $post_index = $index;
+                            break;
+                        }
+                    }
+                }
+            ?>
+            <?php
+                if( $post_index == 0 ){
+            ?>
+                <a class="nextPost" href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat='.$post_list[$post_index+1]->cid.'&post='.$post_list[$post_index+1]->id ?>">下一篇</a>
+            <?php
+                }elseif ( $post_index == (count($post_list) - 1) ) {
+            ?>
+                <a class="lastPost" href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat='.$post_list[$post_index-1]->cid.'&post='.$post_list[$post_index-1]->id; ?>">上一篇</a>
+            <?php    
+                }else{
+            ?>
+                <a class="lastPost" href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat='.$post_list[$post_index-1]->cid.'&post='.$post_list[$post_index-1]->id ?>">上一篇</a>
+                <a class="nextPost" href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat='.$post_list[$post_index+1]->cid.'&post='.$post_list[$post_index+1]->id ?>">下一篇</a>
+            <?php
+                }
+            ?>
+
             <h3 class="postTile"><?php echo $this_post->post_title; ?></h3>
             <ul class="tips">
                 <li>坐标：<?php echo get_post_meta($postID,'坐标',true); ?></li>
