@@ -10127,6 +10127,14 @@ img.mfp-img {
     padding:2rem 0;
     float: none;
   }
+  .galleryBox .galleryInfo .nextPost{
+    top: 10px;
+    right: 1rem;
+  }
+  .galleryBox .galleryInfo .lastPost{
+    top: 10px;
+    left: 1rem;
+  }
 }
 .galleryBox .galleryNav a{
   color: #fff;
@@ -10180,6 +10188,7 @@ img.mfp-img {
 @media (max-width: 768px) {
   .galleryBox .galleryInfo .postTile{
     margin: 0 auto 20px;
+    font-size: 1.2rem;
   }
 }
 .galleryBox .galleryInfo .tips{
