@@ -9976,10 +9976,12 @@ img.mfp-img {
   width: 50%;
   overflow: hidden;
   margin-bottom: 1rem;
+  height: 7rem;
 }
 @media (max-width: 768px) {
   .teamMemberList li{
     width: 100%;
+    height: auto;
   }
 }
 .teamMemberList li img.face{
@@ -10014,6 +10016,7 @@ img.mfp-img {
   width: 100%;
   padding: 0 10rem;
   margin-bottom: 3rem;
+  height: auto;
 }
 .teamLeaderList li div.topic{
   position: relative;
