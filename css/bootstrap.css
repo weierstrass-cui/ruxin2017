@@ -10581,3 +10581,106 @@ footer.moShow{
   color: #000;
   display: block;
 }
+.mo-solution{
+  background: #eee;
+  overflow: hidden;
+}
+.mo-solution h3{
+  color: #ea8755;
+  padding: 2rem 0 1rem;
+}
+.mo-solution .recorde{
+  margin-bottom: 1rem;
+}
+.mo-solution .recorde span{
+  color: #ea8755;
+}
+.mo-solution .form{
+  width: 90%;
+  background: #fff;
+  border-radius: 10px;
+  margin: 0 auto 2rem;
+  padding: 1rem 0;
+}
+.mo-solution .form ul, .mo-solution .form li{
+  width: 100%;
+  overflow: hidden;
+}
+.mo-solution .form li{
+  margin-bottom: 1rem;
+}
+.mo-solution .form label{
+  width: 20%;
+  text-align: right;
+  float: left;
+  display: inline-block;
+  margin-right: 5%;
+  height: 2rem;
+  line-height: 2rem;
+  color: #313131;
+}
+.mo-solution .form .text{
+  width: 60%;
+  float: left;
+  display: inline-block;
+  margin-right: 1%;
+  height: 2rem;
+  border-radius: 5px;
+  border: 1px solid #313131;
+  padding: 0 5px;
+}
+.mo-solution .form li:last-child label{
+  height: 6rem;
+  line-height: 6rem;
+}
+.mo-solution .form li.require:after{
+  content: '*';
+  float: left;
+  color: #ea8755;
+  display: inline-block;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1.4rem;
+}
+.mo-solution .form textarea{
+  height: 6rem;
+  width: 60%;
+  float: left;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #313131;
+  padding: 0 5px;
+  resize: none;
+}
+.mo-solution .btns{
+  width: 90%;
+  margin: 0 auto 2rem;
+}
+.mo-solution .btns .submit{
+  width: 5rem;
+  height: 2rem;
+  border-radius: 5px;
+  border:0 none;
+  background: #ea8755;
+  color: #fff;
+  margin-right: 15%;
+}
+.mo-solution .btns .reset{
+  width: 5rem;
+  height: 2rem;
+  border-radius: 5px;
+  border:0 none;
+  background: #fff;
+  color: #9fa0a0;
+}
+
+
+
+
+
+
+
+
+
+
+

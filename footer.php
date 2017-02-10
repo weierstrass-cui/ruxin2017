@@ -93,7 +93,7 @@
     </div>
   </footer>
   <div id="footerBar" class="moShow">
-    <a href="javascript://"><img data-original="<?php bloginfo('template_url'); ?>/images/footerBar1.png" /></a>
+    <a href="<?php bloginfo('home'); ?>/solution/"><img data-original="<?php bloginfo('template_url'); ?>/images/footerBar1.png" /></a>
     <a href="javascript://"><img data-original="<?php bloginfo('template_url'); ?>/images/footerBar2.png" /></a>
     <a href="callto:4008202083"><img data-original="<?php bloginfo('template_url'); ?>/images/footerBar3.png" /></a>
   </div>
