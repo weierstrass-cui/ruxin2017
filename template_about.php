@@ -40,9 +40,9 @@ get_header(); ?>
                 </div>
                 <div class="topic">
                   <?php if(($index % 2) == 1){ ?>
-                    <img data-original="<?php bloginfo('template_url'); ?>/images/topicLeft.png" />
+                    <img src="<?php bloginfo('template_url'); ?>/images/topicLeft.png" />
                   <?php }else{ ?>
-                    <img data-original="<?php bloginfo('template_url'); ?>/images/topicRight.png" />
+                    <img src="<?php bloginfo('template_url'); ?>/images/topicRight.png" />
                   <?php } ?>
                   <h4><?php echo $v->name; ?></h4>
                   <p><?php echo $v->description; ?></p>
