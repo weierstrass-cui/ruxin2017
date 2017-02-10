@@ -109,7 +109,10 @@
     $("img").lazyload({
         threshold :20,
         effect: "fadeIn"
-     });  
+     });
+    $('.rd-mobilemenu_ul').find('li:last').remove();
+    $('.rd-mobilemenu_ul').find('li:last').remove();
+    $('.rd-mobilemenu_ul').find('li').eq(1).remove();
   });
 </script>
 <!-- </script> -->
