@@ -24,7 +24,7 @@ get_header(); ?>
         <?php $post = get_post(56); ?>
         <?php echo $post->post_content; ?>
       </div> -->
-      <div class="aboutInfoBox">
+      <div class="aboutInfoBox pcShow">
         <h3 class="mobTitle">团队介绍</h3>
         <ul class="teamMemberList teamLeaderList">
           <?php
