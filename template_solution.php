@@ -6,7 +6,7 @@ Template Name:解决方案
 get_header(); ?>
   <div class="mo-solution">
     <h3>免费索取策划方案</h3>
-    <div class="recorde">最新申请<span>108</span>人 累计已有<span>1588</span>位索取方案</div>
+    <div class="recorde">最新申请<span><?php echo get_post_meta('1','最新人数',true); ?></span>人 累计已有<span><?php echo get_post_meta('1','累计人数',true); ?></span>位索取方案</div>
     <div class="mo-solutionSlider">
       <ul>
         <li>郭** 133****8787 5分钟前</li>
