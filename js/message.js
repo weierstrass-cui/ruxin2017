@@ -16,16 +16,19 @@ $(function(){
         //If error found, add hightlight class to the text field
         if (author.val()=='') {
             author.addClass('error');
+            alert('请填写您的姓名');
             returnError = true;
         } else author.removeClass('error');
 
         if (phone.val()=='') {
             phone.addClass('error');
+            alert('请填写您的联系电话');
             returnError = true;
         } else phone.removeClass('error');
 
         if (company.val()=='') {
             company.addClass('error');
+            alert('请填写您的公司信息');
             returnError = true;
         } else company.removeClass('error');
 
