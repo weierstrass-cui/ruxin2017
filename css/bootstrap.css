@@ -10690,12 +10690,137 @@ footer.moShow{
   text-align: left;
   text-indent: 3rem;
 }
-
-
-
-
-
-
-
-
+.pc-solution{
+  width: 100%;
+  overflow:hidden;
+  clear: both;
+}
+.pc-solution h3{
+  width: 100%;
+  font-size: 1.6rem;
+  text-align: center;
+  background: #dcdcdc;
+  padding: 1.2rem 0;
+}
+.pc-solution-main{
+  width: 80%;
+  margin: 0 auto;
+}
+.pc-solution-main .form{
+  width: 50%;
+  float: left;display: inline-block;
+  padding: 1rem 0;
+}
+.pc-solution-main .form ul, .pc-solution-main .form li{
+  width: 100%;
+  overflow: hidden;
+}
+.pc-solution-main .form li{
+  margin-bottom: 1rem;
+  padding-left: 10%;
+}
+.pc-solution-main .form label{
+  /*width: 20%;*/
+  /*text-align: right;*/
+  float: left;
+  display: inline-block;
+  margin-right: 5%;
+  height: 2rem;
+  line-height: 2rem;
+  color: #313131;
+}
+.pc-solution-main .form .text{
+  width: 60%;
+  float: left;
+  display: inline-block;
+  margin-right: 1%;
+  height: 2rem;
+  border-radius: 5px;
+  border: 1px solid #313131;
+  padding: 0 5px;
+}
+.pc-solution-main .form li:last-child label{
+  height: 6rem;
+  line-height: 6rem;
+}
+.pc-solution-main .form li.require:after{
+  content: '*';
+  float: left;
+  color: #ea8755;
+  display: inline-block;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1.4rem;
+}
+.pc-solution-main .form textarea{
+  height: 6rem;
+  width: 60%;
+  float: left;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #313131;
+  padding: 0 5px;
+  resize: none;
+}
+.pc-solution-main .solutionList{
+  width: 50%;
+  float: left;
+  display: inline-block;
+  padding: 1rem 0;
+}
+.pc-solution-main .solutionList li{
+  height: 26px;
+  line-height: 26px;
+  text-align: left;
+  text-indent: 4rem;
+}
+.pc-solution-main .form .recorde{
+  color: #313131;
+  text-indent: 3.5rem;
+  margin-bottom: 1rem;
+}
+.pc-solution-main .solutionList .recorde{
+  color: #313131;
+  text-indent: 4rem;
+  margin-bottom: 1rem;
+}
+.pc-solution-main .solutionList .recorde span{
+  color: #ea8755;
+}
+.pc-solution-phone{
+  color: #ea8755;
+  font-size: 1.6rem;
+  margin-left: 10%;
+  text-align: center;
+  width: 50%;
+  padding: 1rem 0 0;
+}
+.pc-solution .btns{
+  width: 100%;
+  float: none;
+}
+.pc-solution .btns{
+  width: 100%;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+.pc-solution .btns .submit{
+  width: 8rem;
+  height: 3rem;
+  border-radius: 5px;
+  border:0 none;
+  background: #ea8755;
+  color: #fff;
+  margin-right: 15%;
+  font-size: 1.4rem;
+}
+.pc-solution .btns .reset{
+  width: 8rem;
+  height: 3rem;
+  border-radius: 5px;
+  border:0 none;
+  background: #9fa0a0;
+  color: #dcdcdc;
+  font-size: 1.4rem;
+}
 

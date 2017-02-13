@@ -85,38 +85,91 @@ get_header(); ?>
             </div>
             <div id="theImages"></div>
         </div>
+        <div class="pc-solution">
+            <form method="post" action="#" onsubmit="return false;">
+                <h3>免费请专家帮您定制策划营销方案，精准定位校园市场</h3>
+                <div class="pc-solution-main">
+                    <div class="form">
+                        <ul>
+                            <li class="">立即预约，请专家免费提供方案</li>
+                            <li class="require">
+                                <label for="name">姓 名</label>
+                                <input type="text" name="author" class="text" id="name" />
+                            </li>
+                            <li class="require">
+                                <label for="phone">手 机</label>
+                                <input type="text" name="phone" class="text" id="phone" />
+                            </li>
+                            <li class="require">
+                                <label for="company">公 司</label>
+                                <input type="text" name="company" class="text" id="company" />
+                            </li>
+                            <li>
+                                <label>备 注</label>
+                                <textarea name="message"></textarea>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="solutionList">
+                        <div class="recorde">最新申请<span>108</span>人 累计已有<span>1588</span>位索取方案</div>
+                        <div class="pc-solutionSlider">
+                          <ul>
+                            <li>郭** 133****8787 5分钟前</li>
+                            <li>王** 134****9082 13分钟前</li>
+                            <li>李** 137****4988 36分钟前</li>
+                            <li>张** 139****6721 40分钟前</li>
+                            <li>黄** 136****9582 52分钟前</li>
+                            <li>钱** 139****4781 1小时前</li>
+                            <li>朱** 138****9313 1小时前</li>
+                          </ul>
+                        </div>
+                        <div class="pc-solution-phone">
+                            专家咨询热线<br />400-820-2083
+                        </div>
+                    </div>
+                </div>
+                <div class="btns">
+                    <input type="hidden" name="comment_post_ID" value="1">
+                    <input type="hidden" name="comment_parent" value="0">
+                    <input type="button" class="submit" id="submit" value="提交" />
+                    <input type="reset" class="reset" value="重置" />
+                </div>
+            </form>
+        </div>
         <script type="text/javascript">
             $(function(){
-                $('.galleryNav').find('li').bind('click', function(){
-                    if( $(this).find('.blogList').find('a').length ){
-                        $(this).find('.blogList').slideDown();
-                    }
-                });
-                if( $('#theImages').is(':hidden') ){
-                    if( $('#thePost').find('img').length ){
-                        $('#thePost').find('img').each(function(){
-                            var src = $(this).attr('src').replace(/^\/ruxin2017/,'');
-                            var div = $('<div class="swiper-slide" data-slide-bg="<?php bloginfo('home'); ?>' + src + '"></div>').appendTo('#theImagesForMob .swiper-wrapper');
-                            $(this).remove();
-                        });
+                if( $('.pcShow').is(':visible') ){
+                    $('.galleryNav').find('li').bind('click', function(){
+                        if( $(this).find('.blogList').find('a').length ){
+                            $(this).find('.blogList').slideDown();
+                        }
+                    });
+                    if( $('#theImages').is(':hidden') ){
+                        if( $('#thePost').find('img').length ){
+                            $('#thePost').find('img').each(function(){
+                                var src = $(this).attr('src').replace(/^\/ruxin2017/,'');
+                                var div = $('<div class="swiper-slide" data-slide-bg="<?php bloginfo('home'); ?>' + src + '"></div>').appendTo('#theImagesForMob .swiper-wrapper');
+                                $(this).remove();
+                            });
+                        }else{
+                            $('#theImagesForMob').hide();
+                        }
                     }else{
-                        $('#theImagesForMob').hide();
+                        if($('#thePost').find('img').length){
+                            $('#thePost').find('img').each(function(){
+                                var div = $('<div></div>').appendTo('#theImages');
+                                $(this).appendTo(div);
+                            });
+                        }else{
+                            $('#theImages').hide();
+                        }
                     }
-                }else{
-                    if($('#thePost').find('img').length){
-                        $('#thePost').find('img').each(function(){
-                            var div = $('<div></div>').appendTo('#theImages');
-                            $(this).appendTo(div);
-                        });
-                    }else{
-                        $('#theImages').hide();
-                    }
-                }
-                $('#thePost').find('p').find('br').remove();
-                $('.galleryNav').height($('.galleryInfo').height() + 100);
-                setTimeout(function(){
+                    $('#thePost').find('p').find('br').remove();
                     $('.galleryNav').height($('.galleryInfo').height() + 100);
-                }, 3000);
+                    setTimeout(function(){
+                        $('.galleryNav').height($('.galleryInfo').height() + 100);
+                    }, 3000);
+                }
             });
         </script>
     </div>
