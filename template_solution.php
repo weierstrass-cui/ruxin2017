@@ -7,6 +7,17 @@ get_header(); ?>
   <div class="mo-solution">
     <h3>免费索取策划方案</h3>
     <div class="recorde">最新申请<span>108</span>人 累计已有<span>1588</span>位索取方案</div>
+    <div class="mo-solutionSlider">
+      <ul>
+        <li>郭** 133****8787 5分钟前</li>
+        <li>王** 134****9082 13分钟前</li>
+        <li>李** 137****4988 36分钟前</li>
+        <li>张** 139****6721 40分钟前</li>
+        <li>黄** 136****9582 52分钟前</li>
+        <li>钱** 139****4781 1小时前</li>
+        <li>朱** 138****9313 1小时前</li>
+      </ul>
+    </div>
     <form method="post" action="#" onsubmit="return false;">
       <div class="form">
           <ul>
@@ -35,5 +46,16 @@ get_header(); ?>
         <input type="reset" class="reset" value="重置" />
       </div>
     </form>
+    <script type="text/javascript">
+      $(function(){
+        setInterval(function(){
+          var ul = $('.mo-solutionSlider').find('ul');
+          ul.animate({'marginTop': '-30px'}, function(){
+            ul.find('li:first').appendTo(ul);
+            ul.css({'marginTop': 0});
+          });
+        }, 3000);
+      });
+    </script>
   </div>
 <?php get_footer(); ?>

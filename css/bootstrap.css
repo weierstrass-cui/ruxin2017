@@ -10676,8 +10676,20 @@ footer.moShow{
   background: #fff;
   color: #9fa0a0;
 }
-
-
+.mo-solutionSlider{
+  background: url(../images/laba.png) no-repeat 1rem center #fff;
+  width: 90%;
+  margin: 1rem auto;
+  border-radius: 10px;
+  height: 30px;
+  overflow: hidden;
+}
+.mo-solutionSlider li{
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+  text-indent: 3rem;
+}
 
 
 
