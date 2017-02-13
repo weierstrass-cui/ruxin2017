@@ -10875,3 +10875,7 @@ footer.moShow{
   line-height: 2rem;
   margin: 1rem auto;
 }
+.mo-categroy-list ul li.active a{
+  background: #ea8755;
+  color: #fff;
+}

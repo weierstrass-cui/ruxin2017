@@ -194,11 +194,12 @@ get_header(); ?>
         <a href="javascript://" class="mo-changeCategory"></a>
         <div class="mo-categroy-list">
             <ul>
-                <li><a href="<?php bloginfo('home'); ?>/gallery">最新</a></li>
+
+                <li <?php if($_GET['mocat'] == ''){ echo ' class="active"';} ?>><a href="<?php bloginfo('home'); ?>/gallery">最新</a></li>
                 <?php  $categorys = getchild(4); ?>
                 <?php if( $categorys ): ?>
                   <?php foreach( $categorys as $index => $item ): ?>
-                    <li>
+                    <li <?php if($_GET['mocat'] == $item->term_id){ echo ' class="active"';} ?>>
                         <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'mocat='.$item->term_id; ?>"><?php echo $item->cat_name ?></a>
                     </li>
                   <?php endforeach; ?>
