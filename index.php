@@ -172,7 +172,11 @@ get_header(); ?>
             <?php  $categorys = get_posts("category=4&numberposts=4"); ?>
             <?php if( $categorys ):?>
               <?php foreach( $categorys as $index => $post ): ?>
-                <div class="swiper-slide" data-slide-bg="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>">
+                <?php if( get_post_meta($post->ID,'手机首页图',true) ){ ?>
+                  <div class="swiper-slide" data-slide-bg="<?php echo get_post_meta($post->ID,'手机首页图',true); ?>">
+                <?php }else{ ?>
+                  <div class="swiper-slide" data-slide-bg="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>">
+                <?php } ?>
                   <span></span>
                   <p><a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'post='.$post->ID ?>">了解详情</a></p>
                 </div>

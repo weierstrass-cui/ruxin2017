@@ -194,7 +194,6 @@ get_header(); ?>
         <a href="javascript://" class="mo-changeCategory"></a>
         <div class="mo-categroy-list">
             <ul>
-
                 <li <?php if($_GET['mocat'] == ''){ echo ' class="active"';} ?>><a href="<?php bloginfo('home'); ?>/gallery">最新</a></li>
                 <?php  $categorys = getchild(4); ?>
                 <?php if( $categorys ): ?>

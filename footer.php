@@ -95,7 +95,7 @@
   <div id="footerBar" class="moShow">
     <a href="<?php bloginfo('home'); ?>/solution/"><img src="<?php bloginfo('template_url'); ?>/images/footerBar1.png" /></a>
     <a href="javascript://"><img src="<?php bloginfo('template_url'); ?>/images/footerBar2.png" /></a>
-    <a href="callto:4008202083"><img src="<?php bloginfo('template_url'); ?>/images/footerBar3.png" /></a>
+    <a href="tel:4008202083"><img src="<?php bloginfo('template_url'); ?>/images/footerBar3.png" /></a>
   </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -117,5 +117,6 @@
 </script>
 <!-- </script> -->
 <?php wp_footer(); ?>
+<script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fd46e1d2edd7fe75544a0b7ef2e41b730' type='text/javascript'%3E%3C/script%3E")) </script>
 </body>
 </html>

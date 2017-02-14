@@ -18,18 +18,21 @@ $(function(){
             author.addClass('error');
             alert('请填写您的姓名');
             returnError = true;
+            return false;
         } else author.removeClass('error');
 
         if (phone.val()=='') {
             phone.addClass('error');
             alert('请填写您的联系电话');
             returnError = true;
+            return false;
         } else phone.removeClass('error');
 
         if (company.val()=='') {
             company.addClass('error');
             alert('请填写您的公司信息');
             returnError = true;
+            return false;
         } else company.removeClass('error');
 
         // Highlight all error fields, then quit.

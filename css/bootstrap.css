@@ -10532,6 +10532,7 @@ footer.moShow{
   height: 100vh;
   overflow: hidden;
   position: relative;
+  border-bottom: 5px solid #F07D00;
 }
 .oneAnli .anliMask{
   background: rgba(0,0,0,0.3);
@@ -10718,6 +10719,7 @@ footer.moShow{
 .pc-solution-main .form li{
   margin-bottom: 1rem;
   padding-left: 10%;
+  text-align: left;
 }
 .pc-solution-main .form label{
   /*width: 20%;*/
@@ -10783,6 +10785,7 @@ footer.moShow{
   color: #313131;
   text-indent: 4rem;
   margin-bottom: 1rem;
+  text-align: left;
 }
 .pc-solution-main .solutionList .recorde span{
   color: #ea8755;
