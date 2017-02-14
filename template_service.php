@@ -85,7 +85,7 @@ get_header(); ?>
     </section>
     <!-- END Wedding -->
     <img data-original="<?php bloginfo('template_url'); ?>/images/gezi.jpg" />
-    <div class="pc-solution">
+    <div class="pc-solution pcShow">
         <form method="post" action="#" onsubmit="return false;">
             <h3>免费请专家帮您定制策划营销方案，精准定位校园市场</h3>
             <div class="pc-solution-main">
