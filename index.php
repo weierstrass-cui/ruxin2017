@@ -192,7 +192,7 @@ get_header(); ?>
     <section class="well-4 well-4--inset-1 pcShow">
       <div class="container container-wide">
         <h1>如 心 产 品</h1>
-        <div class="divider divider-default">一对一定制服务，展现品牌最大价值，满足并超越客户的期望 </div>
+        <div class="divider divider-default">打造多样校园文化，研究大学生点滴生活，认真了解年轻人</div>
         <div class="row ruxinProductsBox">
             <div class="ruxinOneProduct">
               <img data-original="<?php bloginfo('template_url'); ?>/images/logo_sjz.jpg" />
