@@ -94,7 +94,7 @@
   </footer>
   <div id="footerBar" class="moShow">
     <a href="<?php bloginfo('home'); ?>/solution/"><img src="<?php bloginfo('template_url'); ?>/images/footerBar1.png" /></a>
-    <a href="javascript://"><img src="<?php bloginfo('template_url'); ?>/images/footerBar2.png" /></a>
+    <a href="http://p.qiao.baidu.com//im/index?siteid=3092275&ucid=6228450" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/footerBar2.png" /></a>
     <a href="tel:4008202083"><img src="<?php bloginfo('template_url'); ?>/images/footerBar3.png" /></a>
   </div>
 </div>
