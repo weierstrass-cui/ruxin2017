@@ -112,7 +112,7 @@ get_header(); ?>
                     </div>
                     <div class="solutionList">
                         <div class="recorde">最新申请<span><?php echo get_post_meta('1','最新人数',true); ?></span>人 累计已有<span><?php echo get_post_meta('1','累计人数',true); ?></span>位索取方案</div>
-                        <div class="pc-solutionSlider">
+                        <div class="pc-solutionSlider" style="height: 156px;overflow: hidden;">
                           <ul>
                               <li>郭** 133****8787 5分钟前</li>
                               <li>宋** 135****7982 6分钟前</li>
