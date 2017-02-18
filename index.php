@@ -340,12 +340,17 @@ get_header(); ?>
                   <div class="pc-solutionSlider">
                     <ul>
                       <li>郭** 133****8787 5分钟前</li>
+                      <li>宋** 135****7982 6分钟前</li>
                       <li>王** 134****9082 13分钟前</li>
                       <li>李** 137****4988 36分钟前</li>
                       <li>张** 139****6721 40分钟前</li>
                       <li>黄** 136****9582 52分钟前</li>
                       <li>钱** 139****4781 1小时前</li>
                       <li>朱** 138****9313 1小时前</li>
+                      <li>马** 132****4482 1小时前</li>
+                      <li>沈** 137****9121 1小时前</li>
+                      <li>张** 130****9303 1小时前</li>
+                      <li>毛** 136****9654 1小时前</li>
                     </ul>
                   </div>
                   <div class="pc-solution-phone">
@@ -360,5 +365,16 @@ get_header(); ?>
               <input type="reset" class="reset" value="重置" />
           </div>
       </form>
+      <script type="text/javascript">
+        $(function(){
+          var pcSolutionSlider = $('.pc-solutionSlider').find('ul');
+          setInterval(function(){
+            pcSolutionSlider.animate({'marginTop': '-26px'}, function(){
+              pcSolutionSlider.find('li:first').appendTo(pcSolutionSlider);
+              pcSolutionSlider.css({'marginTop': 0});
+            });
+          }, 3000);
+        });
+      </script>
   </div>
 <?php get_footer(); ?>
