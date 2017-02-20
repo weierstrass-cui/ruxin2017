@@ -115,6 +115,21 @@
     $('.rd-mobilemenu_ul').find('li').eq(1).remove();
   });
 </script>
+<script type="text/javascript">
+  $(function(){
+    var pcSolutionSlider = $('.pc-solutionSlider').find('ul');
+    if( pcSolutionSlider.length && pcSolutionSlider.is(':visible') ){
+      setInterval(function(){
+        var mgTop = parseInt(pcSolutionSlider.css('marginTop'));
+        if( mgTop == -26 ){
+          mgTop = 0;
+          pcSolutionSlider.css({'marginTop': 0}).find('li:first').appendTo(pcSolutionSlider);
+        }
+        pcSolutionSlider.css({'marginTop': (mgTop - 1) + 'px'});
+      }, 100);
+    }
+  });
+</script>
 <!-- </script> -->
 <?php wp_footer(); ?>
 <script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fd46e1d2edd7fe75544a0b7ef2e41b730' type='text/javascript'%3E%3C/script%3E")) </script>

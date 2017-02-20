@@ -140,17 +140,6 @@ get_header(); ?>
                     <input type="reset" class="reset" value="重置" />
                 </div>
             </form>
-            <script type="text/javascript">
-                $(function(){
-                  var pcSolutionSlider = $('.pc-solutionSlider').find('ul');
-                  setInterval(function(){
-                    pcSolutionSlider.animate({'marginTop': '-26px'}, function(){
-                      pcSolutionSlider.find('li:first').appendTo(pcSolutionSlider);
-                      pcSolutionSlider.css({'marginTop': 0});
-                    });
-                  }, 3000);
-                });
-              </script>
         </div>
         <script type="text/javascript">
             $(function(){
