@@ -126,7 +126,7 @@
           pcSolutionSlider.css({'marginTop': 0}).find('li:first').appendTo(pcSolutionSlider);
         }
         pcSolutionSlider.css({'marginTop': (mgTop - 1) + 'px'});
-      }, 100);
+      }, 80);
     }
   });
 </script>
