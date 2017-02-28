@@ -37,7 +37,7 @@
               <br />
               <dl>
                 <dt>联系电话：</dt>
-                <dd><a href="callto:4008202083"> 400-820-2083</a></dd>
+                <dd><a href="tel:4006226975"> 400-622-6975</a></dd>
               </dl>
               <dl>
                 <dt>Email: </dt>
@@ -75,7 +75,7 @@
               <br />
               <dl>
                 <dt>联系电话：</dt>
-                <dd><a href="callto:4008202083"> 400-820-2083</a></dd>
+                <dd><a href="tel:4006226975"> 400-622-6975</a></dd>
               </dl>
               <dl>
                 <dt>Email: </dt>
@@ -95,7 +95,7 @@
   <div id="footerBar" class="moShow">
     <a href="<?php bloginfo('home'); ?>/solution/"><img src="<?php bloginfo('template_url'); ?>/images/footerBar1.png" /></a>
     <a href="http://p.qiao.baidu.com//im/index?siteid=3092275&ucid=6228450" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/footerBar2.png" /></a>
-    <a href="tel:4008202083"><img src="<?php bloginfo('template_url'); ?>/images/footerBar3.png" /></a>
+    <a href="tel:4006226975"><img src="<?php bloginfo('template_url'); ?>/images/footerBar3.png" /></a>
   </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
