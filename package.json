@@ -1,0 +1,8 @@
+{
+	"name": "ruxin",
+	"version": "0.1.0",
+	"devDependencies": {
+		"grunt": "latest",
+		"grunt-contrib-imagemin": "latest"
+	}
+}
