@@ -35,14 +35,14 @@ get_header(); ?>
             <?php foreach( $firstrow as $index => $v ): ?>
               <li>
                 <div class="face">
-                  <img class="face" alt="<?php echo $v->name; ?>" src="<?php echo $v->image_url;?>" />
+                  <img class="face" alt="<?php echo $v->name; ?>" data-original="<?php echo $v->image_url;?>" />
                   <?php echo $v->logo_url; ?>
                 </div>
                 <div class="topic">
                   <?php if(($index % 2) == 1){ ?>
-                    <img src="<?php bloginfo('template_url'); ?>/images/topicLeft.png" />
+                    <img data-original="<?php bloginfo('template_url'); ?>/images/topicLeft.png" />
                   <?php }else{ ?>
-                    <img src="<?php bloginfo('template_url'); ?>/images/topicRight.png" />
+                    <img data-original="<?php bloginfo('template_url'); ?>/images/topicRight.png" />
                   <?php } ?>
                   <h4><?php echo $v->name; ?></h4>
                   <p><?php echo $v->description; ?></p>
@@ -61,7 +61,7 @@ get_header(); ?>
             <?php if( $firstrow ):?>
               <?php foreach( $firstrow as $index => $v ): ?>
                 <li>
-                  <img class="face" alt="<?php echo $v->name; ?>" src="<?php echo $v->image_url;?>" />
+                  <img class="face" alt="<?php echo $v->name; ?>" data-original="<?php echo $v->image_url;?>" />
                   <div style="margin-top:1.3rem;">
                     <h4><?php echo $v->name; ?></h4>
                     <p><?php echo $v->description; ?></p>
@@ -85,7 +85,7 @@ get_header(); ?>
             <?php foreach( $firstrow as $index => $v ): ?>
               <li>
                 <a href="javascript://" title="<?php echo $v->name; ?>">
-                  <img alt="<?php echo $v->description; ?>" src="<?php echo $v->image_url;?>" />
+                  <img alt="<?php echo $v->description; ?>" data-original="<?php echo $v->image_url;?>" />
                 </a>
               </li>
             <?php endforeach; ?>
@@ -106,7 +106,7 @@ get_header(); ?>
             <?php foreach( $firstrow as $index => $v ): ?>
               <li>
                 <a href="javascript://" title="<?php echo $v->name; ?>">
-                  <img alt="<?php echo $v->description; ?>" src="<?php echo $v->image_url;?>" />
+                  <img alt="<?php echo $v->description; ?>" data-original="<?php echo $v->image_url;?>" />
                 </a>
               </li>
             <?php endforeach; ?>

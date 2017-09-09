@@ -184,18 +184,10 @@ get_header(); ?>
   </style>
     <section class="section-85 section-xl-top-182 section-xl-bottom-164">
           <div class="shell text-left">
-            <!-- <h4 class="text-nowrap heading-divider"><?php echo $post->post_title; ?></h4> -->
             <div class="post-blog">
-              <!-- <img alt="" width="1171" height="475" src="..." class="img-responsive"> -->
               <h4 class="heading-divider">
                 <a href="javascript://"><?php echo $post->post_title; ?></a>
               </h4>
-              <!-- <span class="post-blog-comments-count"><?php echo $post->comment_count; ?></span> -->
-              <!-- <div class="post-blog-meta text-primary h6">
-                &nbsp;
-                作者 <a href='blog.html'><?php echo get_the_author_meta('user_nicename', $post->post_author); ?></a>, 
-                <?php echo date('d/m/Y',strtotime($post->post_date)); ?>
-              </div> -->
               <div class="thumbnailImages"> <?php the_post_thumbnail(); ?></div>
               <p><?php echo $post->post_content; ?></p>
             </div>

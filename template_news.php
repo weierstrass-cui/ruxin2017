@@ -22,7 +22,6 @@ get_header(); ?>
                   <div class="media">
                     <div class="media-left">
                       <a href="<?php bloginfo('home'); ?>/blog_single_post?id=<?php echo $post->ID; ?>" class="thumb thumb--mod">
-                        <?php // the_post_thumbnail(); ?>
                         <img data-original="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" width="270" height="135" alt="">
                         <span class="thumb__overlay"></span>
                       </a>
