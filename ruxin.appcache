@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#v201709092142
+#v20170909213146
 #需要缓存的文件
 js/jquery.js
 js/jquery-migrate-1.2.1.min.js
@@ -29,3 +29,11 @@ images/logo_color.png
 images/footerBar1.png
 images/footerBar2.png
 images/footerBar3.png
+
+
+#不需要缓存的页面
+NETWORK:
+*
+
+#无法访问页面
+FALLBACK
