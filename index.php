@@ -34,7 +34,6 @@ get_header(); ?>
                       <img data-original="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" alt="<?php the_title(); ?>">
                       <span></span>
                     </div>
-                    <?php // the_post_thumbnail(); ?>
                     <h5 class="cite"><?php the_title(); ?></h5>
                     <p><?php echo get_post_meta($post->ID,'简介',true); ?></p>
                     <!-- <a href="#" class="btn btn-sm btn-danger">View More</a> -->
@@ -54,7 +53,7 @@ get_header(); ?>
         <h1>服 务 体 系</h1>
         <div class="divider divider-default white">提供优秀品牌策划、文案撰写、创意设计及全方位的活动落地执行</div>
         <div class="row text-sm-left">
-          <?php  // $categorys = getchild(3);
+          <?php 
                 $categorys = get_posts("category=3&numberposts=6");
            ?>
             <?php if( $categorys ):?>
