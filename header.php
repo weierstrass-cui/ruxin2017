@@ -84,7 +84,6 @@
 		      	  <div class="container container-wide bannerDom">
 			        <h1 class="h1 h1--mod brand white"><?php echo $v->name; ?></h1>
 			        <p class="lead white"><?php echo $v->description; ?></p>
-			        <!-- <a href="<?php echo $v->sl_url; ?>" class="btn btn-sm btn-danger">了解更多 !</a> -->
 			      </div>
 		      </div>
 		    <?php }?> 
@@ -146,7 +145,7 @@
 	            <a href="#contactUs">联系我们</a>
 	          </li>
 	          <li class="phoneCall">
-		          <img data-original="<?php bloginfo('template_url'); ?>/images/phoneCall.png" />
+		          <img src="<?php bloginfo('template_url'); ?>/images/phoneCall.png" />
 	          </li>
 	        </ul>
 	        <!-- END Navbar Nav -->
@@ -188,7 +187,7 @@
 	            <a href="#contactUs">联系我们</a>
 	          </li>
 	          <li class="phoneCall">
-		          <img data-original="<?php bloginfo('template_url'); ?>/images/phoneCall.png" />
+		          <img src="<?php bloginfo('template_url'); ?>/images/phoneCall.png" />
 	          </li>
             </ul>
             <!-- END Navbar Nav -->

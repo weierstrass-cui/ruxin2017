@@ -101,19 +101,13 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/js/message.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/tm-scripts.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/js/jquery.lazyload.min.js"></script>
 <script type="text/javascript">
   $(function(){
     $("img").lazyload();
     $('.rd-mobilemenu_ul').find('li:last').remove();
     $('.rd-mobilemenu_ul').find('li:last').remove();
     $('.rd-mobilemenu_ul').find('li').eq(1).remove();
-  });
-</script>
-<script type="text/javascript">
-  $(function(){
     var pcSolutionSlider = $('.pc-solutionSlider').find('ul');
     if( pcSolutionSlider.length && pcSolutionSlider.is(':visible') ){
       setInterval(function(){

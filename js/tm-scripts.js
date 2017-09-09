@@ -7,6 +7,7 @@ function isIE() {
   return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
 };
 
+include( __tpl__ + '/js/message.js');
 /* cookie.JS
  ========================================================*/
 include( __tpl__ + '/js/jquery.cookie.js');
@@ -14,6 +15,7 @@ include( __tpl__ + '/js/jquery.cookie.js');
 /* Easing library
  ========================================================*/
 include( __tpl__ + '/js/jquery.easing.1.3.js');
+include( __tpl__ + '/js/jquery.lazyload.min.js');
 
 
 /* Stick up menus  ========================================================*/
