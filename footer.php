@@ -47,7 +47,7 @@
           </div>
           <div class="col-sm-4" style="text-align:right;">
             <h4 class="white" style="text-align:center;width:170px;float:right;">关注我们</h4>
-            <img class="ecode" src="<?php bloginfo('template_url'); ?>/images/ecode.jpg" />
+            <img class="ecode" data-original="<?php bloginfo('template_url'); ?>/images/ecode.jpg" />
             <p>上海如心文化--大学生研究院</p>
           </div>
       </div>
@@ -93,9 +93,9 @@
     </div>
   </footer>
   <div id="footerBar" class="moShow">
-    <a href="<?php bloginfo('home'); ?>/solution/"><img src="<?php bloginfo('template_url'); ?>/images/footerBar1.png" /></a>
-    <a href="http://p.qiao.baidu.com//im/index?siteid=3092275&ucid=6228450" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/footerBar2.png" /></a>
-    <a href="tel:4006226975"><img src="<?php bloginfo('template_url'); ?>/images/footerBar3.png" /></a>
+    <a href="<?php bloginfo('home'); ?>/solution/"><img data-original="<?php bloginfo('template_url'); ?>/images/footerBar1.png" /></a>
+    <a href="http://p.qiao.baidu.com//im/index?siteid=3092275&ucid=6228450" target="_blank"><img data-original="<?php bloginfo('template_url'); ?>/images/footerBar2.png" /></a>
+    <a href="tel:4006226975"><img data-original="<?php bloginfo('template_url'); ?>/images/footerBar3.png" /></a>
   </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

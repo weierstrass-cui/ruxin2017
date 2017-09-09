@@ -67,11 +67,6 @@ get_header(); ?>
                       <div class="col-sm-4">
                 <?php } ?>
                   <div class="product">
-                    <!-- <a href="<?php bloginfo('home'); ?>/blog_single_post?id=<?php echo $post->ID; ?>" class="thumb">
-                      <?php // the_post_thumbnail(); ?>
-                      <img data-original="<?php echo $post->category_description ?>" width="370" height="278" alt="">
-                      <span class="thumb__overlay"><?php echo $post->cat_name ?></span>
-                    </a> -->
                     <a href="javascript://" class="thumb">
                       <img data-original="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" width="370" height="278" alt="">
                       <span class="thumb__overlay"><?php the_title(); ?></span>
@@ -103,7 +98,6 @@ get_header(); ?>
                 <?php } ?>
                   <?php $posts = get_posts("category=".$cate->term_id."&numberposts=1"); ?>
                   <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat='.$cate->term_id ?>" class="thumb successList">
-                    <?php // the_post_thumbnail(); ?>
                     <img data-original="<?php echo $cate->category_description ?>" alt="<?php echo $cate->cat_name ?>" />
                     <span class="thumb__overlay"><?php echo $cate->cat_name ?></a></span>
                   </a>
@@ -161,7 +155,7 @@ get_header(); ?>
                 <?php foreach( $xfzy as $index => $v ): ?>
                   <li>
                     <a href="<?php echo $v->sl_url ? $v->sl_url : 'javascript://'; ?>" target="_blank" title="<?php echo $v->name; ?>">
-                      <img alt="<?php echo $v->description; ?>" src="<?php echo $v->image_url;?>" />
+                      <img alt="<?php echo $v->description; ?>" data-original="<?php echo $v->image_url;?>" />
                     </a>
                   </li>
                 <?php endforeach; ?>
@@ -183,7 +177,7 @@ get_header(); ?>
                 <?php foreach( $hzqy as $index => $v ): ?>
                   <li>
                     <a href="<?php echo $v->sl_url ? $v->sl_url : 'javascript://'; ?>" target="_blank" title="<?php echo $v->name; ?>">
-                      <img alt="<?php echo $v->description; ?>" src="<?php echo $v->image_url;?>" />
+                      <img alt="<?php echo $v->description; ?>" data-original="<?php echo $v->image_url;?>" />
                     </a>
                   </li>
                 <?php endforeach; ?>
