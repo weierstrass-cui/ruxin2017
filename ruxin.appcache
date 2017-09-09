@@ -1,0 +1,11 @@
+CACHE MANIFEST
+#v1.0.0.0
+#需要缓存的文件
+wp-content/themes/ruxin2017/js/jquery.js
+
+#不需要缓存的页面
+NETWORK:
+*
+
+#无法访问页面
+FALLBACK
