@@ -10,8 +10,8 @@
  */
 ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> class="no-js">
-<head manifest="<?php bloginfo('template_url'); ?>/ruxin.appcache">
+<html <?php language_attributes(); ?> class="no-js" manifest="<?php bloginfo('template_url'); ?>/ruxin.appcache">
+<head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
