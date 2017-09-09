@@ -11,7 +11,7 @@
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
-<head manifest="ruxin.appcache">
+<head manifest="<?php bloginfo('template_url'); ?>/ruxin.appcache">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
