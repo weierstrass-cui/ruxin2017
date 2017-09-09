@@ -1,7 +1,7 @@
 CACHE MANIFEST
-#v1.0.0.0
+#v1.0.0.1
 #需要缓存的文件
-wp-content/themes/ruxin2017/js/jquery.js
+js/jquery.js
 
 #不需要缓存的页面
 NETWORK:
