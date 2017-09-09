@@ -106,10 +106,7 @@
 <script src="<?php bloginfo('template_url'); ?>/js/jquery.lazyload.min.js"></script>
 <script type="text/javascript">
   $(function(){
-    $("img").lazyload({
-        threshold :20,
-        effect: "fadeIn"
-     });
+    $("img").lazyload();
     $('.rd-mobilemenu_ul').find('li:last').remove();
     $('.rd-mobilemenu_ul').find('li:last').remove();
     $('.rd-mobilemenu_ul').find('li').eq(1).remove();
