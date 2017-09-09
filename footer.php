@@ -17,7 +17,7 @@
   <footer class="pcShow">
     <div class="container container-wide">
       <a href="<?php bloginfo('home'); ?>/">
-        <img data-original="<?php bloginfo('template_url'); ?>/images/logo_color.png" />
+        <img class="lazyload" data-original="<?php bloginfo('template_url'); ?>/images/logo_color.png" />
       </a>
       <div class="footBanner">
         <a href="<?php bloginfo('home'); ?>/service/">服务体系</a>|
@@ -47,7 +47,7 @@
           </div>
           <div class="col-sm-4" style="text-align:right;">
             <h4 class="white" style="text-align:center;width:170px;float:right;">关注我们</h4>
-            <img class="ecode" data-original="<?php bloginfo('template_url'); ?>/images/ecode.jpg" />
+            <img class="ecode lazyload" data-original="<?php bloginfo('template_url'); ?>/images/ecode.jpg" />
             <p>上海如心文化--大学生研究院</p>
           </div>
       </div>
@@ -62,7 +62,7 @@
   <footer class="moShow">
     <div class="container container-wide">
       <a href="<?php bloginfo('home'); ?>/">
-        <img data-original="<?php bloginfo('template_url'); ?>/images/logo_color.png" />
+        <img class="lazyload" data-original="<?php bloginfo('template_url'); ?>/images/logo_color.png" />
       </a>
       <!-- Address -->
       <div class="row text-sm-left footerInfo" id="mo-contactUs">
@@ -93,9 +93,9 @@
     </div>
   </footer>
   <div id="footerBar" class="moShow">
-    <a href="<?php bloginfo('home'); ?>/solution/"><img data-original="<?php bloginfo('template_url'); ?>/images/footerBar1.png" /></a>
-    <a href="http://p.qiao.baidu.com//im/index?siteid=3092275&ucid=6228450" target="_blank"><img data-original="<?php bloginfo('template_url'); ?>/images/footerBar2.png" /></a>
-    <a href="tel:4006226975"><img data-original="<?php bloginfo('template_url'); ?>/images/footerBar3.png" /></a>
+    <a href="<?php bloginfo('home'); ?>/solution/"><img class="lazyload" data-original="<?php bloginfo('template_url'); ?>/images/footerBar1.png" /></a>
+    <a href="http://p.qiao.baidu.com//im/index?siteid=3092275&ucid=6228450" target="_blank"><img class="lazyload" data-original="<?php bloginfo('template_url'); ?>/images/footerBar2.png" /></a>
+    <a href="tel:4006226975"><img class="lazyload" data-original="<?php bloginfo('template_url'); ?>/images/footerBar3.png" /></a>
   </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -106,7 +106,7 @@
 <script src="<?php bloginfo('template_url'); ?>/js/jquery.lazyload.min.js"></script>
 <script type="text/javascript">
   $(function(){
-    $("img").lazyload();
+    $("img.lazyload").lazyload();
     $('.rd-mobilemenu_ul').find('li:last').remove();
     $('.rd-mobilemenu_ul').find('li:last').remove();
     $('.rd-mobilemenu_ul').find('li').eq(1).remove();
