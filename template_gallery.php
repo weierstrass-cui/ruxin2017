@@ -80,6 +80,10 @@ get_header(); ?>
                 <div class="swiper-button-prev material-icons-chevron_left"></div>
                 <div class="swiper-button-next material-icons-chevron_right"></div>
             </div>
+            <div style="width:100%;font-size:1.4rem;margin:0 auto 2rem;line-height:1.5rem;">
+                <div>策划/设计师：</div>
+                <div style="text-indent:3rem;"><?php echo get_post_meta($postID,'理念',true); ?></div>
+            </div>
             <div id="thePost" class="thePost">
                 <?php echo $this_post->post_content; ?>
             </div>
