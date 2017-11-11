@@ -20,7 +20,7 @@ get_header(); ?>
       <!-- <a href="#contacts" data-waypoint-to="#contacts" class="locate fa-map-marker"><span>找到我们</span></a> -->
       <div class="well-1 container container-wide">
         <h1>年均接触年轻派人群</h1>
-        <div class="divider divider-default" style="font-size:40px;margin-top:0;">线下20000+，线上6000000+</div>
+        <div class="divider divider-default" style="font-size:40px;margin-top:2rem;">线下20000+，线上6000000+</div>
         <div class="divider divider-default">全面渗透大学生市场、多维度传播、全方位曝光，实现强力转化</div>
         <!-- Owl Carousel -->
         <div class="owl-carousel">
