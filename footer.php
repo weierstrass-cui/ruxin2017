@@ -25,7 +25,7 @@
         <a href="<?php bloginfo('home'); ?>/gallery?cat=6">成功案例</a>|
         <a href="<?php bloginfo('home'); ?>/about/">关于我们</a>
       </div> -->
-      <div style="font-size:1.6rem;text-align:center;color:#f07e3c;">
+      <div style="font-size:2rem;text-align:center;color:#f90;margin-top:1rem;">
         年轻派品效大师<br />只做年轻人喜欢的营销策划方案
       </div>
 
