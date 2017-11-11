@@ -19,7 +19,8 @@ get_header(); ?>
     <section class="bg-image bg-fixed bg-image-1 bg-overlay-light pcShow">
       <!-- <a href="#contacts" data-waypoint-to="#contacts" class="locate fa-map-marker"><span>找到我们</span></a> -->
       <div class="well-1 container container-wide">
-        <h1>平 台 资 源</h1>
+        <h1>年均接触年轻派人群</h1>
+        <div class="divider divider-default" style="font-size:40px;margin-top:0;">线下20000+，线上6000000+</div>
         <div class="divider divider-default">全面渗透大学生市场、多维度传播、全方位曝光，实现强力转化</div>
         <!-- Owl Carousel -->
         <div class="owl-carousel">
@@ -68,7 +69,7 @@ get_header(); ?>
                   <div class="product">
                     <a href="javascript://" class="thumb">
                       <img data-original="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" width="370" height="278" alt="">
-                      <span class="thumb__overlay"><?php the_title(); ?></span>
+                      <span class="thumb__overlay" style="color:#f90;text-shadow: 5px 2px 6px rgba(0,0,0,0.8);"><?php the_title(); ?></span>
                     </a>
                   </div>
                 </div>
