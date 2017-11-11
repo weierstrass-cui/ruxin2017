@@ -22,7 +22,7 @@
       <!-- <div class="footBanner">
         <a href="<?php bloginfo('home'); ?>/service/">服务体系</a>|
         <a href="javascript://">优势资源</a>|
-        <a href="<?php bloginfo('home'); ?>/gallery?cat=6">成功案例</a>|
+        <a href="<?php bloginfo('home'); ?>/gallery?cat=20">成功案例</a>|
         <a href="<?php bloginfo('home'); ?>/about/">关于我们</a>
       </div> -->
       <div style="font-size:2rem;text-align:center;color:#f90;margin-top:1rem;">
