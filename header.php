@@ -13,7 +13,7 @@ manifest="/wp-content/themes/ruxin2017/ruxin.appcache"
 */
 ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> class="no-js" >
+<html <?php language_attributes(); ?> class="no-js" manifest="/wp-content/themes/ruxin2017/ruxin.appcache">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
