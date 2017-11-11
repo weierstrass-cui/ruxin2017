@@ -8,9 +8,12 @@
  * @subpackage 如心
  * @since 如心2017
  */
+/*
+manifest="/wp-content/themes/ruxin2017/ruxin.appcache"
+*/
 ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> class="no-js" manifest="/wp-content/themes/ruxin2017/ruxin.appcache">
+<html <?php language_attributes(); ?> class="no-js" >
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">

@@ -19,11 +19,14 @@
       <a href="<?php bloginfo('home'); ?>/">
         <img class="lazyload" data-original="<?php bloginfo('template_url'); ?>/images/logo_color.png" />
       </a>
-      <div class="footBanner">
+      <!-- <div class="footBanner">
         <a href="<?php bloginfo('home'); ?>/service/">服务体系</a>|
         <a href="javascript://">优势资源</a>|
         <a href="<?php bloginfo('home'); ?>/gallery?cat=6">成功案例</a>|
         <a href="<?php bloginfo('home'); ?>/about/">关于我们</a>
+      </div> -->
+      <div style="font-size:1.6rem;text-align:center;color:#f07e3c;">
+        年轻派品效大师<br />只做年轻人喜欢的营销策划方案
       </div>
 
       <!-- Address -->

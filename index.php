@@ -142,28 +142,6 @@ get_header(); ?>
     <!-- END 如心产品-->
     <section class="well-3 bg-image bg-fixed bg-image-2 friendlyLinks">
       <div class="container container-wide">
-        <h1 class="white">校 方 资 源</h1>
-        <div class="gallerySlider">
-          <div class="galleryMain">
-            <ul>
-              <?php 
-                global $wpdb; $query = "SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = 3 order by ordering";
-                  $xfzy=$wpdb->get_results($query);
-              ?>
-              <?php if( $xfzy ):?>
-                <?php foreach( $xfzy as $index => $v ): ?>
-                  <li>
-                    <a href="<?php echo $v->sl_url ? $v->sl_url : 'javascript://'; ?>" target="_blank" title="<?php echo $v->name; ?>">
-                      <img alt="<?php echo $v->description; ?>" data-original="<?php echo $v->image_url;?>" />
-                    </a>
-                  </li>
-                <?php endforeach; ?>
-              <?php endif ?>
-            </ul>
-          </div>
-          <a href="javascript://" class="lastScreen"></a>
-          <a href="javascript://" class="nextScreen"></a>
-        </div>
         <h1 class="white">合 作 企 业</h1>
         <div class="gallerySlider">
           <div class="galleryMain">
