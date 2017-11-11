@@ -152,7 +152,7 @@ get_header(); ?>
               ?>
               <?php if( $hzqy ):?>
                 <?php foreach( $hzqy as $index => $v ): ?>
-                  <li>
+                  <li style="width:100px;height:100px;margin-right:10px">
                     <a href="<?php echo $v->sl_url ? $v->sl_url : 'javascript://'; ?>" target="_blank" title="<?php echo $v->name; ?>">
                       <img alt="<?php echo $v->description; ?>" data-original="<?php echo $v->image_url;?>" />
                     </a>
@@ -161,16 +161,16 @@ get_header(); ?>
               <?php endif ?>
             </ul>
           </div>
-          <a href="javascript://" class="lastScreen"></a>
-          <a href="javascript://" class="nextScreen"></a>
+          <a href="javascript://" style="height:100px;line-height:100px;" class="lastScreen"></a>
+          <a href="javascript://" style="height:100px;line-height:100px;" class="nextScreen"></a>
         </div>
       </div>
       <script type="text/javascript">
         $(function(){
           $('.galleryMain').each(function(){
             var _this = $(this), count = _this.find('li').length;
-            _this.find('ul').width( count * 167);
-            if( (count * 167) > _this.width() ){
+            _this.find('ul').width( count * 110);
+            if( (count * 110) > _this.width() ){
               _this.siblings('.lastScreen').bind('click', function(){
                 if( _this.hasClass('isMoving') ){
                   return false;
@@ -178,7 +178,7 @@ get_header(); ?>
                 _this.addClass('isMoving');
                 var ul = _this.find('ul');
                 ul.find('li:last').prependTo(ul);
-                ul.css({'left': '-167px'});
+                ul.css({'left': '-110px'});
                 ul.animate({'left': '0px'}, function(){
                   _this.removeClass('isMoving');
                 });
@@ -189,7 +189,7 @@ get_header(); ?>
                 }
                 _this.addClass('isMoving');
                 var ul = _this.find('ul');
-                ul.animate({'left': '-167px'}, function(){
+                ul.animate({'left': '-110px'}, function(){
                   ul.find('li:first').appendTo(ul);
                   ul.css({'left': '0px'});
                   _this.removeClass('isMoving');
