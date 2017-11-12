@@ -82,23 +82,23 @@ get_header(); ?>
     <section class="well-4 well-4--inset-1 pcShow">
       <div class="container container-wide">
         <h1>如 心 服 务</h1>
-        <div class="row ruxinProductsBox">
-            <div class="ruxinOneProduct">
-              <img data-original="<?php bloginfo('template_url'); ?>/images/xl.png" />
+        <div class="row ruxinProductsBox" style="margin-top:5rem;">
+            <div class="ruxinOneProduct rotateYImg" style="width:310px;margin-right:20px;height:265px;">
+              <img style="width:100px;height:100px;margin-top:1rem;" data-original="<?php bloginfo('template_url'); ?>/images/xl.png" />
               <div class="ruxinProducts white">
                 <h5 class="white">简历值得信赖和依赖的客户关系</h5>
                 “尊重”客户意见<br />“第一时间”相应客户需求<br />“保质、保量、按时”客户交办的各项任务
               </div>
             </div>
-            <div class="ruxinOneProduct">
-              <img data-original="<?php bloginfo('template_url'); ?>/images/zy.png" />
+            <div class="ruxinOneProduct rotateYImg" style="width:310px;margin-right:20px;height:265px;">
+              <img style="width:100px;height:100px;margin-top:1rem;" data-original="<?php bloginfo('template_url'); ?>/images/zy.png" />
               <div class="ruxinProducts white">
                 <h5 class="white">品质卓越</h5>
                 创作品质“持续稳定”<br />创作品质“经常卓越”
               </div>
             </div>
-            <div class="ruxinOneProduct">
-              <img data-original="<?php bloginfo('template_url'); ?>/images/cx.png" />
+            <div class="ruxinOneProduct rotateYImg" style="width:310px;margin-right:20px;height:265px;">
+              <img style="width:100px;height:100px;margin-top:1rem;" data-original="<?php bloginfo('template_url'); ?>/images/cx.png" />
               <div class="ruxinProducts white">
                 <h5 class="white">不断创新</h5>
                 永远不断地向客户<br />提出“具有新鲜创意的解决方案”
