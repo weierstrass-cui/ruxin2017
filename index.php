@@ -127,9 +127,12 @@ get_header(); ?>
                       <div class="col-sm-3">
                 <?php } ?>
                   <div class="product">
-                    <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat=21&post='.$post->ID ?>" class="thumb">
-                      <img data-original="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" width="370" height="278" alt="">
-                      <span class="thumb__overlay" style="color:#f90;text-shadow: 5px 2px 6px rgba(0,0,0,0.8);"><?php the_title(); ?></span>
+                    <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat=21&post='.$post->ID ?>" class="thumb demoList">
+                      <img data-original="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" width="250" height="200" alt="">
+                      <span class="demoShow" style="color:#f90;">
+                        <b><?php the_title(); ?></b><br />
+                        <?php echo get_post_meta($post->ID,'理念',true) ? get_post_meta($post->ID,'理念',true) : ''; ?>
+                      </span>
                     </a>
                   </div>
                 </div>
