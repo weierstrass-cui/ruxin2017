@@ -20,7 +20,7 @@ get_header(); ?>
       <!-- <a href="#contacts" data-waypoint-to="#contacts" class="locate fa-map-marker"><span>找到我们</span></a> -->
       <div class="well-1 container container-wide">
         <h1>年均接触年轻派人群</h1>
-        <div class="divider divider-default" style="font-size:40px;margin-top:2rem;">线下20000+，线上6000000+</div>
+        <div class="divider divider-default" style="font-size:36px;margin-top:2rem;">线下20000+，线上6000000+</div>
         <div class="divider divider-default">全面渗透大学生市场、多维度传播、全方位曝光，实现强力转化</div>
         <!-- Owl Carousel -->
         <div class="owl-carousel">
@@ -79,6 +79,34 @@ get_header(); ?>
       </div>
     </section>
     <!-- END 服务体系-->
+    <section class="well-4 well-4--inset-1 pcShow">
+      <div class="container container-wide">
+        <h1>如 心 服 务</h1>
+        <div class="row ruxinProductsBox">
+            <div class="ruxinOneProduct">
+              <img data-original="<?php bloginfo('template_url'); ?>/images/xl.png" />
+              <div class="ruxinProducts white">
+                <h5 class="white">简历值得信赖和依赖的客户关系</h5>
+                “尊重”客户意见<br />“第一时间”相应客户需求<br />“保质、保量、按时”客户交办的各项任务
+              </div>
+            </div>
+            <div class="ruxinOneProduct">
+              <img data-original="<?php bloginfo('template_url'); ?>/images/zy.png" />
+              <div class="ruxinProducts white">
+                <h5 class="white">品质卓越</h5>
+                创作品质“持续稳定”<br />创作品质“经常卓越”
+              </div>
+            </div>
+            <div class="ruxinOneProduct">
+              <img data-original="<?php bloginfo('template_url'); ?>/images/cx.png" />
+              <div class="ruxinProducts white">
+                <h5 class="white">不断创新</h5>
+                永远不断地向客户<br />提出“具有新鲜创意的解决方案”
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
     <!-- 成功案例 -->
     <section class="well-3 bg-image bg-fixed bg-image-2 pcShow">
       <div class="container container-wide">
@@ -141,7 +169,7 @@ get_header(); ?>
       </div>
     </section>
     <!-- END 如心产品-->
-    <section class="well-3 bg-image bg-fixed bg-image-2 friendlyLinks">
+    <section class="well-3 bg-image bg-fixed bg-image-2 friendlyLinks" style="padding-top:60px;padding-bottom:60px;">
       <div class="container container-wide">
         <h1 class="white">合 作 企 业</h1>
         <div class="gallerySlider">
