@@ -114,9 +114,9 @@ get_header(); ?>
         <div class="divider divider-light white">一对一定制服务，展现品牌最大价值，满足并超越客户的期望 </div>
         <!-- Owl Carousel -->
         <div class="row text-sm-left successListBox">
-          <?php $categorys = getchild(21); ?>
-            <?php if( $categorys ):?>
-              <?php foreach( $categorys as $index => $cate ): ?>
+          <?php $posts = get_posts("category=21&numberposts=99"); ?>
+            <?php if( $posts ):?>
+              <?php foreach( $posts as $index => $post ): setup_postdata( $post ); ?>
                 <?php if($index == '4'){ ?>
                     </div>
                     <div class="row text-sm-left">
@@ -124,15 +124,11 @@ get_header(); ?>
                 <?php }else{ ?>
                       <div class="col-sm-3">
                 <?php } ?>
-                  <?php $posts = get_posts("category=".$cate->term_id."&numberposts=99"); ?>
-                  <?php if( $posts ):?>
-                    <?php foreach( $posts as $postIndex => $post ): setup_postdata( $post ); ?>
-                      <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat='.$cate->term_id.'&post='.$post->ID ?>" class="thumb successList">
-                        <img data-original="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" alt="<?php echo $post->post_title  ?>" />
-                        <span class="thumb__overlay"><?php echo $post->post_title ?></a></span>
-                      </a>
-                    <?php endforeach; ?>
-                  <?php endif ?>
+                  <span style="display:none;"><?php print_r($post); ?></span>
+                  <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat=21&post='.$post->ID ?>" class="thumb successList">
+                    <img data-original="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" alt="<?php echo $post->post_title  ?>" />
+                    <span class="thumb__overlay"><?php echo $post->post_title ?></a></span>
+                  </a>
                 </div>
               <?php endforeach; ?>
             <?php endif ?>
