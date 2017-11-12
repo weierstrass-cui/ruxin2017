@@ -113,10 +113,12 @@ get_header(); ?>
         <h1 class="white">成 功 案 例</h1>
         <div class="divider divider-light white">一对一定制服务，展现品牌最大价值，满足并超越客户的期望 </div>
         <!-- Owl Carousel -->
-        <div class="row text-sm-left successListBox">
-          <?php $posts = get_posts("category=21&numberposts=99"); ?>
-            <?php if( $posts ):?>
-              <?php foreach( $posts as $index => $post ): setup_postdata( $post ); ?>
+        <div class="row text-sm-left">
+          <?php 
+                $categorys = get_posts("category=21&numberposts=99");
+           ?>
+            <?php if( $categorys ):?>
+              <?php foreach( $categorys as $index => $post ): ?>
                 <?php if($index == '4'){ ?>
                     </div>
                     <div class="row text-sm-left">
@@ -124,11 +126,12 @@ get_header(); ?>
                 <?php }else{ ?>
                       <div class="col-sm-3">
                 <?php } ?>
-                  <span style="display:none;"><?php print_r($post); ?></span>
-                  <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat=21&post='.$post->ID ?>" class="thumb successList">
-                    <img data-original="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" alt="<?php echo $post->post_title  ?>" />
-                    <span class="thumb__overlay"><?php echo $post->post_title ?></a></span>
-                  </a>
+                  <div class="product">
+                    <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat=21&post='.$post->ID ?>" class="thumb">
+                      <img data-original="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" width="370" height="278" alt="">
+                      <span class="thumb__overlay" style="color:#f90;text-shadow: 5px 2px 6px rgba(0,0,0,0.8);"><?php the_title(); ?></span>
+                    </a>
+                  </div>
                 </div>
               <?php endforeach; ?>
             <?php endif ?>
