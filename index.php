@@ -128,8 +128,8 @@ get_header(); ?>
                 <?php } ?>
                   <div class="product">
                     <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat=21&post='.$post->ID ?>" class="thumb demoList">
-                      <img data-original="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" width="250" height="200" alt="">
-                      <span class="demoShow" style="color:#f90;">
+                      <img data-original="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" width="250" height="180" alt="">
+                      <span class="demoShow">
                         <b><?php the_title(); ?></b><br />
                         <?php echo get_post_meta($post->ID,'理念',true) ? get_post_meta($post->ID,'理念',true) : ''; ?>
                       </span>
