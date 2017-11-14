@@ -124,18 +124,6 @@ get_header(); ?>
                     <img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" alt="<?php the_title(); ?>" />
                     <div><?php the_title(); ?></div>
                   </a>
-                  <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat=21&post='.$post->ID ?>">
-                    <img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" alt="<?php the_title(); ?>" />
-                    <div><?php the_title(); ?></div>
-                  </a>
-                  <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat=21&post='.$post->ID ?>">
-                    <img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" alt="<?php the_title(); ?>" />
-                    <div><?php the_title(); ?></div>
-                  </a>
-                  <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat=21&post='.$post->ID ?>">
-                    <img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" alt="<?php the_title(); ?>" />
-                    <div><?php the_title(); ?></div>
-                  </a>
               <?php endforeach; ?>
             <?php endif ?>
           </div>
