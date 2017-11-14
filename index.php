@@ -113,32 +113,28 @@ get_header(); ?>
         <h1 class="white">成 功 案 例</h1>
         <div class="divider divider-light white">一对一定制服务，展现品牌最大价值，满足并超越客户的期望 </div>
         <!-- Owl Carousel -->
-        <div class="row text-sm-left">
-          <?php 
+        <div id="dg-container" class="row text-sm-left dg-container">
+          <div class="dg-wrapper">
+            <?php 
                 $categorys = get_posts("category=21&numberposts=99");
-           ?>
+            ?>
             <?php if( $categorys ):?>
               <?php foreach( $categorys as $index => $post ): ?>
-                <?php if($index == '4'){ ?>
-                    </div>
-                    <div class="row text-sm-left">
-                      <div class="col-sm-3">
-                <?php }else{ ?>
-                      <div class="col-sm-3">
-                <?php } ?>
-                  <div class="product">
-                    <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat=21&post='.$post->ID ?>" class="thumb demoList">
-                      <img data-original="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" width="250" height="180" alt="<?php the_title(); ?>">
-                      <span class="demoShow">
-                        <b><?php the_title(); ?></b><br />
-                        <?php echo get_post_meta($post->ID,'理念',true) ? get_post_meta($post->ID,'理念',true) : ''; ?>
-                      </span>
-                    </a>
-                  </div>
-                </div>
+                  <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat=21&post='.$post->ID ?>">
+                    <img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" alt="<?php the_title(); ?>" />
+                    <div><?php the_title(); ?></div>
+                  </a>
               <?php endforeach; ?>
             <?php endif ?>
+          </div>
+          <nav> 
+            <span class="dg-prev">&lt;</span>
+            <span class="dg-next">&gt;</span>
+          </nav>
         </div>
+        <script src="<?php bloginfo('template_url'); ?>/js/modernizr.custom.53451.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/js/jquery.gallery.js"></script>
+        <script>$(function(){$('#dg-container').gallery();});</script>
         <!-- END Owl Carousel -->
       </div>
     </section>
