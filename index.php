@@ -134,7 +134,7 @@ get_header(); ?>
         </div>
         <script src="<?php bloginfo('template_url'); ?>/js/modernizr.custom.53451.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/js/jquery.gallery.js"></script>
-        <script>$(function(){$('#dg-container').gallery(autoplay:true);});</script>
+        <script>$(function(){$('#dg-container').gallery({autoplay:true});});</script>
         <!-- END Owl Carousel -->
       </div>
     </section>
