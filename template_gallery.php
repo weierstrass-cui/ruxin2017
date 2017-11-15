@@ -153,7 +153,7 @@ get_header(); ?>
                 if( $('.pcShow').is(':visible') ){
                     $('.galleryNav').find('li').bind('click', function(){
                         if( $(this).find('.blogList').find('a').length ){
-                            $(this).find('.blogList').slideDown();
+                            $(this).find('.blogList').slideToggle();
                         }
                     });
                     if( $('#theImages').is(':hidden') ){
