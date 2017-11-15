@@ -14,7 +14,8 @@ get_header(); ?>
                   <?php foreach( $categorys as $index => $item ): ?>
                     <li>
                         <a href="javascript://"><?php echo $item->cat_name ?></a>
-                        <div class="blogList <?php echo $cateID == $item->term_id ? 'current' : '' ?>">
+                        <div class="blogList">
+                        <!-- <div class="blogList <?php echo $cateID == $item->term_id ? 'current' : '' ?>"> -->
                             <?php $posts = get_posts("category=".$item->term_id."&numberposts=99"); ?>
                             <?php if( $posts ):?>
                                 <?php foreach( $posts as $postInde => $post ): setup_postdata( $post ); ?>
