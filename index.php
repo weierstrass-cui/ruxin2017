@@ -183,7 +183,7 @@ get_header(); ?>
                 <?php foreach( $hzqy as $index => $v ): ?>
                   <li style="width:100px;height:100px;margin-right:10px">
                     <a href="<?php echo $v->sl_url ? $v->sl_url : 'javascript://'; ?>" target="_blank" title="<?php echo $v->name; ?>">
-                      <img alt="<?php echo $v->description; ?>" data-original="<?php echo $v->image_url;?>" />
+                      <img alt="<?php echo $v->description; ?>" src="<?php echo $v->image_url;?>" />
                     </a>
                   </li>
                 <?php endforeach; ?>
