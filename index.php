@@ -86,7 +86,7 @@ get_header(); ?>
             <div class="ruxinOneProduct rotateYImg" style="width:310px;margin-right:20px;height:265px;">
               <img style="width:100px;height:100px;margin-top:1rem;" data-original="<?php bloginfo('template_url'); ?>/images/xl.png" />
               <div class="ruxinProducts white">
-                <h5 class="white">简历值得信赖和依赖的客户关系</h5>
+                <h5 class="white">建立值得信赖和依赖的客户关系</h5>
                 “尊重”客户意见<br />“第一时间”相应客户需求<br />“保质、保量、按时”客户交办的各项任务
               </div>
             </div>
@@ -113,28 +113,26 @@ get_header(); ?>
         <h1 class="white">成 功 案 例</h1>
         <div class="divider divider-light white">一对一定制服务，展现品牌最大价值，满足并超越客户的期望 </div>
         <!-- Owl Carousel -->
-        <div id="dg-container" class="row text-sm-left dg-container">
-          <div class="dg-wrapper">
+        <div class="row text-sm-left carousel">
+          <div class="slides">
             <?php 
                 $categorys = get_posts("category=21&numberposts=99");
             ?>
             <?php if( $categorys ):?>
               <?php foreach( $categorys as $index => $post ): ?>
+                <div>
                   <a href="<?php bloginfo('home'); ?>/gallery?<?php echo 'cat=21&post='.$post->ID ?>">
                     <img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" alt="<?php the_title(); ?>" />
                     <div><?php the_title(); ?></div>
                   </a>
+                </div>
               <?php endforeach; ?>
             <?php endif ?>
           </div>
-          <nav> 
-            <span class="dg-prev">&lt;</span>
-            <span class="dg-next">&gt;</span>
-          </nav>
         </div>
-        <script src="<?php bloginfo('template_url'); ?>/js/modernizr.custom.53451.js"></script>
-        <script src="<?php bloginfo('template_url'); ?>/js/jquery.gallery.js"></script>
-        <script>$(function(){$('#dg-container').gallery({autoplay:true});});</script>
+        <script src="<?php bloginfo('template_url'); ?>/js/jquery.mousewheel.min.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/js/jquery.carousel-1.1.min.js"></script>
+        <script>$(function(){$('.carousel').carousel({carouselWidth:930,carouselHeight:330,directionNav:true,shadow:true,buttonNav:'bullets'});});</script>
         <!-- END Owl Carousel -->
       </div>
     </section>
@@ -233,11 +231,11 @@ get_header(); ?>
     </section>
     <div class="pc-solution pcShow">
       <form method="post" action="#" onsubmit="return false;">
-          <h3>免费请专家帮您定制策划营销方案，精准定位校园市场</h3>
+          <h3>免费请专家帮您梳理策划营销思路，精准定位年轻派市场</h3>
           <div class="pc-solution-main">
               <div class="form">
                   <ul>
-                      <li class="">立即预约，请专家免费提供方案</li>
+                      <li class="">立即预约，请专家梳理策划思路</li>
                       <li class="require">
                           <label for="name">姓 名</label>
                           <input type="text" name="author" class="text" id="name" />

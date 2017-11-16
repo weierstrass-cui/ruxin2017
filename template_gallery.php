@@ -94,11 +94,11 @@ get_header(); ?>
         </div>
         <div class="pc-solution">
             <form method="post" action="#" onsubmit="return false;">
-                <h3>免费请专家帮您定制策划营销方案，精准定位校园市场</h3>
+                <h3>免费请专家帮您梳理策划营销思路，精准定位年轻派市场</h3>
                 <div class="pc-solution-main">
                     <div class="form">
                         <ul>
-                            <li class="">立即预约，请专家免费提供方案</li>
+                            <li class="">立即预约，请专家梳理策划思路</li>
                             <li class="require">
                                 <label for="name">姓 名</label>
                                 <input type="text" name="author" class="text" id="name" />

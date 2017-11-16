@@ -51,7 +51,7 @@
           <div class="col-sm-4" style="text-align:right;">
             <h4 class="white" style="text-align:center;width:170px;float:right;">关注我们</h4>
             <img class="ecode lazyload" data-original="<?php bloginfo('template_url'); ?>/images/ecode.jpg" width="170" height="170" />
-            <p>上海如心文化--大学生研究院</p>
+            <p>上海如心文化--年轻派研究院</p>
           </div>
       </div>
       <!-- END Address -->
