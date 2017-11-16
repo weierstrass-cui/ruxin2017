@@ -132,8 +132,7 @@ get_header(); ?>
         </div>
         <script src="<?php bloginfo('template_url'); ?>/js/jquery.mousewheel.min.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/js/jquery.carousel-1.1.min.js"></script>
-        <script>$(function(){
-          $('.carousel').carousel_a({carouselWidth:930,carouselHeight:330,directionNav:true,shadow:true,buttonNav:'bullets'});});</script>
+        <script>$(function(){$('.carousel').carousel_a({carouselWidth:930,carouselHeight:330,directionNav:true,shadow:true,buttonNav:'bullets'});});</script>
         <!-- END Owl Carousel -->
       </div>
     </section>
