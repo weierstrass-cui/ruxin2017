@@ -66,7 +66,7 @@ get_header(); ?>
                 <?php }else{ ?>
                       <div class="col-sm-4">
                 <?php } ?>
-                  <div class="product">
+                  <div class="product" style="width:350px;height:230px;overflow:hidden;">
                     <a href="javascript://" class="thumb">
                       <img data-original="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large')[0]; ?>" width="370" height="278" alt="">
                       <span class="thumb__overlay" style="color:#f90;text-shadow: 5px 2px 6px rgba(0,0,0,0.8);"><?php the_title(); ?></span>
