@@ -201,7 +201,7 @@ get_header(); ?>
                         if($('#thePost').find('img').length){
                             $('#thePost').find('img').each(function(){
                                 var div = $('<div></div>').appendTo('#theImages');
-                                $(this).appendTo(div);
+                                $(this).attr('src', '/wp-content' + $(this).attr('src')).appendTo(div);
                             });
                         }else{
                             $('#theImages').hide();
