@@ -191,6 +191,9 @@ get_header(); ?>
                         if( $('#thePost').find('img').length ){
                             $('#thePost').find('img').each(function(){
                                 var src = $(this).attr('src').replace(/^\/ruxin2017/,'');
+                                if( !/\/wp-content/.test(src) ){
+                                    src = '/wp-content' + src;
+                                }
                                 var div = $('<div class="swiper-slide" data-slide-bg="<?php bloginfo('home'); ?>' + src + '"></div>').appendTo('#theImagesForMob .swiper-wrapper');
                                 $(this).remove();
                             });
