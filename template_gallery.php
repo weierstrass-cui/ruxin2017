@@ -201,7 +201,12 @@ get_header(); ?>
                         if($('#thePost').find('img').length){
                             $('#thePost').find('img').each(function(){
                                 var div = $('<div></div>').appendTo('#theImages');
-                                $(this).attr('src', '/wp-content' + $(this).attr('src')).appendTo(div);
+                                var src = $(this).attr('src');
+                                if( /\/wp-content/.test(src) ){
+                                    $(this).appendTo(div);
+                                }else{
+                                    $(this).attr('src', '/wp-content' + $(this).attr('src')).appendTo(div);
+                                }
                             });
                         }else{
                             $('#theImages').hide();
